@@ -2,7 +2,8 @@ import React from 'react'
 import {
     Nav,
     Logo,
-    NavLinks
+    NavLinks,
+    Bars
 } from './headerStyles'
 
 function Header() {
@@ -14,6 +15,7 @@ function Header() {
             <span>Locations</span>
             <span>Contact</span>
         </NavLinks>
+        <Bars src='/assets/shared/mobile/icon-hamburger.svg'/>
     </Nav>
   )
 }
