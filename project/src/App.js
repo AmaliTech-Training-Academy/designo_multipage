@@ -9,22 +9,10 @@ import Header from './components/Header/Header';
 
 function App() {
   return (
-<<<<<<< HEAD
     <div className="app"  >
       <Header />
       <Design/>
       <Footer/>
       </div>
   )}
-=======
-    <div className='App'>
-      <Header/>
-      <Home/>
-      
-    
-    </div>
-  );
-}
-
->>>>>>> 1a425b5e72d79e83e52f2eb947e9833fca990095
 export default App;
