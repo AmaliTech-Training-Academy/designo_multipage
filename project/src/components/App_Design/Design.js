@@ -1,13 +1,11 @@
 import React from 'react'
-import './Home.css'
+import './Design.css'
 import pattern from "../../assets/app-design/desktop/bg-pattern-intro-app.svg"
 import airfilter from "../../assets/app-design/desktop/image-airfilter.jpg"
 import eyecam from "../../assets/app-design/desktop/image-eyecam.jpg"
 import faceit from "../../assets/app-design/desktop/image-faceit.jpg"
 import loopstudios from "../../assets/app-design/desktop/image-loopstudios.jpg"
 import todo from "../../assets/app-design/desktop/image-todo.jpg"
-import web from "../../assets/home/desktop/image-web-design-small.jpg"
-import graphic from   "../../assets/home/desktop/image-graphic-design.jpg"
 
 const Home = () => {
   return (
@@ -98,18 +96,22 @@ const Home = () => {
     </div>
 
     <div className="picture-container">
+      <div className="img-background">
       <div className="first-img">
         <div className="picture-text">
           <h2> Web Design</h2>
           <p>View Projects</p>
         </div>
       </div>
+      </div>
+      <div className="img-background">
       <div className="second-img">
-      <div className="picture-text">
+      <div className="picture-text-2">
      <h2> Graphic Design</h2> 
       <p>  View Projects</p>
       </div>
       </div>
+    </div>
     </div>
    </div>
   )
