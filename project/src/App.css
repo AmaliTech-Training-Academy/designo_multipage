@@ -1,9 +1,22 @@
+
 .App {
-    margin: 0 165px;
+    margin: 0 135px;
+    overflow: hidden;
 }
 
-@media (min-width: 451px) and (max-width: 950px) {
-    .App {
+
+@media only screen and (max-width:825px) and (min-width:450px) {
+    
+}
+
+@media only screen and (max-width:449px) {
+    
+}
+
+
+/* 
+@media  (min-width: 451px) and (max-width: 950px) {
+    .App {  
         margin: 0 40px;
     }
 }
@@ -11,5 +24,6 @@
 @media (max-width: 450px) {
     .App {
         margin: 0 24px;
+
     }
-}
+} */

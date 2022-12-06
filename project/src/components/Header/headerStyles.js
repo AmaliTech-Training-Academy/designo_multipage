@@ -6,6 +6,7 @@ export const Nav = Styled.nav`
     margin-top: 64px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 64px;
 `
 export const Logo = Styled.img`
     width: 196px;

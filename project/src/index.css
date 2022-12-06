@@ -1,12 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Jost&display=swap');
+body {
+    font-family: 'Jost';
+}
 
 *{
     margin: 0;
     padding: 0;
-}
-.app{
-    overflow: hidden;
-}
-@import url('https://fonts.googleapis.com/css?family=Jost&display=swap');
-body {
-    font-family: 'Jost';
 }
