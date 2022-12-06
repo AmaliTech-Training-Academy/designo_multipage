@@ -1,15 +1,16 @@
-import React from 'react'
+
+import Footer from "./components/Footer/Footer";
+import Design from "./components/App_Design/Design";
+// import pattern from "./assets/app-design/desktop/bg-pattern-intro-app.svg"
+import "./index.css"
 import './App.css'
 import Header from './components/Header/Header';
-import Home from "./components/Home/Home";
 
 function App() {
   return (
-    <div className='App'>
+    <div className="app"  >
       <Header />
-      <Home/>
-    </div>
-  );
-}
+      <Design/>
+      <Footer/>
 
 export default App;
