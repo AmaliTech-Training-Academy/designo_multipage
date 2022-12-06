@@ -1,5 +1,5 @@
 import React from "react";
-import '../../css/mid.css'
+import './mid.css'
 
 
 function Middle(){
