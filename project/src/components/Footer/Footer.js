@@ -1,12 +1,12 @@
 import React from "react";
 import "./Footer.css";
-import facebook from '../assets/shared/desktop/icon-facebook.svg'
-import twitter from '../assets/shared/desktop/icon-instagram.svg'
-import youtube from '../assets/shared/desktop/icon-youtube.svg'
-import pinterest from '../assets/shared/desktop/icon-pinterest.svg'
-import instagram from '../assets/shared/desktop/icon-instagram.svg'
-import footer from '../assets/shared/desktop/logo-light.png'
-import pattern from '../assets/shared/desktop/bg-pattern-small-circle.svg'
+import facebook from '../../assets/shared/desktop/icon-facebook.svg'
+import twitter from '../../assets/shared/desktop/icon-instagram.svg'
+import youtube from '../../assets/shared/desktop/icon-youtube.svg'
+import pinterest from '../../assets/shared/desktop/icon-pinterest.svg'
+import instagram from '../../assets/shared/desktop/icon-instagram.svg'
+import footer from '../../assets/shared/desktop/logo-light.png'
+import pattern from '../../assets/shared/desktop/bg-pattern-small-circle.svg'
 
 const Footer = () => {
   return (
