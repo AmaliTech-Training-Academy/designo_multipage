@@ -1,11 +1,18 @@
 import React from 'react'
-import './Home.css'
+import {
+  HomeContainer,
+  Article,
+  ArticleImage,
+} from './HomeStyles'
 
-const Home = () => {
+function Home() {
   return (
-   <div className='home'>
-    
-   </div>
+    <HomeContainer>
+      <Article>
+        hey
+      </Article>
+      <ArticleImage />
+    </HomeContainer>
   )
 }
 
