@@ -12,5 +12,6 @@ function App() {
       <Header />
       <Design/>
       <Footer/>
-
+      </div>
+  )}
 export default App;
