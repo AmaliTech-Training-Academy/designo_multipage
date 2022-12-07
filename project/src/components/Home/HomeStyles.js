@@ -1,20 +1,5 @@
 import styled from 'styled-components'
 
-const backgroundStyles = `
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: fixed;
-`
-const gridItemStyles = `
-    ${backgroundStyles};
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    border-radius: 15px;
-    cursor: pointer;
-`
-
 export const HomeContainer = styled.div`
     position: relative;
     margin-top: 67px;
