@@ -40,3 +40,19 @@
     margin: 0px 28.29%;
     border-radius: 10px;
 }
+
+/*TABLET SCREENS */
+@media only screen and (min-width: 520px) and (max-width:920px){
+ .mid-div{
+    display: flex;
+    flex-direction: column;
+    width: 50.80%;
+    margin: 120px 24.52% 0px 24.67%;
+ }  
+ .sub-mid{
+    width: 100%;
+
+ } 
+
+
+}
