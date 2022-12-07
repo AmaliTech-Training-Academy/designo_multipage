@@ -71,7 +71,7 @@ function TopAbout(){
                  and we strive to bring a fresh perspective to every opportunity. We make design and
                   technology more accessible and give you tools to measure success.
                   </p>
-                  <p className="body-text-small other" id="sub-text-1">
+                  <p className="body-text-small other" id="sub-text-2">
                     We are visual storytellers in appealing and captivating ways.
                      By combining business and marketing strategies, we inspire audiences to take 
                      action and drive real results.
