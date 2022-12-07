@@ -40,6 +40,9 @@
     margin: 0px 28.29%;
     border-radius: 10px;
 }
+.loc-button:hover{
+    background-color: #FFAD9B;
+}
 
 /*TABLET SCREENS */
 @media only screen and (min-width: 520px) and (max-width:920px){
