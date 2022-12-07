@@ -99,5 +99,43 @@ body{
     margin-top: 48px;
 }
 
+/*TABLET SCREENS */
+@media only screen and (min-width: 520px) and (max-width:920px){
+    .big-div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 632px;
+    }
+    .sub-div{
+        width: 100%;
+    }
+    .sub-div-1{
+        width: 100%;
+        height: 320px;
+    }
+    .col-order:nth-of-type(1) { order: 2; }
+    .col-order:nth-of-type(2) { order: 1; }
 
+    .myText{
+        width: 83.02%;
+        margin: 64px 8.42% 32px 8.42%;
+    }
+    .about-text{
+        width: 83.02%;
+        font-size: 16px;
+        line-height: 26px;
+        margin: 0px 8.42% 64px 8.42%;
+    }
+
+     .left-curve{
+    border-radius:0px 0px 15px 15px ;
+    }
+
+    .right-curve{
+        border-radius: 15px 15px 0px 0px;
+
+    }
+
+}
 
