@@ -1,13 +1,16 @@
 import React from "react";
 import Middle from "./middle";
 import './about.css'
+import HeroMobile from "../../assets/about/mobile/image-about-hero.jpg"
+import HeroTablet from "../../assets/about/tablet/image-about-hero.jpg"
+import HeroDesktop from "../../assets/about/desktop/image-about-hero.jpg"
 
 
 function TopAbout(){
     return (
         <>
         <div className="big-div">
-            <div className="sub-div left-curve" id="">
+            <div className="sub-div left-curve col-order" id="">
                 <h3 className="myText">About Us</h3>
                 <p className=" about-text">Founded in 2010, we are a creative agency that produces 
                    lasting results for our clients. We’ve partnered with
@@ -15,8 +18,11 @@ function TopAbout(){
                    that make real impact. We’re always looking forward to creating
                    brands, products, and digital experiences that connect with our clients’ audiences.</p>
             </div>
-            <div className="sub-div-1">
-                 <img className="right-curve" id="sub-img" src="/assets/about/desktop/image-about-hero.jpg"/>
+            <div className="sub-div-1 col-order">
+                 <img className="right-curve" id="sub-img" src={HeroDesktop}
+                     sizes="(min-width: 1090px) 30vw, (min-width: 550px) 100vw,  100vw"
+                     srcSet={`${HeroMobile} 375w, ${HeroTablet} 689w,
+                            ${HeroDesktop} 476w`}  alt=""/>
             </div>
         </div>
         <div className="big-div-1">
@@ -56,7 +62,7 @@ function TopAbout(){
                  and we strive to bring a fresh perspective to every opportunity. We make design and
                   technology more accessible and give you tools to measure success.
                   </p>
-                  <p className="body-text-small" id="sub-text-1">
+                  <p className="body-text-small other" id="sub-text-1">
                     We are visual storytellers in appealing and captivating ways.
                      By combining business and marketing strategies, we inspire audiences to take 
                      action and drive real results.
