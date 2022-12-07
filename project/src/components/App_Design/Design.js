@@ -48,7 +48,7 @@ const Home = () => {
       <div className="img-background">
         <div className="picture-text">
           <h2> Web Design</h2>
-          <p>View Projects <span><img src={arrow} alt="" /></span></p>
+          <p>View Projects</p>
         </div>
       </div>
       </div>
@@ -56,10 +56,7 @@ const Home = () => {
       <div className="img-background">
       <div className="picture-text-2">
      <h2> Graphic Design</h2> 
-     <Link to={"/graphic"} style={{ color: 'inherit', textDecoration: 'inherit'}}>
-      <p>  View Projects <span><img src={arrow} alt="" /></span></p>
-
-     </Link>
+      <p>  View Projects</p>
       </div>
       </div>
     </div>
