@@ -96,19 +96,19 @@ const Home = () => {
     </div>
 
     <div className="picture-container">
-      <div className="img-background">
       <div className="first-img">
+      <div className="img-background">
         <div className="picture-text">
           <h2> Web Design</h2>
-          <p>View Projects</p>
+          <p>View Projects <span>></span></p>
         </div>
       </div>
       </div>
-      <div className="img-background">
       <div className="second-img">
+      <div className="img-background">
       <div className="picture-text-2">
      <h2> Graphic Design</h2> 
-      <p>  View Projects</p>
+      <p>  View Projects <span>></span></p>
       </div>
       </div>
     </div>

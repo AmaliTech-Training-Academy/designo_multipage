@@ -11,7 +11,9 @@ import pattern from '../../assets/shared/desktop/bg-pattern-small-circle.svg'
 const Footer = () => {
   return (
     <div className="all-footer">
-        <div className="above-footer" style={{backgroundImage:`url(${pattern})`}}>
+        
+    <footer>
+    <div className="above-footer" style={{backgroundImage:`url(${pattern})`}}>
             <div className="above-footer-text">
                 <h2> Let's talk about your project</h2>
                 <p> Ready to take it to the next level? Contact us today and find out how our expertise can 
@@ -21,15 +23,9 @@ const Footer = () => {
                 <button className="above-footer-btn"> Get in touch</button>
             </div>
         </div>
-    <footer>
       <div className="footer-container">
         <div className="footer-upper-container">
-          <div className="footer-text">
-            <div >
             <img src={footer} alt="" className="footer-icon"/>
-            </div>
-          </div>
-
           <ul className="footer-links">
             <li>Our company</li>
             <li>Locations</li>
