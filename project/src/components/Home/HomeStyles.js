@@ -1,5 +1,19 @@
 import styled from 'styled-components'
 
+const backgroundStyles = `
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: fixed;
+`
+const gridItemStyles = `
+    ${backgroundStyles};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 15px;
+`
+
 export const HomeContainer = styled.div`
     position: relative;
     margin-top: 67px;
@@ -105,6 +119,7 @@ export const Button = styled.button`
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #333136;
+    cursor: pointer;
 
     &:hover {
         background: #FFAD9B;
@@ -170,6 +185,7 @@ export const Content = styled.div`
     text-transform: uppercase;
     position: absolute;
     letter-spacing: 4px;
+    cursor: pointer;
 `
 export const GridTitle = styled(Title)`
     font-size: 40px;
