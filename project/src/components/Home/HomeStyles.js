@@ -12,6 +12,7 @@ const gridItemStyles = `
     justify-content: center;
     width: 100%;
     border-radius: 15px;
+    cursor: pointer;
 `
 
 export const HomeContainer = styled.div`
@@ -154,6 +155,12 @@ export const BlackBackground = styled.div`
     background: rgb(0, 0, 0);
     opacity: 0.4;
     border-radius: 15px;
+    cursor: pointer;
+
+    &:hover {
+        background: rgb(231, 129, 107);
+        opacity: 0.8;
+    }
 `
 export const WebDesign = styled.div`
     ${gridItemStyles};
