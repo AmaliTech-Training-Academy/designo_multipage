@@ -45,11 +45,11 @@ body{
     height: 100%;
     border-radius: 15px;
 }
-.left-curve{
+.left-curve,.left-curve-1{
     border-radius: 15px 0px 0px 15px;
 
 }
-.right-curve{
+.right-curve,.right-curve-1{
     border-radius: 0px 15px 15px 0px;
     
 
@@ -134,11 +134,11 @@ body{
         margin: 0px 8.42% 64px 8.42%;
     }
 
-     .left-curve{
+     .left-curve,.right-curve-1{
     border-radius:0px 0px 15px 15px ;
     }
 
-    .right-curve{
+    .right-curve,.left-curve-1{
         border-radius: 15px 15px 0px 0px;
 
     }
