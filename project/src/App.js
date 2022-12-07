@@ -5,14 +5,17 @@ import Design from "./components/App_Design/Design";
 import "./index.css"
 import './App.css'
 import Header from './components/Header/Header';
+import TopAbout from "./components/About/top";
 
 
 function App() {
   return (
     <div className="app"  >
-      <Header />
+      {/* <Header />
       <Design/>
-      <Footer/>
+      <Footer/> */}
+      <Header/>
+      <TopAbout/>
       </div>
   )}
 export default App;

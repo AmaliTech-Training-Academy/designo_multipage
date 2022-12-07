@@ -1,8 +1,8 @@
 .mid-div{
     display: flex;
     flex-direction: row;
-    width: 77.08%;
-    margin: 160px 11.45%;
+    width: 100%;
+    margin: 160px 0px;
 }
 
 .sub-mid{
