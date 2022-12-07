@@ -40,7 +40,7 @@ const Home = () => {
           <div className="card-footer-text">
 
           <div className="card-text-header">
-          eyecam
+          Eyecam
           </div>
           <div className="card-text">
           Product that lets you edit your favorite photos and videos at any time
