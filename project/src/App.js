@@ -5,13 +5,15 @@ import Design from "./components/App_Design/Design";
 import "./index.css"
 import './App.css'
 import Header from './components/Header/Header';
+import Graphic from "./components/Graphic_Design/Graphic";
 
 function App() {
   return (
     <>
     <div className="App"  >
       <Header />
-      <Design/>
+      {/* <Design/> */}
+      <Graphic/>
       </div>
       <Footer/>
     </>
