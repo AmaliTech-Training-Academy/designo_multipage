@@ -7,18 +7,9 @@ import TopAbout from "./components/About/top";
 
 function App() {
   return (
-<<<<<<< HEAD
     <>
       <div className="App"  >
         <Header />
-=======
-    <div className="app"  >
-      {/* <Header />
-      <Design/>
-      <Footer/> */}
-      <Header/>
-      <TopAbout/>
->>>>>>> 12ed052 (fixing css on desktop view)
       </div>
     </>
   )
