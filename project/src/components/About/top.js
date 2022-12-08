@@ -33,12 +33,12 @@ function TopAbout(){
         </div>
         <div className="big-div-1">
             <div className="sub-div-1">
-             <img  className="left-curve"id="sub-img" src={WorldClassDesktop}
+             <img  className="left-curve-1"id="sub-img" src={WorldClassDesktop}
                      sizes="(min-width: 1090px) 30vw, (min-width: 550px) 100vw,  100vw"
                      srcSet={`${WorldClassMobile} 375w, ${WorldClassTablet} 689w,
                             ${WorldClassDesktop} 476w`}  alt=""/>
             </div>
-            <div className="sub-2 right-curve">
+            <div className="sub-2 right-curve-1">
                 <div className="holder-2">
                     <h3 className="class-medium">World-class talent</h3>
                     <p className="body-text-small" id="sub-text">
@@ -62,7 +62,7 @@ function TopAbout(){
         <Middle/>
 
         <div className="big-div-1">
-            <div className="sub-2 left-curve-1 col-order">
+            <div className="sub-2 left-curve col-order">
                 <div className="holder-2">
                     <h3 className="class-medium">The real deal</h3>
                 <p className="body-text-small" id="sub-text">
@@ -79,7 +79,7 @@ function TopAbout(){
                 </div>
             </div>
             <div className="sub-div-1 col-order">
-            <img className="right-curve-1" id="sub-img" src={RealDealDesktop}
+            <img className="right-curve" id="sub-img" src={RealDealDesktop}
                      sizes="(min-width: 1090px) 30vw, (min-width: 550px) 100vw,  100vw"
                      srcSet={`${RealDealMobile} 375w, ${RealDealTablet} 689w,
                             ${RealDealMobile} 476w`}  alt=""/>

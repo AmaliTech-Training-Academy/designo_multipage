@@ -11,10 +11,10 @@ import TopAbout from "./components/About/top";
 function App() {
   return (
     <div className="app"  >
-      <Header />
+      {/* <Header />
       <Design/>
-      <Footer/>
-     
+      <Footer/> */}
+     <TopAbout/>
       </div>
   )}
 export default App;
