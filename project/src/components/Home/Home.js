@@ -14,7 +14,15 @@ import {
   GraphicDesign,
   Content,
   GridTitle,
-  GridSubtitle
+  GridSubtitle,
+  AttributeContainer,
+  Passionate,
+  PassionateImage,
+  Description,
+  Resourceful,
+  ResourcefulImage,
+  Friendly,
+  FriendlyImage
 } from './HomeStyles'
 
 function Home() {
@@ -68,6 +76,26 @@ function Home() {
           </Content>
         </GraphicDesign>
       </GridContainer>
+      <AttributeContainer>
+        <Passionate>
+          <PassionateImage src="/assets/home/desktop/illustration-passionate.svg"/>
+          <Description>
+
+          </Description>
+        </Passionate>
+        <Resourceful>
+          <ResourcefulImage src="/assets/home/desktop/illustration-resourceful.svg"/>
+          <Description>
+
+          </Description>
+        </Resourceful>
+        <Friendly>
+          <FriendlyImage src="/assets/home/desktop/illustration-friendly.svg"/>
+          <Description>
+            
+          </Description>
+        </Friendly>
+      </AttributeContainer>
     </>
   )
 }

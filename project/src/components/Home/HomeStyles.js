@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const backgroundStyles = `
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: fixed;
+    background-position: center;
 `
 const gridItemStyles = `
     ${backgroundStyles};
@@ -13,6 +13,7 @@ const gridItemStyles = `
     width: 100%;
     border-radius: 15px;
 `
+// TOP CONTENT
 
 export const HomeContainer = styled.div`
     position: relative;
@@ -37,6 +38,7 @@ export const HomeContainer = styled.div`
 `
 export const BackgroundImage = styled.div`
     ${backgroundStyles}
+    background-size: contain;
     position: absolute;
     top: 0;
     left: 420px;
@@ -47,6 +49,12 @@ export const BackgroundImage = styled.div`
     @media (min-width: 450px) and (max-width: 850px) {
         left: 170px;
         right: -100px;
+    }
+
+    @media (max-width: 449px) {
+        top: -30px;
+        left: 0;
+        right: -250px;
     }
 `
 export const Article = styled.div`
@@ -136,7 +144,13 @@ export const ArticleImage = styled.img`
         right: 0;
         margin: 0 auto;
     }
+
+    @media (max-width: 449px) {
+        left: -120px;
+    }
 `
+// MIDDLE CONTENT
+
 export const GridContainer = styled.div`
     position: relative;
     display: grid;
@@ -145,6 +159,20 @@ export const GridContainer = styled.div`
     width: 100%;
     height: 640px;
     margin-top: 164px;
+
+    @media (max-width: 449px), (min-width: 450px) and (max-width: 850px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    @media (min-width: 450px) and (max-width: 850px) {
+        margin-top: 120px;
+        height: 649px;
+    }
+
+    @media (max-width: 449px) {
+        margin-top: 963px;
+        height: 798px;
+    }
 `
 export const BlackBackground = styled.div`
     position: absolute;
@@ -167,17 +195,43 @@ export const WebDesign = styled.div`
     position: relative;
     grid-row: 1 / span 2;
     height: 100%;
-    background: url('/assets/home/desktop/image-web-design-large.jpg');
+    background-image: url('/assets/home/desktop/image-web-design-large.jpg');
+
+    @media (min-width: 450px) and (max-width: 850px) {
+        background-image: url('/assets/home/tablet/image-web-design.jpg');
+        grid-row: unset;
+    }
+
+    @media (max-width: 449px) {
+        background-image: url('/assets/home/mobile/image-web-design.jpg');
+        grid-row: unset; 
+    }
 `
 export const AppDesign = styled.div`
     ${gridItemStyles};
     position: relative;
-    background: url('/assets/home/desktop/image-app-design.jpg');
+    background-image: url('/assets/home/desktop/image-app-design.jpg');
+
+    @media (min-width: 450px) and (max-width: 850px) {
+        background-image: url('/assets/home/tablet/image-app-design.jpg');
+    }
+
+    @media (max-width: 449px) {
+        background-image: url('/assets/home/mobile/image-app-design.jpg');
+    }
 `
 export const GraphicDesign = styled.div`
     ${gridItemStyles};
     position: relative;
-    background: url('/assets/home/desktop/image-graphic-design.jpg');
+    background-image: url('/assets/home/desktop/image-graphic-design.jpg');
+
+    @media (min-width: 450px) and (max-width: 850px) {
+        background-image: url('/assets/home/tablet/image-graphic-design.jpg');
+    }
+
+    @media (max-width: 449px) {
+        background-image: url('/assets/home/mobile/image-graphic-design.jpg');
+    }
 `
 export const Content = styled.div`
     width: 80%;
@@ -190,6 +244,12 @@ export const Content = styled.div`
 export const GridTitle = styled(Title)`
     font-size: 40px;
     margin-bottom: 20px;
+
+    @media (max-width: 449px) {
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: 1.6px;
+    }
 `
 export const GridSubtitle = styled(Subtitle)`
     width: 100%;
@@ -198,4 +258,40 @@ export const GridSubtitle = styled(Subtitle)`
         color: #E7816B;
         // padding-left: 15px;
     }
+
+    @media (max-width: 449px) {
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 5px;
+    }
+`
+//BOTTOM CONTENT
+
+export const AttributeContainer = styled.div`
+    height: 412px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 160px;
+`
+export const Passionate = styled.div`
+    width: 350px;
+`
+export const PassionateImage = styled.img`
+`
+export const Description = styled.div`
+`
+export const Resourceful = styled.div`
+    width: 350px;
+    
+`
+export const ResourcefulImage = styled.img`
+    object-fit: contain;
+`
+export const Friendly = styled.div`
+    width: 350px;
+    background: blue;
+    margin: 0 auto;
+`
+export const FriendlyImage = styled.img`
 `
