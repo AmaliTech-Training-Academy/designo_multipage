@@ -8,9 +8,9 @@ body{
 .big-div{
     display: flex;
     flex-direction: row;
-    width: 77.15%;
+    width: 100%;
     height: 480px;
-    margin: 155px 11.39% 160px 11.45%;
+    margin: 155px 0px 160px 0px;
     border-radius: 15px;
 }
 
@@ -45,11 +45,11 @@ body{
     height: 100%;
     border-radius: 15px;
 }
-.left-curve{
+.left-curve,.left-curve-1{
     border-radius: 15px 0px 0px 15px;
 
 }
-.right-curve{
+.right-curve,.right-curve-1{
     border-radius: 0px 15px 15px 0px;
     
 
@@ -62,9 +62,9 @@ body{
 .big-div-1{
     display: flex;
     flex-direction: row;
-    width: 77.15%;
+    width: 100%;
     height: 640px;
-    margin: 155px 11.39% 160px 11.45%;
+    margin: 155px 0px 160px 0px;
     border-radius: 15px;
 }
 
@@ -96,6 +96,167 @@ body{
 }
 #sub-text-1{
     width: 100%;
+    margin-top: 32px;
+}
+#sub-text-2{
+    width: 100%;
+    margin-top: 58px;
+
 }
 
+/*TABLET SCREENS */
+@media only screen and (min-width: 520px) and (max-width:920px){
+    .big-div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 632px;
+        margin: 71px 0px 0px 0px;
+    }
+    .sub-div{
+        width: 100%;
+    }
+    .sub-div-1{
+        width: 100%;
+        height: 320px;
+    }
+    .col-order:nth-of-type(1) { order: 2; }
+    .col-order:nth-of-type(2) { order: 1; }
 
+    .myText{
+        width: 83.02%;
+        margin: 64px 8.42% 32px 8.42%;
+    }
+    .about-text{
+        width: 83.02%;
+        font-size: 16px;
+        line-height: 26px;
+        margin: 0px 8.42% 64px 8.42%;
+    }
+
+     .left-curve,.right-curve-1{
+    border-radius:0px 0px 15px 15px ;
+    }
+
+    .right-curve,.left-curve-1{
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    .big-div-1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 736px;
+        margin: 120px 0px 0px 0px;
+    }
+    .sub-div-1{
+        width: 100%;
+        height: 320px;
+    }
+    .sub-2{
+        width: 100%;
+        height: 416px;
+    }
+    .holder-2{
+        height: 280px;
+        width: 83.02%;
+        margin: 68px 8.42% 68px 8.56%;
+    }
+    #sub-text-1{
+        width: 100%;
+        margin-top: 24px;
+    }
+    #sub-text-2{
+        width: 100%;
+        margin-top: 24px;
+    
+    }
+
+}
+
+/* MOBILE SCREENS*/
+@media only screen and (min-width:265px)and (max-width:450px) {
+.big-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 715px;
+    margin: 0px;
+}
+.col-order:nth-of-type(1) { order: 2; }
+.col-order:nth-of-type(2) { order: 1; }
+.sub-div-1{
+    width: 100%;
+    height: 320px;
+    border-radius: 0px;
+}
+.sub-div{
+    width: 100%;
+    height: 395px;
+    border-radius: 0px;
+}
+.myText{
+    font-size: 32px;
+    line-height: 36px;
+    width: 87.2%;
+    margin: 80px 6.4% 0px 6.4%;
+}
+.about-text{
+    font-size: 15px;
+    line-height: 25px;
+    width: 87.2%;
+    margin: 24px 6.4% 80px 6.4%;
+}
+.big-div-1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    height: 865px;
+
+}
+.sub-div-1{
+    width: 100%;
+    height: 320px;
+
+}
+.sub-2{
+    width: 100%;
+    height: 545px;
+}
+.holder-2{
+    width: 87.2%;
+    height: 385px;
+    margin: 80px 6.4%;
+}
+.class-medium{
+    font-size: 32px;
+    line-height: 36px;
+    width: 100%;
+}
+
+.body-text-small #sub-text{
+    width: 100%;
+    background-color: #333136;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.left-curve,.right-curve-1{
+    border-radius:0px ;
+    }
+
+.right-curve,.left-curve-1{
+        border-radius: 0px;
+    }
+
+    #sub-text{
+        height: 173px;
+    }
+    .about-page-mobile{
+        position: absolute;
+        left: 0px;
+        right: 0px;
+    }
+
+}

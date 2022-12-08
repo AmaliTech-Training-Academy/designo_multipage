@@ -1,13 +1,22 @@
 import React from "react";
 import Middle from "./middle";
 import './about.css'
+import HeroMobile from "../../assets/about/mobile/image-about-hero.jpg"
+import HeroTablet from "../../assets/about/tablet/image-about-hero.jpg"
+import HeroDesktop from "../../assets/about/desktop/image-about-hero.jpg"
+import WorldClassMobile from "../../assets/about/mobile/image-world-class-talent.jpg"
+import WorldClassTablet from "../../assets/about/tablet/image-world-class-talent.jpg"
+import WorldClassDesktop from "../../assets/about/desktop/image-world-class-talent.jpg"
+import RealDealMobile from "../../assets/about/mobile/image-real-deal.jpg"
+import RealDealTablet from "../../assets/about/tablet/image-real-deal.jpg"
+import RealDealDesktop from "../../assets/about/desktop/image-real-deal.jpg"
 
 
-function topAbout(){
+function TopAbout(){
     return (
-        <>
+        < div className="about-page-mobile">
         <div className="big-div">
-            <div className="sub-div left-curve" id="">
+            <div className="sub-div left-curve  col-order" id="">
                 <h3 className="myText">About Us</h3>
                 <p className=" about-text">Founded in 2010, we are a creative agency that produces 
                    lasting results for our clients. We’ve partnered with
@@ -15,15 +24,21 @@ function topAbout(){
                    that make real impact. We’re always looking forward to creating
                    brands, products, and digital experiences that connect with our clients’ audiences.</p>
             </div>
-            <div className="sub-div-1">
-                 <img className="right-curve" id="sub-img" src="/assets/about/desktop/image-about-hero.jpg"/>
+            <div className="sub-div-1 col-order">
+                 <img className="right-curve" id="sub-img" src={HeroDesktop}
+                     sizes="(min-width: 1090px) 30vw, (min-width: 550px) 100vw,  100vw"
+                     srcSet={`${HeroMobile} 375w, ${HeroTablet} 689w,
+                            ${HeroDesktop} 476w`}  alt=""/>
             </div>
         </div>
         <div className="big-div-1">
             <div className="sub-div-1">
-             <img  className="left-curve"id="sub-img" src="/assets/about/desktop/image-world-class-talent.jpg"/>
+             <img  className="left-curve-1"id="sub-img" src={WorldClassDesktop}
+                     sizes="(min-width: 1090px) 30vw, (min-width: 550px) 100vw,  100vw"
+                     srcSet={`${WorldClassMobile} 375w, ${WorldClassTablet} 689w,
+                            ${WorldClassDesktop} 476w`}  alt=""/>
             </div>
-            <div className="sub-2 right-curve">
+            <div className="sub-2 right-curve-1">
                 <div className="holder-2">
                     <h3 className="class-medium">World-class talent</h3>
                     <p className="body-text-small" id="sub-text">
@@ -46,8 +61,8 @@ function topAbout(){
         </div>
         <Middle/>
 
-        <div className="big-div">
-            <div className="sub-2 left-curve">
+        <div className="big-div-1">
+            <div className="sub-2 left-curve col-order">
                 <div className="holder-2">
                     <h3 className="class-medium">The real deal</h3>
                 <p className="body-text-small" id="sub-text">
@@ -56,22 +71,25 @@ function topAbout(){
                  and we strive to bring a fresh perspective to every opportunity. We make design and
                   technology more accessible and give you tools to measure success.
                   </p>
-                  <p className="body-text-small" id="sub-text-1">
+                  <p className="body-text-small other" id="sub-text-2">
                     We are visual storytellers in appealing and captivating ways.
                      By combining business and marketing strategies, we inspire audiences to take 
                      action and drive real results.
                 </p>
                 </div>
             </div>
-            <div className="sub-div-1">
-            <img className="right-curve" id="sub-img" src="/assets/about/desktop/image-real-deal.jpg"/>
+            <div className="sub-div-1 col-order">
+            <img className="right-curve" id="sub-img" src={RealDealDesktop}
+                     sizes="(min-width: 1090px) 30vw, (min-width: 550px) 100vw,  100vw"
+                     srcSet={`${RealDealMobile} 375w, ${RealDealTablet} 689w,
+                            ${RealDealMobile} 476w`}  alt=""/>
                 
             </div>
 
         </div>
-        </>
+        </div>
     );
 }
 
 
-export default topAbout
+export default TopAbout
