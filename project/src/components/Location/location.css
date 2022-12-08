@@ -80,7 +80,31 @@
     width: 100%;
     border-radius: 15px;
 }
-.sub-loc-1{
+/*TABLET SCREENS */
+@media only screen and (min-width: 520px) and (max-width:920px){
+    .loc-page{
 
+    }
+    .loc-big-div{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 683px;
+    }
+    .loc-text-1{
+        width: 100%;
+        height: 326px;
+        margin-top: 31px;
+    }
+
+    .loc-holder{
+        width: 78.37%;
+        height: 150px;
+        margin: 88px 10.74% 88px 10.74%;
+    }
+    .loc-img{
+        width: 100%;
+        height: 326px;
+        margin: 0px;
+    }
 
 }
