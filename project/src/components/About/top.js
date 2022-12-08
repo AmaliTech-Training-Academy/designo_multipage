@@ -3,7 +3,7 @@ import Middle from "./middle";
 import './about.css'
 
 
-function topAbout(){
+function TopAbout(){
     return (
         <>
         <div className="big-div">
@@ -46,7 +46,7 @@ function topAbout(){
         </div>
         <Middle/>
 
-        <div className="big-div">
+        <div className="big-div-1">
             <div className="sub-2 left-curve">
                 <div className="holder-2">
                     <h3 className="class-medium">The real deal</h3>
@@ -74,4 +74,4 @@ function topAbout(){
 }
 
 
-export default topAbout
+export default TopAbout

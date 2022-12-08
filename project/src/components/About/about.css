@@ -8,9 +8,9 @@ body{
 .big-div{
     display: flex;
     flex-direction: row;
-    width: 77.15%;
+    width: 100%;
     height: 480px;
-    margin: 155px 11.39% 160px 11.45%;
+    margin: 155px 0px 160px 0px;
     border-radius: 15px;
 }
 
@@ -62,9 +62,9 @@ body{
 .big-div-1{
     display: flex;
     flex-direction: row;
-    width: 77.15%;
+    width: 100%;
     height: 640px;
-    margin: 155px 11.39% 160px 11.45%;
+    margin: 155px 0px 160px 0px;
     border-radius: 15px;
 }
 
@@ -96,6 +96,8 @@ body{
 }
 #sub-text-1{
     width: 100%;
+    margin-top: 48px;
 }
+
 
 
