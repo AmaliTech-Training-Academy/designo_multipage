@@ -4,11 +4,13 @@ import pattern from "../../assets/app-design/desktop/bg-pattern-intro-app.svg"
 import tim from "../../assets/graphic-design/desktop/image-change.jpg"
 import water from "../../assets/graphic-design/desktop/image-boxed-water.jpg"
 import science from "../../assets/graphic-design/desktop/image-science.jpg"
+import bgimg from "../../assets/shared/desktop/bg-pattern-leaf.svg"
 
 
 const Graphic = () => {
     return (
         <div className='home'>
+          <img src={bgimg} className="bg-img"/>
          <div className="wrapper" style={{backgroundImage:`url(${pattern})`}}>
            <div className="wrapper-text">
              <h2> Graphic design</h2>
