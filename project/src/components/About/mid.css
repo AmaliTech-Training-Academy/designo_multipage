@@ -56,6 +56,19 @@
     width: 100%;
 
  } 
+}
+ /* MOBILE SCREENS*/
+@media only screen and (min-width:265px)and (max-width:450px) {
+    .mid-div{
+        display: flex;
+        flex-direction: column;
+       width: 93.33%;
+       margin: 120px 3.47% 120px 3.2%;
+
+    }
+    .sub-mid{
+        width: 100%;
+    }
 
 
 }
