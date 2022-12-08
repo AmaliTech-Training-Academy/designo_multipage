@@ -14,7 +14,7 @@ import RealDealDesktop from "../../assets/about/desktop/image-real-deal.jpg"
 
 function TopAbout(){
     return (
-        <>
+        < div className="about-page-mobile">
         <div className="big-div">
             <div className="sub-div left-curve  col-order" id="">
                 <h3 className="myText">About Us</h3>
@@ -87,7 +87,7 @@ function TopAbout(){
             </div>
 
         </div>
-        </>
+        </div>
     );
 }
 

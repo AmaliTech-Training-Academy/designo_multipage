@@ -250,4 +250,13 @@ body{
         border-radius: 0px;
     }
 
+    #sub-text{
+        height: 173px;
+    }
+    .about-page-mobile{
+        position: absolute;
+        left: 0px;
+        right: 0px;
+    }
+
 }
