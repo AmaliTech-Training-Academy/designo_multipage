@@ -1,5 +1,20 @@
 import styled from 'styled-components'
 
+const center = `
+    position: relative;
+
+    img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    @media (min-width: 450px) and (max-width: 850px) {
+        display: flex;
+        width: 100%;
+    }
+`
 const backgroundStyles = `
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,6 +28,39 @@ const gridItemStyles = `
     width: 100%;
     border-radius: 15px;
 `
+const smallCircleBackground = `
+    background-image: url("assets/shared/desktop/bg-pattern-small-circle.svg");
+    width: 100%;
+    height: 50%;
+    ${backgroundStyles}
+    background-size: contain;
+
+    @media (max-width: 449px), (min-width: 450px) and (max-width: 850px)  {
+        position: relative;
+        height: 110%;
+    }
+`
+// BACKGROUND
+export const HomeBackgroundOne = styled.img`
+    position: absolute;
+    top: 475px;
+    left: 0;
+
+    @media (max-width: 449px), (min-width: 450px) and (max-width: 850px) {
+        display: none;
+    }
+`
+export const HomeBackgroundTwo = styled.img`
+    position: absolute;
+    top: 1879px;
+    right: 0;
+    transform: rotate(180deg);
+
+    @media (max-width: 449px), (min-width: 450px) and (max-width: 850px) {
+        display: none;
+    }
+`
+
 // TOP CONTENT
 
 export const HomeContainer = styled.div`
@@ -256,7 +304,6 @@ export const GridSubtitle = styled(Subtitle)`
 
     b {
         color: #E7816B;
-        // padding-left: 15px;
     }
 
     @media (max-width: 449px) {
@@ -273,25 +320,67 @@ export const AttributeContainer = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 160px;
+
+    @media (max-width: 449px), (min-width: 450px) and (max-width: 850px) {
+        flex-direction: column;
+        height: 670px;
+    }
+
+    @media (max-width: 449px) {
+        height: 1396px;
+        margin-top: 120px;
+    }
 `
 export const Passionate = styled.div`
     width: 350px;
+    ${center}
 `
-export const PassionateImage = styled.img`
+export const PassionateImage = styled.div`
+    ${smallCircleBackground}
+
 `
 export const Description = styled.div`
+    text-align: center;
+    color: #333136;
+    margin-top: 48px;
+
+    span {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 5px;
+    }
+
+    p {
+        font-weight: 550;
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 32px;
+    }
+
+    @media (min-width: 450px) and (max-width: 850px)  {
+        text-align: unset;
+    }
 `
 export const Resourceful = styled.div`
     width: 350px;
-    
+    ${center}
 `
-export const ResourcefulImage = styled.img`
-    object-fit: contain;
+export const ResourcefulImage = styled.div`
+    ${smallCircleBackground} 
+    transform: rotate(-90deg);
+    img {
+        transform: rotate(90deg);
+    }
 `
 export const Friendly = styled.div`
+    ${center}
     width: 350px;
-    background: blue;
-    margin: 0 auto;
 `
-export const FriendlyImage = styled.img`
+export const FriendlyImage = styled.div`
+    ${smallCircleBackground}
+    transform: rotate(90deg);
+    img {
+        transform: rotate(-90deg);
+    }
 `
