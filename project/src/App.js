@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css"
 import './App.css'
 import Header from './components/Header/Header';
-import Home from "./components/Home/Home";
+import WebDesign from "./components/Web_Design/WebDesign";
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <>
       <div className="App"  >
         <Header />
-        <Home />     
+        <WebDesign />
       </div>
     </>
   )
