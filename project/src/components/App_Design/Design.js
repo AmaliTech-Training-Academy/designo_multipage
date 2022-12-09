@@ -6,7 +6,7 @@ import eyecam from "../../assets/app-design/desktop/image-eyecam.jpg"
 import faceit from "../../assets/app-design/desktop/image-faceit.jpg"
 import loopstudios from "../../assets/app-design/desktop/image-loopstudios.jpg"
 import todo from "../../assets/app-design/desktop/image-todo.jpg"
-
+import {App} from '../../data'
 const Home = () => {
   return (
    <div className='home'>
@@ -19,80 +19,28 @@ const Home = () => {
 
       {/*  CARD SECTION  */}
     <div className="cards-container">
-      <div className="card-container">
-        <img src={airfilter} alt=""/>
-        <div className="card-footer">
-          <div className="card-footer-text">
+      {
+        App.map((data)=>{
+          const {img,title,text}=data
+          return(
+            <div className="card-container">
+            <img src={img} alt=""/>
+            <div className="card-footer">
+              <div className="card-footer-text">
+              <div className="card-text-header">
+              {title}
+              </div>
+              <div className="card-text">
+                  {text}              
+              </div>
+              </div>
+            </div>
+          </div>
+          )
+        })
 
-          <div className="card-text-header">
-          Airfilter
-          </div>
-          <div className="card-text">
-  Solving the problem of poor indoor air quality by filtering the air
-          </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="card-container">
-        <img src={eyecam} alt=""/>
-        <div className="card-footer">
-          <div className="card-footer-text">
-
-          <div className="card-text-header">
-          Eyecam
-          </div>
-          <div className="card-text">
-          Product that lets you edit your favorite photos and videos at any time
-          </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="card-container">
-        <img src={faceit} alt=""/>
-        <div className="card-footer">
-          <div className="card-footer-text">
-
-          <div className="card-text-header">
-          Faceit
-          </div>
-          <div className="card-text">
-          Get to meet your favorite internet superstar with the faceit app
-          </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="card-container">
-        <img src={todo} alt=""/>
-        <div className="card-footer">
-          <div className="card-footer-text">
-
-          <div className="card-text-header">
-          Todo
-          </div>
-          <div className="card-text">
-          A todo app that features cloud sync with light and dark mode
-          </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="card-container">
-        <img src={loopstudios} alt=""/>
-        <div className="card-footer">
-          <div className="card-footer-text">
-
-          <div className="card-text-header">
-          Loopstudios
-          </div>
-          <div className="card-text">
-          A VR experience app made for Loopstudios
-          </div>
-          </div>
-        </div>
-      </div>
+      }
+     
     </div>
 
     <div className="picture-container">

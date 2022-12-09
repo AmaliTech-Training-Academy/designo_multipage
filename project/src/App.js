@@ -6,6 +6,7 @@ import "./index.css"
 import './App.css'
 import Header from './components/Header/Header';
 import Graphic from "./components/Graphic_Design/Graphic";
+import Contact from "./components/Contact/contact";
 import {BrowserRoute} from "react-router-dom"
 
 function App() {
@@ -13,8 +14,8 @@ function App() {
     <>
     <div className="App"  >
       <Header />
-      {/* <Design/> */}
-      <Graphic/>
+      
+      <Contact/>
       </div>
       <Footer/>
     </>
