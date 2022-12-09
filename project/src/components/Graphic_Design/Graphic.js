@@ -51,7 +51,7 @@ const Graphic = () => {
            </div>
      
            <div className="card-container">
-             <img src={science} alt=""/>
+              <img src={science} alt=""/>
              <div className="card-footer">
                <div className="card-footer-text">
      
