@@ -95,7 +95,16 @@ const Contact = () => {
     // </Form>
     <>
     <form>
-      <input></input>
+      <input placeholder='Name'></input>
+      <hr></hr>
+      <input placeholder='Email Address'></input>
+      <hr></hr>
+      <input placeholder='Phone'></input>
+      <hr></hr>
+      <textarea placeholder='Your Message'></textarea>
+      <hr></hr>
+     <Button type="submit" className='btn'>Submit</Button>
+
     </form>
     </>
   );
