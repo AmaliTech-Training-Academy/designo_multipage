@@ -37,7 +37,7 @@ export const Content = styled.div`
 `
 export const CardContainer = styled.div`
   width: 100%;
-  height: 988px;
+  height: 100%;
   display: grid;
   column-gap: 30px;
   row-gap: 32px;
@@ -55,10 +55,9 @@ export const CardContainer = styled.div`
   }
 `
 export const Card = styled.div`
-  width: 390px;
+  width: 100%;
   height: 478px;
   border-radius: 15px;
-  cursor: pointer;
 
   @media (min-width: 450px) and (max-width: 850px) {
     width: 100%;
@@ -100,6 +99,7 @@ export const CardArticle =styled.div`
   text-align: center;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  cursor: pointer;
 
   span {
     display: block;
