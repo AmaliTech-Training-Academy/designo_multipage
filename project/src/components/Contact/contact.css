@@ -4,7 +4,7 @@
     background: #e7816b;
     align-items: center;
     justify-content: space-between;
-    padding: 5rem;
+    padding: 6rem;
     margin-bottom: 160px;
     border-radius: 10px;
     position: relative;   
@@ -16,7 +16,7 @@
     bottom:  0%;
 }
 .contact{
-    width: 40%;
+    width: 47%;
     color: #fff;
 }
 .contact>h1{
@@ -24,7 +24,7 @@
     font-family: "Jost";
 }
 .text{
-    width: 450px;
+    width: 420px;
     line-height: 28px;
     font-family: "Jost";
 }
@@ -45,6 +45,7 @@ input{
     background: transparent;
     color: #fff;
     padding: 0.8rem;
+    margin-bottom:1rem ;
 }
 input::placeholder{
     color: #fff;
@@ -69,6 +70,7 @@ textarea::placeholder{
 .btn{
     position: absolute;
 right: 0%;
+bottom: -59px;
 text-transform: uppercase;
 width: 120px;
 height: 45px;

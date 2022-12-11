@@ -4,40 +4,24 @@ import Button from 'react-bootstrap/Button';
 
 
 const Contact = () => {
-  const initialValues = { username: '', email: '', phone: '', message: '' }
-  const [values, setValues] = useState(initialValues)
-  const [formErrors,setFormErrors] = useState({})
+  // const initialValues = 
+  const [values, setValues] = useState({ username: '', email: '', phone: '', message: '' })
   const [isSubmit,setIsSubmit] = useState(false)
 
   const handleChange = (e) => {
-    const { name, value } = e.target
+    const name = e.target.name
+    const value  = e.target.value
     setValues({ ...values, [name]: value })
   }
   const handleSubmit = (e) =>{
     e.preventDefault()
-      setFormErrors(validate(values))
-    setIsSubmit(true)
+       setIsSubmit(true)
+      if (values.username&&values.email&&values.phone&&values.message) {
+        setValues({ username: '', email: '', phone: '', message: '' })
+      }
+        
   }
 
-  
-
-  const validate = (value)=>{
-    const errors ={}
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i; 
-    if(!value.username){
-      errors.username="Username is required!"
-    }
-    if(!value.email){
-      errors.email="Email is required!"
-    }
-    if(!value.phone){
-      errors.phone="Phone is required!"
-    }
-    if(!value.message){
-      errors.message="Please provide your message"
-    }
-      return errors
-  }
   return (
 
     <div className='contact-page'>
@@ -53,18 +37,11 @@ const Contact = () => {
         </div>
       </div>
       <form onSubmit={handleSubmit}>
-        <input type='text' name="username" placeholder='Name' value={values.username} onChange={handleChange} />
-        <p className='error'>{formErrors.username}</p>
-        <input type='email' name="email" placeholder='Email Address' value={values.email} onChange={handleChange} />
-        <p className='error'>{formErrors.email}</p>
-
-        <input type='tel' name="phone" placeholder='Phone' value={values.phone} onChange={handleChange} />
-        <p className='error'>{formErrors.phone}</p>
-        
-        <textarea type='text' name="message" placeholder='Your Message' value={values.message} onChange={handleChange}/>
-        <p className='error'>{formErrors.message}</p>
-
-        <Button type="submit" className='btn'>Submit</Button>
+        <input type='text' name="username" placeholder='Name' required value={values.username} onChange={handleChange} />
+        <input type='email' name="email" placeholder='Email Address' required value={values.email} onChange={handleChange} />
+        <input type='text' name="phone" placeholder='Phone'required value={values.phone} onChange={handleChange} />
+        <textarea type='text' name="message" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder='Your Message' required value={values.message} onChange={handleChange}/>
+        <Button type="submit" className='btn' >Submit</Button>
 
       </form>
     </div>
