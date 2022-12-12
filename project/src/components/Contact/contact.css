@@ -1,13 +1,202 @@
-.error-img{
-    display: none;
+.error-img {
+  display: none;
 }
 
 .error-img-show {
-    display: block;
+  display: block;
 }
 
+.contact-page {
+  width: 100%;
+  display: flex;
+  background: #e7816b;
+  align-items: center;
+  justify-content: space-around;
+  /* padding: 6rem; */
+  margin-bottom: 160px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.svg-container {
+  position: absolute;
+  left: 0.2%;
+  bottom: 0%;
+}
+.contact {
+  width: 43%;
+  height: 184px;
+  color: #fff;
+  margin-left: 95px;
+  margin-bottom: 161px;
+  margin-top: 135px;
+}
+.contact > h1 {
+  margin-bottom: 1rem;
+  font-family: "Jost";
+}
+.text {
+  width: 450px;
+  line-height: 28px;
+  font-family: "Jost";
+}
 
-.contact-page{
+form {
+  width: 41%;
+  height: 371px;
+  position: relative;
+  margin-top: 55px;
+  margin-bottom: 54px;
+  margin-right: 96px;
+}
+hr {
+  color: #fff;
+}
+.inp {
+  width: 100%;
+  position: relative;
+}
+.error-message {
+  position: absolute;
+  right: 0%;
+  top: 11px;
+  display: flex;
+  gap: 0.5rem;
+}
+.message {
+  position: absolute;
+  top: 0;
+}
+.error-text {
+  font-family: "Jost";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
+
+  color: #ffffff;
+  display: flex;
+  gap: 0.5rem;
+}
+
+input {
+  outline: none;
+  width: 100%;
+  border: transparent;
+  border-bottom: 1.6px solid;
+  background: transparent;
+  color: #fff;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+}
+input::placeholder {
+  background: transparent;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+input:focus {
+  border-bottom: 3.5px solid;
+}
+textarea {
+  width: 100%;
+  height: 5rem;
+  border: transparent;
+  color: #fff;
+  border-bottom: 1.6px solid;
+  resize: none;
+  outline: none;
+  background: transparent;
+}
+
+textarea::placeholder {
+  background: transparent;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 26px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  padding-left: 1rem;
+}
+textarea:focus {
+  border-bottom: 3.5px solid;
+}
+
+.btn {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  width: 152px;
+  height: 56px;
+  background: #fff;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333136;
+  border: none;
+  border-radius: 8px;
+}
+.btn:hover {
+  background: #ffad9b;
+  color: #fff;
+}
+.location-page {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.location-card {
+  width: 350px;
+  height: 365px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.location-card-img-container-1 {
+  width: 202px;
+  height: 202px;
+  background-image: url("../../assets/shared/desktop/bg-pattern-small-circle.svg");
+  border-radius: 50%;
+  transform: rotate(90deg);
+}
+.location-card-img-container-2{
+    width: 202px;
+    height: 202px;
+    background-image: url("../../assets/shared/desktop/bg-pattern-small-circle.svg");
+    border-radius: 50%;
+    /* transform: rotate(90deg); */
+  }
+  .location-card-img-container-3{
+    width: 202px;
+    height: 202px;
+    background-image: url("../../assets/shared/desktop/bg-pattern-small-circle.svg");
+    border-radius: 50%;
+    transform: rotate(-90deg);
+  }
+.img-svg-1 {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+
+}
+.img-svg-2 {
     width: 100%;
     display: flex;
     background: #e7816b;
@@ -51,18 +240,46 @@ hr {
 }
 .inp{
     width: 100%;
-    position: relative;
+    height: 100%;
+    transform: rotate(90deg);
+  
+  }
+.location-card-text-container {
+  width: 100%;
+  height: 114px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.error-message{
-    position: absolute;
-    right: 0%;
-    top: 14px;
-    display: flex;
-    gap: 0.5rem;
+.location-card-text-container > h2 {
+  width: 350px;
+  height: 26px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #333136;
 }
-.error-text{
-    display: flex;
-    gap: 0.5rem;
+.locatio-btn {
+  width: 152px;
+  height: 56px;
+  background: #e7816b;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
 }
 
 
