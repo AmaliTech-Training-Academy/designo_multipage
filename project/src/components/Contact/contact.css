@@ -1,0 +1,59 @@
+.contact-div{
+    width: 100%;
+    height: 480px;
+    background-color: #E7816B;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 64px;
+}
+
+.text-contact{
+    width: 48.6%;
+    margin: 135px 0px 161px 8.55%;
+}
+
+.font-contact-medium{
+    font-size: 48px;
+    line-height: 48px;
+    color: white;
+}
+
+.contact-regular-font{
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
+    width: 82.41%;
+    margin-top: 32px;
+}
+
+.contact-form{
+    width: 70.37%;
+    height: 371px;
+    display: flex;
+    flex-direction: column;
+    margin: 55px 8.64% 56px 0px;
+}
+.input-contact{
+    width: 100%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-color: white;
+    background-color: transparent;
+    border-bottom-width: 1px;
+
+}
+#name-field{
+    height: 38px;
+    margin-bottom: 25px;
+}
+
+#message-field{
+    height: 102px;
+}
+ ::placeholder{
+    color: white;
+    opacity: 0.5;
+    margin-left: 4.21%;
+}
