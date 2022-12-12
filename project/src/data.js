@@ -6,6 +6,10 @@ import todo from "./assets/app-design/desktop/image-todo.jpg";
 import tim from "./assets/graphic-design/desktop/image-change.jpg"
 import water from "./assets/graphic-design/desktop/image-boxed-water.jpg"
 import science from "./assets/graphic-design/desktop/image-science.jpg"
+import Canada from "./assets/shared/desktop/illustration-canada.svg"
+import Australia from "./assets/shared/desktop/illustration-australia.svg"
+import Uk from "./assets/shared/desktop/illustration-united-kingdom.svg"
+
 
 export const App = [
   {
@@ -61,4 +65,25 @@ export  const Graph= [
         title: " Science!",
         text: " A poster made in collaboration with the Federal Art Project",
       },
+]
+
+export const Location = [
+  {
+    id: 1,
+        img: Canada,
+        title: "canada",
+       
+  },
+  {
+    id: 2,
+        img: Australia,
+        title: "Australia",
+       
+  },
+  {
+    id: 3,
+        img: Uk,
+        title: "united kingdom",
+       
+  }
 ]

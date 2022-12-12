@@ -16,7 +16,7 @@ function App() {
       <Header />
       <Contact/>
       </div>
-      <Footer/>
+      {/* <Footer/> */}
     </>
   )}
 export default App;

@@ -2,6 +2,9 @@
   width: 100%;
   position: absolute;
   margin-top: 160px;
+  left: 0;
+  right: 0;
+  /* margin: 0 auto; */
 }
 .above-footer {
   width: 1111px;

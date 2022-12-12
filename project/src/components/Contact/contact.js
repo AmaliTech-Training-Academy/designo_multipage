@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import "./contact.css";
-import Button from "react-bootstrap/Button";
 import error from "../../assets/contact/desktop/icon-error.svg";
-
+import { Location } from "../../data";
+import Footer from "../Footer/Footer";
 const Contact = () => {
   const [formValues, setFormValues] = useState({
     username: "",
@@ -42,6 +42,8 @@ const Contact = () => {
     }
     if (!values.email) {
       errors.email = "Can't be empty";
+    }else if (!regex.test(values.email)) {
+      errors.email = "This is not a valid email";
     }
     if (!values.phone) {
       errors.phone = "Can't be empty";
@@ -52,6 +54,7 @@ const Contact = () => {
     return errors;
   };
   return (
+    <>
     <div className="contact-page">
       <div className="svg-container">
         <svg width="640" height="640" xmlns="http://www.w3.org/2000/svg">
@@ -96,7 +99,7 @@ const Contact = () => {
               <div >
 
               <img
-                className={formErrors.username ? "error-img-show" : "error-img"}
+                className={formErrors.username ? "error-img-show " : "error-img"}
                 src={error}
               />
               </div>
@@ -156,7 +159,7 @@ const Contact = () => {
           value={formValues.message}
           onChange={handleChange}
         />
-        <div className="error-message">
+        <div className="error-message message">
             <p className="error-text">
               {formErrors.message}
               <div >
@@ -171,11 +174,38 @@ const Contact = () => {
         </div>
 
 
-        <Button type="submit" className="btn">
+        <button type="submit" className="btn">
           Submit
-        </Button>
+        </button>
       </form>
     </div>
+
+    <div className="location-page">
+      {
+        Location.map((place)=>{
+          const {img,title,id} = place
+          return(
+            <div className="location-card">
+        <div className={id===1?"location-card-img-container-1":id===2?"location-card-img-container-2":"location-card-img-container-3"}>
+          <img className={id===1?"img-svg-1":id===2?"img-svg-2":"img-svg-3"} src={img} alt="" />
+        </div>
+        <div className="location-card-text-container">
+          <h2>{title}</h2>
+          <button type="submit" className="locatio-btn">
+          Submit
+        </button>
+        </div>
+      </div>
+
+          )
+        })
+      }
+    </div>
+      
+
+      <Footer/>
+    </>
+
   );
 };
 
