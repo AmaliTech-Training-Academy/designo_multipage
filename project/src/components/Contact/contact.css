@@ -227,6 +227,7 @@ textarea:focus {
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #333136;
+  margin-bottom: 25px;
 }
 .locatio-btn {
   width: 152px;
@@ -247,4 +248,107 @@ textarea:focus {
 
 .locatio-btn:hover {
   background: #ffad9b;
+}
+
+
+@media only screen and (max-width:825px) and (min-width:450px) {
+   .contact-page{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .contact{
+    margin: 0px;
+    width: 567px;
+    height: 158px;
+    margin-top: 71px;
+    margin-bottom: 40px;
+   }
+   .text{
+    width: 573px;
+height: 78px;
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+   }
+
+   form{
+    width: 567px;
+    height: 291px;
+
+    margin: 0px;
+    margin-bottom: 150px;
+
+   }
+    .btn{
+        bottom: -30%;
+    }
+    .location-page{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .location-card{
+        margin-bottom: 80px;
+    }
+}
+
+@media only screen and (max-width:449px) {
+    .contact-page{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 660px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        border-radius: 0px;
+        margin-bottom: 160px;
+       }
+    
+       .contact{
+        margin: 0px;
+        width: 327px;
+        height: 158px;
+        margin-top: 72px;
+        margin-bottom: 40px;
+        text-align: center;
+       }
+       .text{
+        width: 327px;
+    height: 7125px8px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+       }
+    
+       form{
+        width: 327px;
+        height: 387px;
+    
+        margin: 0px;
+        margin-bottom: 150px;
+    
+       }
+        .btn{
+            left: 30%;
+            bottom: -30%;
+        }
+        .location-page{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 835px;
+        }
+        .location-card{
+            margin-bottom: 80px;
+        }
+    
 }

@@ -22,9 +22,9 @@ const Contact = () => {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
-    // if (formValues.username&&formValues.email&&formValues.phone&&formValues.message) {
-    //   setFormValues({ username: '', email: '', phone: '', message: '' })
-    // }
+    if (formValues.username&&formValues.email&&formValues.phone&&formValues.message) {
+      setFormValues({ username: '', email: '', phone: '', message: '' })
+    }
   };
 
   useEffect(() => {
