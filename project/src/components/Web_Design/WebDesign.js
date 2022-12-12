@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import AppDesign from '../Banners/AppDesignComponent'
-import WebDesignContainer from '../Banners/WebDesignComponent'
+import GraphicDesignContainer from '../Banners/GraphicDesignComponent'
 
 import { 
   TitleContainer,
@@ -74,8 +74,8 @@ function WebDesign() {
       }
       </CardContainer>
       <Grid>
-        <WebDesignContainer />
         <AppDesign />
+        <GraphicDesignContainer />
       </Grid>
     </>
   )
@@ -84,10 +84,22 @@ function WebDesign() {
 export default WebDesign
 
 const Grid = styled.div`
-margin-top: 160px;
+  margin-top: 160px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   column-gap: 30px;
   width: 100%;
-  height: 400px;
+  height: 308px;
+
+  @media (max-width: 850px) {
+    margin-top: 120px;
+    height: 424px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    row-gap: 24px;
+  }
+
+  @media (max-width: 449px) {
+    margin-top: 96px;
+    height: 524px;
+  }
 `

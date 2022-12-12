@@ -1,3 +1,4 @@
+import styled from 'styled-components'
 import Styled from 'styled-components'
 
 export const Nav = Styled.nav`
@@ -57,12 +58,21 @@ export const NavLinks = Styled.div`
         width: 370px;
     }
 `
-export const Bars = Styled.img`
-    width: 40px;
-    height: 70%;
+export const Bars = Styled.div`
+    width: 24px;
+    height: 20px;
     display: none;
+    z-index: 2;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 
     @media (max-width: 450px) {
         display: block;
     }
+`
+export const Close = styled(Bars)`
 `

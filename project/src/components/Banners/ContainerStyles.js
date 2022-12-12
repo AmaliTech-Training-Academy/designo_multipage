@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { gridItemStyles } from '../About/GlobalVariables/GlobalVariables'
+import { gridItemStyles } from '../GlobalVariables/GlobalVariables'
 
 export const AppContainer = styled.div`
 // ${gridItemStyles};

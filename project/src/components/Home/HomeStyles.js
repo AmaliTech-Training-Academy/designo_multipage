@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {backgroundStyles} from '../About/GlobalVariables/GlobalVariables'
+import {backgroundStyles} from '../GlobalVariables/GlobalVariables'
 
 // BACKGROUND
 export const HomeBackgroundOne = styled.img`
@@ -7,7 +7,7 @@ export const HomeBackgroundOne = styled.img`
     top: 475px;
     left: 0;
 
-    @media (max-width: 449px), (min-width: 450px) and (max-width: 850px) {
+    @media (max-width: 850px) {
         display: none;
     }
 `
@@ -17,7 +17,7 @@ export const HomeBackgroundTwo = styled.img`
     right: 0;
     transform: rotate(180deg);
 
-    @media (max-width: 449px), (min-width: 450px) and (max-width: 850px) {
+    @media (max-width: 850px) {
         display: none;
     }
 `
@@ -33,7 +33,7 @@ export const HomeContainer = styled.div`
     border-radius: 15px;
     overflow: hidden;
 
-    @media (max-width: 449px), (min-width: 450px) and (max-width: 850px) {
+    @media (max-width: 850px) {
         height: 843px;
     }
 
@@ -73,7 +73,7 @@ export const Article = styled.div`
     width: 540px;
     height: 350px;
 
-    @media (max-width: 449px), (min-width: 450px) and (max-width: 850px) {
+    @media (max-width: 850px) {
         text-align: center;
         top: 60px;
         left: 0;
@@ -114,7 +114,7 @@ export const Subtitle = styled.div`
     margin-bottom: 40px;
     color: #FFFFFF;
 
-    @media (max-width: 449px), (min-width: 450px) and (max-width: 850px) {
+    @media (max-width: 850px) {
         margin: 0 auto 20px;
         text-align: center;
     }
@@ -147,7 +147,7 @@ export const ArticleImage = styled.img`
     position: absolute;
     left: 531px;
 
-    @media (max-width: 449px), (min-width: 450px) and (max-width: 850px) {
+    @media (max-width: 850px) {
         top: 285px;
         left: 0;
         right: 0;
@@ -169,7 +169,7 @@ export const GridContainer = styled.div`
     height: 640px;
     margin-top: 164px;
 
-    @media (max-width: 449px), (min-width: 450px) and (max-width: 850px) {
+    @media (max-width: 850px) {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 

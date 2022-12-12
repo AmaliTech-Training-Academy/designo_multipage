@@ -28,13 +28,17 @@ export const gridItemStyles = `
 `
 export const smallCircleBackground = `
     background-image: url("assets/shared/desktop/bg-pattern-small-circle.svg");
-    width: 100%;
-    height: 50%;
+    width: 202px;
+    height: 202px;
     ${backgroundStyles}
     background-size: contain;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 
-    @media (max-width: 449px), (min-width: 450px) and (max-width: 850px)  {
-        position: relative;
-        height: 110%;
+    @media (min-width: 450px) and (max-width: 850px)  {
+        margin: unset;
+        height: 100%
     }
 `

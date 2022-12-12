@@ -15,7 +15,7 @@ import {
 import AppDesign from '../Banners/AppDesignComponent'
 import GraphicDesign from '../Banners/GraphicDesignComponent'
 import WebDesign from '../Banners/WebDesignComponent'
-// import AttributeComponent from '../AttributeComponent/Attribute'
+import AttributeComponent from '../AttributeComponent/Attribute'
 
 function Home() {
   return (
@@ -40,7 +40,7 @@ function Home() {
         <AppDesign />
         <GraphicDesign />
       </GridContainer>
-      {/* <AttributeComponent /> */}
+      <AttributeComponent />
     </>
   )
 }

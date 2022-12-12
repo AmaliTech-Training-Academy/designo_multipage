@@ -4,7 +4,7 @@ import {
 } from "../GlobalVariables/GlobalVariables"
 
 export const Container = styled.div`
-    height: 412px;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -22,8 +22,10 @@ export const Container = styled.div`
 `
 
 export const Attribute = styled.div`
+    /* background: yellow; */
     position: relative;
     width: 350px;
+    height: 412px;
 
     img {
         position: absolute;
@@ -38,6 +40,7 @@ export const Attribute = styled.div`
     }
 `
 export const AttributeImage = styled.div`
+    /* background: green; */
     ${smallCircleBackground}
     transform: ${({rotate}) => rotate === 'resourceful' ? 'rotate(-90deg)' : rotate === 'friendly' ? 'rotate(90deg)' : 'unset'};
 
@@ -46,7 +49,10 @@ export const AttributeImage = styled.div`
     }
 `
 export const AttributeDescription = styled.div`
+    position: absolute;
+    bottom: 0;
     text-align: center;
+    /* background: red; */
     color: #333136;
     margin-top: 48px;
 
@@ -66,5 +72,8 @@ export const AttributeDescription = styled.div`
 
     @media (min-width: 450px) and (max-width: 850px)  {
         text-align: unset;
+        bottom: unset;
+        right: 0;
+        width: 439px;
     }
 `
