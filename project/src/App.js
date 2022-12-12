@@ -8,15 +8,15 @@ import Header from './components/Header/Header';
 import Graphic from "./components/Graphic_Design/Graphic";
 import Contact from "./components/Contact/contact";
 import {BrowserRoute} from "react-router-dom"
+import Home from "./components/App_Design/Design";
 
 function App() {
   return (
-    <>
     <div className="App"  >
       <Header />
       <Contact/>
+      {/* <Graphic/> */}
+      {/* <Home/> */}
       </div>
-      {/* <Footer/> */}
-    </>
   )}
 export default App;

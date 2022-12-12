@@ -3,6 +3,8 @@ import "./Graphic.css";
 import pattern from "../../assets/app-design/desktop/bg-pattern-intro-app.svg";
 import bgimg from "../../assets/shared/desktop/bg-pattern-leaf.svg";
 import { Graph } from "../../data";
+import arrow from "../../assets/shared/desktop/icon-right-arrow.svg"
+import Footer from "../Footer/Footer";
 
 const Graphic = () => {
   return (
@@ -43,7 +45,7 @@ const Graphic = () => {
             <div className="picture-text">
               <h2> Web Design</h2>
               <p>
-                View Projects <span>></span>
+                View Projects <span><img src={arrow} alt="" /></span>
               </p>
             </div>
           </div>
@@ -53,13 +55,13 @@ const Graphic = () => {
             <div className="picture-text-2">
               <h2> Graphic Design</h2>
               <p>
-                {" "}
-                View Projects <span>></span>
+                View Projects <span><img src={arrow} alt="" /></span>
               </p>
             </div>
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

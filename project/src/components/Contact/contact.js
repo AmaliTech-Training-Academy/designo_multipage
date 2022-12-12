@@ -3,6 +3,7 @@ import "./contact.css";
 import error from "../../assets/contact/desktop/icon-error.svg";
 import { Location } from "../../data";
 import Footer from "../Footer/Footer";
+import Mini from "../Footer/Footer-mini";
 const Contact = () => {
   const [formValues, setFormValues] = useState({
     username: "",
@@ -196,15 +197,12 @@ const Contact = () => {
         </button>
         </div>
       </div>
-
           )
         })
       }
     </div>
-      
-
-      <Footer/>
-    </>
+    <Mini/>
+        </>
 
   );
 };

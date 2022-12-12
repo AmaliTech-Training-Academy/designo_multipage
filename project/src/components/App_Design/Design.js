@@ -1,12 +1,10 @@
 import React from 'react'
 import './Design.css'
 import pattern from "../../assets/app-design/desktop/bg-pattern-intro-app.svg"
-import airfilter from "../../assets/app-design/desktop/image-airfilter.jpg"
-import eyecam from "../../assets/app-design/desktop/image-eyecam.jpg"
-import faceit from "../../assets/app-design/desktop/image-faceit.jpg"
-import loopstudios from "../../assets/app-design/desktop/image-loopstudios.jpg"
-import todo from "../../assets/app-design/desktop/image-todo.jpg"
+import arrow from "../../assets/shared/desktop/icon-right-arrow.svg"
+
 import {App} from '../../data'
+import Footer from '../Footer/Footer'
 const Home = () => {
   return (
    <div className='home'>
@@ -48,7 +46,7 @@ const Home = () => {
       <div className="img-background">
         <div className="picture-text">
           <h2> Web Design</h2>
-          <p>View Projects <span>></span></p>
+          <p>View Projects <span><img src={arrow} alt="" /></span></p>
         </div>
       </div>
       </div>
@@ -56,12 +54,14 @@ const Home = () => {
       <div className="img-background">
       <div className="picture-text-2">
      <h2> Graphic Design</h2> 
-      <p>  View Projects <span>></span></p>
+      <p>  View Projects <span><img src={arrow} alt="" /></span></p>
       </div>
       </div>
     </div>
     </div>
+    <Footer/>
    </div>
+
   )
 }
 
