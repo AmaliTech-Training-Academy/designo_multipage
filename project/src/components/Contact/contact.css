@@ -1,3 +1,12 @@
+.error-img{
+    display: none;
+}
+
+.error-img-show {
+    display: block;
+}
+
+
 .contact-page{
     width: 100%;
     display: flex;
@@ -40,6 +49,23 @@ form {
 hr {
   color: #fff;
 }
+.inp{
+    width: 100%;
+    position: relative;
+}
+.error-message{
+    position: absolute;
+    right: 0%;
+    top: 14px;
+    display: flex;
+    gap: 0.5rem;
+}
+.error-text{
+    display: flex;
+    gap: 0.5rem;
+}
+
+
 input{
     outline: none;
     width: 100%;
@@ -199,8 +225,4 @@ color: black;
 font-weight: bolder;
 background: #fff;
 border: none;
-}
-.error{
-    color: red;
-    font-weight: bold;
 }
