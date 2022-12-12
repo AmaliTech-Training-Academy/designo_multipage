@@ -3,7 +3,11 @@
 
 body{
     font-family:'Jost';
+    background-image: url("../../assets/shared/desktop/bg-pattern-leaf.svg"), url("../../assets/shared/desktop/bg-pattern-leaf.svg");
+    background-repeat: no-repeat;
+    background-position-y: 25%;
 }
+
 
 .big-div{
     display: flex;
@@ -74,6 +78,16 @@ body{
 .sub-2{
     width:57.16% ;
     background-color: #FDF3F0;
+ 
+}
+
+.two-circles{
+    background-image: url("../../assets/shared/desktop/bg-pattern-two-circles.svg");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+
+}
+.three-circles{
     background-image: url("../../assets/shared/desktop/bg-pattern-three-circles.svg");
     background-repeat: no-repeat;
 }
@@ -112,6 +126,9 @@ body{
 
 /*TABLET SCREENS */
 @media only screen and (min-width: 520px) and (max-width:920px){
+    body{
+        background-image: none;
+    }
     .big-div{
         width: 100%;
         display: flex;
@@ -121,6 +138,13 @@ body{
     }
     .sub-div{
         width: 100%;
+        background-position-y: -400px;
+        background-position-x: -90%;
+        background-repeat: no-repeat;
+    }
+    .three-circles{
+        background-position-x: right;
+        background-position-y: -190px;
     }
     .sub-div-1{
         width: 100%;

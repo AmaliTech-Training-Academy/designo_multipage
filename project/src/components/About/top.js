@@ -38,7 +38,7 @@ function TopAbout(){
                      srcSet={`${WorldClassMobile} 375w, ${WorldClassTablet} 689w,
                             ${WorldClassDesktop} 476w`}  alt=""/>
             </div>
-            <div className="sub-2 right-curve-1">
+            <div className="sub-2 right-curve-1 three-circles">
                 <div className="holder-2">
                     <h3 className="class-medium">World-class talent</h3>
                     <p className="body-text-small" id="sub-text">
@@ -62,7 +62,7 @@ function TopAbout(){
         <Middle/>
 
         <div className="big-div-1">
-            <div className="sub-2 left-curve col-order">
+            <div className="sub-2 left-curve col-order two-circles">
                 <div className="holder-2">
                     <h3 className="class-medium">The real deal</h3>
                 <p className="body-text-small" id="sub-text">
