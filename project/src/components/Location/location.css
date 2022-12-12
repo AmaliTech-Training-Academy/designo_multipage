@@ -23,6 +23,14 @@
     height: 100%;
     margin-right: 2.7%;
     border-radius: 15px;
+    background-image: url(../../assets/shared/desktop/bg-pattern-two-circles.svg);
+    background-repeat: no-repeat;
+    background-position-y:bottom;
+    background-image: -webkit-image-set(
+        url("../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg") 1x,
+        url("../../assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg") 2x,
+        url("../../assets/shared/desktop/bg-pattern-two-circles.svg") 3x);
+
     
 }
 .loc-holder{
