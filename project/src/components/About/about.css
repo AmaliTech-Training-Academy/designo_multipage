@@ -37,6 +37,9 @@ body{
 .sub-div{
     background-color: #E7816B;
     width: 57.16%;
+    background-image: url("../../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+    background-position-x: center;
+    background-position-y: bottom;
    
 }
 
@@ -71,12 +74,15 @@ body{
 .sub-2{
     width:57.16% ;
     background-color: #FDF3F0;
+    background-image: url("../../assets/shared/desktop/bg-pattern-three-circles.svg");
+    background-repeat: no-repeat;
 }
 
 .holder-2{
     width: 70.08%;
     height: 332px;
     margin: 154px 15.12% 154px 14.80%;
+    
 }
 .body-text-small{
     font-size: 16px;
