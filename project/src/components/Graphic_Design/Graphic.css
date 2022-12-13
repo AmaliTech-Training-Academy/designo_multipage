@@ -19,7 +19,7 @@ top: 281px;
   position: relative;
   overflow: hidden;
 }
-.bg-wrapper{
+.bg-wrap{
   position: absolute;
   left: -100px;
   right: 300px;
@@ -27,7 +27,7 @@ top: 281px;
   bottom: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('../../assets/app-design/desktop/bg-pattern-intro-app.svg');
+  background-image: url('../../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg');
 }
 
 .wrapper-text {

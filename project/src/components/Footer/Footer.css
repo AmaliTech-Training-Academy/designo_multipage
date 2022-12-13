@@ -19,7 +19,14 @@
   top: -230px;
   left: 0;
   right: 0;
+  overflow: hidden;
   
+}
+.foot-img{
+  position: absolute;
+  right: 0;
+  z-index: -1;
+ 
 }
 .above-footer-text {
   width: 50%;

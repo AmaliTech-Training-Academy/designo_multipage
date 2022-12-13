@@ -11,7 +11,7 @@ const Graphic = () => {
     <div className="home">
       <img src={bgimg} className="bg-img" />
       <div className="wrapper" >
-      <div className="bg-wrapper"></div>
+      <div className="bg-wrap"></div>
         <div className="wrapper-text">
           <h2> Graphic design</h2>
           <p>

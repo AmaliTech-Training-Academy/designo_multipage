@@ -1,15 +1,15 @@
 import React from "react";
 import "./Footer.css";
 import footer from '../../assets/shared/desktop/logo-light.png'
-import pattern from '../../assets/shared/desktop/bg-pattern-call-to-action.svg'
+import pattern from '../../assets/app-design/desktop/bg-pattern-intro-app.svg'
 
 const Footer = () => {
   return (
     <div className="all-footer">
         
     <footer>
-    <div className="above-footer" style={{backgroundImage:`url(${pattern})`}}>
-      
+    <div className="above-footer" >
+      <img src={pattern} className="foot-img" />
             <div className="above-footer-text">
                 <h2> Let's talk about your project</h2>
                 <p> Ready to take it to the next level? Contact us today and find out how our expertise can 
