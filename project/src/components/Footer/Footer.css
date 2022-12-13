@@ -70,7 +70,7 @@
   color: #333136;
 }
 .above-footer-text {
-  width: 459px;
+  width: 50%;
   height: 174px;
   color: #ffffff;
 }
@@ -220,7 +220,6 @@ footer {
 .footer-icons:hover svg:hover{
   fill: #ffad9b;
 }
-
 
 
 @media only screen and (max-width: 825px) and (min-width: 450px) {
