@@ -9,6 +9,11 @@ height: 100%;
 background-image: url('/assets/home/desktop/image-app-design.jpg');
 background-size: cover;
 
+    a {
+        text-decoration: none;
+        border-radius: inherit;
+    }
+
 @media (min-width: 450px) and (max-width: 850px) {
     background-image: url('/assets/home/tablet/image-app-design.jpg');
 }

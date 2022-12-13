@@ -7,6 +7,7 @@ import {
     Close
 } from './headerStyles'
 import MobileNavMenu from './MobileNavMenu';
+import { Link } from 'react-router-dom'
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,11 +21,13 @@ function Header() {
   return (
     <>
       <Nav>
-          <Logo src="/assets/shared/desktop/logo-dark.png" />
+          <Link to="/">
+            <Logo src="/assets/shared/desktop/logo-dark.png" />
+          </Link>
           <NavLinks>
-              <span>our company</span>
-              <span>Locations</span>
-              <span>Contact</span>
+              <Link to='/about'>our company</Link>
+              <Link to='/location'>Locations</Link>
+              <Link to='/contact'>Contact</Link>
           </NavLinks>
           {isOpen ? close : bars}
       </Nav>
