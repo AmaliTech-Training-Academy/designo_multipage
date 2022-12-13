@@ -2,8 +2,7 @@ import styled from "styled-components"
 import { gridItemStyles } from '../GlobalVariables/GlobalVariables'
 
 export const AppContainer = styled.div`
-// ${gridItemStyles};
-// margin-top: 100px;
+${gridItemStyles};
 position: relative;
 width: 100%;
 height: 100%;
@@ -86,6 +85,6 @@ export const Content = styled.div`
     }
 
     &:hover {
-        background:  rgba(231, 129, 107, 0.7)
+        background:  rgba(231, 129, 107, 0.75)
     }
 `

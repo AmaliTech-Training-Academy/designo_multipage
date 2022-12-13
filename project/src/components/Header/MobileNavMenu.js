@@ -17,7 +17,6 @@ export default MobileNavMenu
 
 const Menu = styled.div`
     background: rgba(0, 0, 0, 0.5);
-    /* opacity: 0.2; */
     width: 100%;
     height: 100%;
     position: absolute;
@@ -26,9 +25,6 @@ const Menu = styled.div`
     right: 0;
     bottom: 0;
     z-index: 1;
-    /* transform: scaleX(0.8); */
-    transform-origin: left center;
-    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 `
 const MobileNav = styled.div`
     background: rgb(0, 0, 0);

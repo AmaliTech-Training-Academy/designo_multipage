@@ -12,10 +12,10 @@ import {
   GridContainer,
 } from './HomeStyles'
 
-import AppDesign from '../Banners/AppDesignComponent'
-import GraphicDesign from '../Banners/GraphicDesignComponent'
-import WebDesign from '../Banners/WebDesignComponent'
-import AttributeComponent from '../AttributeComponent/Attribute'
+import AppDesign from '../../components/Banners/AppDesignComponent'
+import GraphicDesign from '../../components/Banners/GraphicDesignComponent'
+import WebDesign from '../../components/Banners/WebDesignComponent'
+import AttributeComponent from '../../components/AttributeComponent/Attribute'
 
 function Home() {
   return (

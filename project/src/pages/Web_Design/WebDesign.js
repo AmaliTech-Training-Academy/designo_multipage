@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import AppDesign from '../Banners/AppDesignComponent'
-import GraphicDesignContainer from '../Banners/GraphicDesignComponent'
+import AppDesign from '../../components/Banners/AppDesignComponent'
+import GraphicDesignContainer from '../../components/Banners/GraphicDesignComponent'
 
 import { 
+  SvgBackground,
   TitleContainer,
   WebBackgroundImage,
   Content,
@@ -45,6 +46,7 @@ const cards = [
 function WebDesign() {
   return (
     <>
+      <SvgBackground src='/assets/shared/desktop/bg-pattern-leaf.svg'/>
       <TitleContainer>
         <WebBackgroundImage />
         <Content>

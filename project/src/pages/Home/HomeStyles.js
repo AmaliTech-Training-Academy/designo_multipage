@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {backgroundStyles} from '../GlobalVariables/GlobalVariables'
+import {backgroundStyles} from '../../components/GlobalVariables/GlobalVariables'
 
 // BACKGROUND
 export const HomeBackgroundOne = styled.img`

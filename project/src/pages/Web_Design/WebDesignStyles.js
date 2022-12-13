@@ -1,10 +1,16 @@
 import styled from "styled-components";
 import {
+    HomeBackgroundOne,
     HomeContainer,
     BackgroundImage ,
     Subtitle,
     Title,
   } from '../Home/HomeStyles'
+
+export const SvgBackground = styled(HomeBackgroundOne)`
+  top: 281px;
+  z-index: -5;
+`
 
 export const TitleContainer = styled(HomeContainer)`
     height: 256px;
@@ -12,14 +18,26 @@ export const TitleContainer = styled(HomeContainer)`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 449px) {
+      height: 320px;
+    }
 `
 export const WebBackgroundImage = styled(BackgroundImage)`
   background-image: url('/assets/web-design/desktop/bg-pattern-intro-web.svg');
   background-size: cover;
   left: 250px;
   
-  @media (min-width: 449px) and (max-width: 850px) {
+  @media (min-width: 450px) and (max-width: 850px) {
     left: 40px;
+  }
+
+  @media (max-width: 449px) {
+    background-image: url('/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg');
+    left: -500px;
+    top: 0;
+    right: 0;
+    bottom: -280px;
   }
 `
 export const WebTitle = styled(Title)`
@@ -28,12 +46,16 @@ export const WebSubtitle = styled(Subtitle)`
   width: 55%;
   margin: 0 auto;
 
-  @media (max-width: 449px), (min-width: 450px) and (max-width: 850px) {
+  @media (max-width: 850px) {
     width: 95%;
   }
 `
 export const Content = styled.div`
   width: 60%;
+
+  @media (max-width: 449px) {
+    width: 90%;
+  }
 `
 export const CardContainer = styled.div`
   width: 100%;
@@ -51,7 +73,8 @@ export const CardContainer = styled.div`
 
   @media (max-width: 449px) {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    margin-top: 412px;
+    margin-top: 512px;
+    row-gap: 40px;
   }
 `
 export const Card = styled.div`
