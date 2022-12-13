@@ -1,0 +1,27 @@
+.loc-page{
+    width: 100%;
+    margin: 64px 0px 0px 0px;
+}
+
+
+.loc-big-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px;
+    height: 326px;
+}
+.loc-text{
+    background-color: #FDF3F0;
+    width: 65.77%;
+    margin-right: 2.7%;
+    border-radius: 15px;
+    
+}
+
+.loc-img{
+    width: 31.53%;
+    height: 326px;
+    margin: 0px;
+    border-radius: 15px;
+}
