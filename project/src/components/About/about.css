@@ -3,9 +3,22 @@
 
 body{
     font-family:'Jost';
-    background-image: url("../../assets/shared/desktop/bg-pattern-leaf.svg"), url("../../assets/shared/desktop/bg-pattern-leaf.svg");
+    /* background-image: url("../../assets/shared/desktop/bg-pattern-leaf.svg"), url("../../assets/shared/desktop/bg-pattern-leaf.svg");
     background-repeat: no-repeat;
-    background-position-y: 25%;
+    background-position-y: 25%; */
+}
+#top-bg{
+    position: absolute;
+    top: 475px;
+    z-index: -1;
+    left: 0;
+    width: 69.86%;
+}
+#mid-bg{
+    position: absolute;
+    top: 1777px;
+    z-index: -1;
+    left: 57.64%;
 }
 
 

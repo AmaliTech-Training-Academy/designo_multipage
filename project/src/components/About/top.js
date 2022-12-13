@@ -10,11 +10,14 @@ import WorldClassDesktop from "../../assets/about/desktop/image-world-class-tale
 import RealDealMobile from "../../assets/about/mobile/image-real-deal.jpg"
 import RealDealTablet from "../../assets/about/tablet/image-real-deal.jpg"
 import RealDealDesktop from "../../assets/about/desktop/image-real-deal.jpg"
+import BackgroundSvg from "../../assets/shared/desktop/bg-pattern-leaf.svg"
 
 
 function TopAbout(){
     return (
         < div className="about-page-mobile">
+            <img id="top-bg" src={BackgroundSvg}/>
+            <img id="mid-bg"src={BackgroundSvg}/>
         <div className="big-div">
             <div className="sub-div left-curve  col-order" id="">
                 <h3 className="myText">About Us</h3>
