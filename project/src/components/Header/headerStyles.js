@@ -18,8 +18,10 @@ export const NavLinks = styled.div`
     align-items: center;
     justify-content: space-between;
     
-    span {
+    a {
         position: relative;
+        color: #333136;
+        text-decoration: none;
         cursor: pointer;
 
         &:after {
