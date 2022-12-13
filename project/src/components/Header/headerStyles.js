@@ -1,17 +1,17 @@
-import Styled from 'styled-components'
+import styled from 'styled-components'
 
-export const Nav = Styled.nav`
+export const Nav = styled.nav`
     width: 100%;
     height: 30px;
     margin-top: 64px;
     display: flex;
     justify-content: space-between;
 `
-export const Logo = Styled.img`
+export const Logo = styled.img`
     width: 196px;
     cursor: pointer;
 `
-export const NavLinks = Styled.div`
+export const NavLinks = styled.div`
     text-transform: uppercase;
     width: 40%;
     display: flex;
@@ -31,7 +31,6 @@ export const NavLinks = Styled.div`
             left: 0;
             right: 0;
             bottom: 3px;
-            display: none;
             transform: scaleX(0);
             transform-origin: left center;
             transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
@@ -44,10 +43,6 @@ export const NavLinks = Styled.div`
             }
         }
 
-        // @media (min-width: 451px) and (max-width: 769px) {
-        //     font-size: 20px;
-        // }
-
         @media (max-width: 450px) {
             display: none;
         }
@@ -57,12 +52,21 @@ export const NavLinks = Styled.div`
         width: 370px;
     }
 `
-export const Bars = Styled.img`
-    width: 40px;
-    height: 70%;
+export const Bars = styled.div`
+    width: 24px;
+    height: 20px;
     display: none;
+    z-index: 2;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 
     @media (max-width: 450px) {
         display: block;
     }
+`
+export const Close = styled(Bars)`
 `
