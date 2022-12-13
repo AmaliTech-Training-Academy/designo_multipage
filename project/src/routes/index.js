@@ -8,11 +8,9 @@ import Contact from '../components/Contact/contact'
 const AppRoutes = () => {
   return (
     <Routes>
-      {/* <Route path='/' element={ <HomePage /> } /> */}
       <Route path='/' element={<App />} />
       <Route path='/graphic' element={<Graphic />} />
       <Route path='/contact' element={<Contact />} />
-      {/* <Route path='/add' element={<Add/>} /> */}
     </Routes>
   )
 }
