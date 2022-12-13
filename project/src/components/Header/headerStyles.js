@@ -19,7 +19,7 @@ export const NavLinks = Styled.div`
     align-items: center;
     justify-content: space-between;
     
-    span {
+    Link {
         position: relative;
         cursor: pointer;
 

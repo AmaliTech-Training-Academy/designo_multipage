@@ -10,7 +10,8 @@ const Graphic = () => {
   return (
     <div className="home">
       <img src={bgimg} className="bg-img" />
-      <div className="wrapper" style={{ backgroundImage: `url(${pattern})` }}>
+      <div className="wrapper" >
+      <div className="bg-wrapper"></div>
         <div className="wrapper-text">
           <h2> Graphic design</h2>
           <p>

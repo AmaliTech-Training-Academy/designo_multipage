@@ -1,5 +1,13 @@
-
+.bg-img{
+  position: absolute;
+  z-index: -10;
+  width: 1006px;
+height: 594px;
+left: 0px;
+top: 281px;
+}
 .wrapper {
+  position: relative;
   width: 100%;
   height: 252px;
   background: #e7816b;
@@ -9,6 +17,17 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 160px;
+  overflow: hidden;
+}
+.bg-wrapper{
+  position: absolute;
+  left: -100px;
+  right: 300px;
+  top: -220px;
+  bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../../assets/app-design/desktop/bg-pattern-intro-app.svg');
 }
 
 .wrapper-text {
@@ -56,11 +75,12 @@
   width: 100%;
   height: 320px;
   margin-bottom: -4px;
+  
 }
 .card-footer {
   background: #fdf3f0;
-  border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   width: 100%;
   height: 158px;
   margin-top: 0px;
@@ -128,7 +148,7 @@ color: #333136;
 }
 
 .first-img{
-  width: 520px;
+  width: 48%;
   height: 308px;
   background-image: url(../../assets/home/desktop/image-web-design-small.jpg);
   object-fit: cover;
@@ -138,7 +158,7 @@ color: #333136;
 }
 
 .second-img{
-  width: 520px;
+  width: 48%;
 
   object-fit: cover;
   height: 308px;
@@ -260,14 +280,16 @@ margin-bottom: 24px;
 @media only screen and (max-width:449px) {
   .wrapper{
      border-radius: 0px;
-     width: 375px;
+     width: 100%;
 height: 320px;
 margin-bottom:96px;
+
   }
     .cards-container{
       display: flex;
       flex-direction: column;
       margin-bottom: 56px;
+      margin-top: 450px;
     }
     .card-container{
       height: 478px;

@@ -1,14 +1,16 @@
 import React from 'react'
 import './Design.css'
-import pattern from "../../assets/app-design/desktop/bg-pattern-intro-app.svg"
 import arrow from "../../assets/shared/desktop/icon-right-arrow.svg"
-
+import bgimg from "../../assets/shared/desktop/bg-pattern-leaf.svg";
 import {App} from '../../data'
 import Footer from '../Footer/Footer'
+import { Link } from 'react-router-dom'
 const Home = () => {
   return (
    <div className='home'>
-    <div className="wrapper" style={{backgroundImage:`url(${pattern})`}}>
+      <img src={bgimg} className="bg-img" />
+    <div className="wrapper" >
+      <div className="bg-wrapper"></div>
       <div className="wrapper-text">
         <h2>App design</h2>
         <p>Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.</p>
@@ -54,7 +56,10 @@ const Home = () => {
       <div className="img-background">
       <div className="picture-text-2">
      <h2> Graphic Design</h2> 
+     <Link to={"/graphic"} style={{ color: 'inherit', textDecoration: 'inherit'}}>
       <p>  View Projects <span><img src={arrow} alt="" /></span></p>
+
+     </Link>
       </div>
       </div>
     </div>
