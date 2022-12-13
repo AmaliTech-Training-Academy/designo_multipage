@@ -3,7 +3,24 @@
 
 body{
     font-family:'Jost';
+    /* background-image: url("../../assets/shared/desktop/bg-pattern-leaf.svg"), url("../../assets/shared/desktop/bg-pattern-leaf.svg");
+    background-repeat: no-repeat;
+    background-position-y: 25%; */
 }
+#top-bg{
+    position: absolute;
+    top: 475px;
+    z-index: -1;
+    left: 0;
+    width: 69.86%;
+}
+#mid-bg{
+    position: absolute;
+    top: 1777px;
+    z-index: -1;
+    left: 57.64%;
+}
+
 
 .big-div{
     display: flex;
@@ -37,6 +54,9 @@ body{
 .sub-div{
     background-color: #E7816B;
     width: 57.16%;
+    background-image: url("../../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+    background-position-x: center;
+    background-position-y: bottom;
    
 }
 
@@ -71,12 +91,25 @@ body{
 .sub-2{
     width:57.16% ;
     background-color: #FDF3F0;
+ 
+}
+
+.two-circles{
+    background-image: url("../../assets/shared/desktop/bg-pattern-two-circles.svg");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+
+}
+.three-circles{
+    background-image: url("../../assets/shared/desktop/bg-pattern-three-circles.svg");
+    background-repeat: no-repeat;
 }
 
 .holder-2{
     width: 70.08%;
     height: 332px;
     margin: 154px 15.12% 154px 14.80%;
+    
 }
 .body-text-small{
     font-size: 16px;
@@ -106,6 +139,9 @@ body{
 
 /*TABLET SCREENS */
 @media only screen and (min-width: 520px) and (max-width:920px){
+    body{
+        background-image: none;
+    }
     .big-div{
         width: 100%;
         display: flex;
@@ -115,6 +151,13 @@ body{
     }
     .sub-div{
         width: 100%;
+        background-position-y: -400px;
+        background-position-x: -90%;
+        background-repeat: no-repeat;
+    }
+    .three-circles{
+        background-position-x: right;
+        background-position-y: -190px;
     }
     .sub-div-1{
         width: 100%;
@@ -126,6 +169,7 @@ body{
     .myText{
         width: 83.02%;
         margin: 64px 8.42% 32px 8.42%;
+       text-align: center;
     }
     .about-text{
         width: 83.02%;
@@ -140,6 +184,9 @@ body{
 
     .right-curve,.left-curve-1{
         border-radius: 15px 15px 0px 0px;
+    }
+    .class-medium{
+        text-align: center;
     }
 
     .big-div-1{
@@ -176,6 +223,9 @@ body{
 
 /* MOBILE SCREENS*/
 @media only screen and (min-width:265px)and (max-width:450px) {
+    body{
+        background-image: none;
+    }
 .big-div{
     display: flex;
     flex-direction: column;
@@ -200,6 +250,7 @@ body{
     line-height: 36px;
     width: 87.2%;
     margin: 80px 6.4% 0px 6.4%;
+    text-align: center;
 }
 .about-text{
     font-size: 15px;
@@ -233,6 +284,7 @@ body{
     font-size: 32px;
     line-height: 36px;
     width: 100%;
+    text-align: center;
 }
 
 .body-text-small #sub-text{

@@ -5,7 +5,6 @@ import './App.css'
 import Header from './components/Header/Header';
 import Home from "./pages/Home/Home";
 import WebDesign from "./pages/Web_Design/WebDesign";
-// import MobileNavMenu from "./components/Header/MobileNavMenu";
 
 const Wrapper = ({children}) => {
   const location = useLocation();
