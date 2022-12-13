@@ -1,6 +1,6 @@
 import React from "react";
 import Location from "./location";
-import './location.css'
+import './locationCall.css'
 // images
 import CanadaMap from "../../assets/locations/desktop/image-map-canada.png"
 import AustraliaMap from "../../assets/locations/desktop/image-map-australia.png"
@@ -15,6 +15,7 @@ import UKTablet from "../../assets/locations/tablet/image-map-uk.png"
 const LocationCall=() => {
     return(
         <div className="loc-page-main">
+          <div>
         <Location
         title="Canada"
         titleA= "Designo  Central Office"
@@ -27,7 +28,8 @@ const LocationCall=() => {
         src={CanadaMap}
         
 
-        />
+        /></div>
+        <div >
          <Location
           title="Australia"
           titleA= "Designo AU Office"
@@ -38,7 +40,8 @@ const LocationCall=() => {
         src={AustraliaMap}
         sizes="(min-width: 1090px) 341px, (min-width: 650px) 40vw,  50vw"
         srcSet={`${AustraliaTablet} 689w, ${AustraliaMap} 375w`} />
-         
+         </div>
+         <div>
          <Location
           title="United Kingdom"
           titleA= "Designo UK Office"
@@ -48,7 +51,7 @@ const LocationCall=() => {
           mail="M : contact@designo.uk"
         src={UKMap}
         sizes="(min-width: 1090px) 341px, (min-width: 650px) 40vw,  50vw"
-        srcSet={`${UKTablet} 689w, ${UKMap} 375w`} />
+        srcSet={`${UKTablet} 689w, ${UKMap} 375w`} /></div>
         </div>
 
     );
