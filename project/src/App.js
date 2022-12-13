@@ -11,10 +11,9 @@ function App() {
   return (
     <>
       <div className="App"  >
-        {/* <MobileNavMenu /> */}
-        <Header />
-        {/* <Home /> */}
+  
         <WebDesign />
+
       </div>
     </>
   )

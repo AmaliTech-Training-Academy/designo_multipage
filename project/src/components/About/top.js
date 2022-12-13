@@ -10,11 +10,14 @@ import WorldClassDesktop from "../../assets/about/desktop/image-world-class-tale
 import RealDealMobile from "../../assets/about/mobile/image-real-deal.jpg"
 import RealDealTablet from "../../assets/about/tablet/image-real-deal.jpg"
 import RealDealDesktop from "../../assets/about/desktop/image-real-deal.jpg"
+import BackgroundSvg from "../../assets/shared/desktop/bg-pattern-leaf.svg"
 
 
 function TopAbout(){
     return (
         < div className="about-page-mobile">
+            <img id="top-bg" src={BackgroundSvg}/>
+            <img id="mid-bg"src={BackgroundSvg}/>
         <div className="big-div">
             <div className="sub-div left-curve  col-order" id="">
                 <h3 className="myText">About Us</h3>
@@ -38,7 +41,7 @@ function TopAbout(){
                      srcSet={`${WorldClassMobile} 375w, ${WorldClassTablet} 689w,
                             ${WorldClassDesktop} 476w`}  alt=""/>
             </div>
-            <div className="sub-2 right-curve-1">
+            <div className="sub-2 right-curve-1 three-circles">
                 <div className="holder-2">
                     <h3 className="class-medium">World-class talent</h3>
                     <p className="body-text-small" id="sub-text">
@@ -62,7 +65,7 @@ function TopAbout(){
         <Middle/>
 
         <div className="big-div-1">
-            <div className="sub-2 left-curve col-order">
+            <div className="sub-2 left-curve col-order two-circles">
                 <div className="holder-2">
                     <h3 className="class-medium">The real deal</h3>
                 <p className="body-text-small" id="sub-text">

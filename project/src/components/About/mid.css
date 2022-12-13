@@ -17,6 +17,8 @@
     width: 57.71%;
     height: 202px;
     margin: 0px 21.14% 48px;
+    background-image: url("../../assets/shared/desktop/bg-pattern-small-circle.svg");
+    background-repeat: no-repeat;
 }
 
 .loc-text{
