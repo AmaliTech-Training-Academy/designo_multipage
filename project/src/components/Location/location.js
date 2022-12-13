@@ -58,7 +58,7 @@ function Location () {
               </div>
           </div>   
         </div>
-        <div className="loc-img">
+        <div className="loc-img img-reverse">
         <img id="img-loc-1"src={AustraliaMap}
              sizes="(min-width: 1090px) 341px, (min-width: 650px) 40vw,  50vw"
             srcSet={`${AustraliaTablet} 689w, ${AustraliaMap} 375w`}

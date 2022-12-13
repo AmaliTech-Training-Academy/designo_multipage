@@ -3,7 +3,7 @@
     margin: 64px 0px 0px 0px;
 }
 
-.reverse
+.loc-big-div.reverse
 {
     flex-direction: row-reverse;
 }
@@ -26,6 +26,13 @@
     background-image: url(../../assets/shared/desktop/bg-pattern-two-circles.svg);
     background-repeat: no-repeat;
     background-position-y:bottom;  
+}
+.reverse .loc-text-1 {
+    margin-right: 0px;
+}
+
+.img-reverse.loc-img{
+    margin-right:2.7% ;
 }
 .loc-holder{
     width: 73.97%;
@@ -86,6 +93,10 @@
         flex-direction: column-reverse;
         height: 683px;
     }
+    .loc-big-div.reverse
+{
+    flex-direction:column-reverse;
+}
     .loc-text-1{
         width: 100%;
         height: 326px;
@@ -122,6 +133,10 @@
     display: flex;
     flex-direction: column-reverse;
     height: 714px;
+}
+.loc-big-div.reverse
+{
+    flex-direction: column-reverse;
 }
 .loc-text-1{
     width: 100%;
