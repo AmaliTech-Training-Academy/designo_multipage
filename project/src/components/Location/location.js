@@ -8,7 +8,7 @@ import CanadaTablet from "../../assets/locations/tablet/image-map-canada.png"
 import AustraliaTablet from "../../assets/locations/tablet/image-map-australia.png"
 import UKTablet from "../../assets/locations/tablet/image-map-uk.png"
 
-const Location = (props) => {
+function Location () {
     return(
         <>
         <div className="loc-page">
@@ -40,7 +40,7 @@ const Location = (props) => {
         </div>
         
        <div className="loc-page">
-       <div className="loc-big-div">
+       <div className="loc-big-div reverse">
         <div className="loc-text-1">
           <div className="loc-holder">
           <h3 className="loc-title">Australia</h3>
@@ -61,7 +61,7 @@ const Location = (props) => {
         <div className="loc-img">
         <img id="img-loc-1"src={AustraliaMap}
              sizes="(min-width: 1090px) 341px, (min-width: 650px) 40vw,  50vw"
-            srcSet={`${CanadaTablet} 689w, ${CanadaMap} 375w`}
+            srcSet={`${AustraliaTablet} 689w, ${AustraliaMap} 375w`}
             alt="australia map"/>
         </div>
        </div>
