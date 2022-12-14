@@ -1,0 +1,184 @@
+.loc-page{
+    width: 100%;
+    margin: 64px 0px 0px 0px;
+}
+
+.loc-big-div.reverse
+{
+    flex-direction: row-reverse;
+}
+
+
+
+.loc-big-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0px;
+    height: 326px;
+}
+.loc-text-1{
+    background-color: #FDF3F0;
+    width: 65.77%;
+    height: 100%;
+    margin-right: 2.7%;
+    border-radius: 15px;
+    background-image: url(../../assets/shared/desktop/bg-pattern-two-circles.svg);
+    background-repeat: no-repeat;
+    background-position-y:bottom;  
+}
+.reverse .loc-text-1 {
+    margin-right: 0px;
+}
+
+.img-reverse.loc-img{
+    margin-right:2.7% ;
+}
+.loc-holder{
+    width: 73.97%;
+    height: 150px;
+    margin: 88px 13.01%;  
+}
+.loc-title{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: medium;
+    color: #E7816B;   
+}
+.loc-small-text{
+    font-size: 16px;
+    line-height: 26px;
+    color: #333136;
+}
+
+#loc-small-title{
+    font-weight: bold;
+    
+}
+#loc-normal-text{
+    font-weight:normal;
+}
+
+.loc-text-row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 78px;
+    margin-top: 24px;
+}
+.sub-loc-1{
+    width: 47.22%;
+}
+#loc-right{
+    margin-right: 5.55%;
+}
+
+
+.loc-img{
+    width: 31.53%;
+    height: 326px;
+    margin: 0px;
+    border-radius: 15px;  
+}
+#img-loc-1{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+/*TABLET SCREENS */
+@media only screen and (min-width: 520px) and (max-width:920px){
+    
+    .loc-big-div{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 683px;
+    }
+    .loc-big-div.reverse
+{
+    flex-direction:column-reverse;
+}
+    .loc-text-1{
+        width: 100%;
+        height: 326px;
+        margin-top: 31px;
+    }
+
+    .loc-holder{
+        width: 78.37%;
+        height: 150px;
+        margin: 88px 10.74% 88px 10.74%;
+    }
+    .loc-img{
+        width: 100%;
+        height: 326px;
+        margin: 0px;
+    }
+
+}
+
+
+ /* MOBILE SCREENS*/
+ @media only screen and (min-width:265px)and (max-width:450px) {
+.loc-page-main{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: 0px;
+}
+.loc-page{
+    margin-top: 0px;
+    margin-bottom:40px ;
+}
+.loc-big-div{
+    display: flex;
+    flex-direction: column-reverse;
+    height: 714px;
+}
+.loc-big-div.reverse
+{
+    flex-direction: column-reverse;
+}
+.loc-text-1{
+    width: 100%;
+    height: 374px;
+    border-radius: 0px;
+}
+
+
+.loc-holder{
+    width: 87.2%;
+    height: 234px;
+    margin: 80px 6.4%;
+}
+.loc-img{
+    width: 100%;
+    height: 320px;
+    margin: 0px;
+    border-radius: 0px;
+}
+#img-loc-1{
+    border-radius: 0px;
+}
+.loc-small-text{
+    text-align: center;
+}
+
+.loc-text-row{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.sub-loc-1{
+    width: 100%;
+}
+#loc-right{
+    margin: 0px;
+}
+
+.loc-title{
+    text-align: center;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+ }
