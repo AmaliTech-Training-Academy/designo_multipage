@@ -8,9 +8,6 @@
 }
 .above-footer {
   width: 82%;
-}
-.above-footer {
-  width: 1111px;
   height: 292px;
   margin: 0 auto;
   display: flex;
@@ -23,18 +20,22 @@
   left: 0;
   right: 0;
   overflow: hidden;
-  
+  background-image: url('../../assets/app-design/desktop/bg-pattern-intro-app.svg');
+  background-size: cover;
+  background-repeat: no-repeat;  
+  background-position: right;
 }
 .foot-img{
   position: absolute;
   right: 0;
-  z-index: -1;
+  /* z-index: -1; */
  
 }
 .above-footer-text {
   width: 50%;
   height: 174px;
   color: #ffffff;
+  z-index: 5;
 }
 .above-footer-text > h2 {
   font-family: "Jost";

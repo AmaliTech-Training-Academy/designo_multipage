@@ -1,3 +1,15 @@
+.bg-img{
+  position: absolute;
+width: 1006px;
+height: 594px;
+left: 434px;
+top: 885px;
+z-index: -5;
+background: #F1F3F5;
+mix-blend-mode: normal;
+opacity: 0.5;
+border-radius: 297px 297px 297px 0px;
+}
 .error-img {
   display: none;
 }
@@ -8,11 +20,11 @@
 
 .contact-page {
   width: 100%;
+  height: 480px;
   display: flex;
   background: #e7816b;
   align-items: center;
-  justify-content: space-around;
-  /* padding: 6rem; */
+  /* justify-content: space-around; */
   margin-bottom: 160px;
   border-radius: 10px;
   position: relative;
@@ -20,11 +32,11 @@
 }
 .svg-container {
   position: absolute;
-  left: 0.2%;
-  bottom: 0%;
+  left: 0%;
+  bottom: -1.5%;
 }
 .contact {
-  width: 43%;
+  width: 43.5%;
   height: 184px;
   color: #fff;
   margin-left: 95px;
@@ -42,16 +54,15 @@
 }
 
 form {
-  width: 41%;
+  width: 380px;
   height: 371px;
   position: relative;
-  margin-top: 55px;
+  margin-top: 145px;
   margin-bottom: 54px;
   margin-right: 96px;
+  overflow: hidden;
 }
-hr {
-  color: #fff;
-}
+
 .inp {
   width: 100%;
   position: relative;
@@ -79,15 +90,14 @@ hr {
   gap: 0.5rem;
 }
 
-input {
+input{
   outline: none;
   width: 100%;
-  border: transparent;
-  border-bottom: 1.6px solid;
   background: transparent;
   color: #fff;
   padding: 0.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 25px;
+  border-bottom: 1.6px solid !important;
 }
 input::placeholder {
   background: transparent;
@@ -101,7 +111,7 @@ input::placeholder {
   opacity: 0.5;
 }
 input:focus {
-  border-bottom: 3.5px solid;
+  border-bottom: 3.5px solid !important;
 }
 textarea {
   width: 100%;
@@ -198,47 +208,10 @@ textarea:focus {
 }
 .img-svg-2 {
     width: 100%;
-    display: flex;
-    background: #e7816b;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5rem;
-    margin-bottom: 160px;
-    border-radius: 10px;
-    position: relative;   
-    overflow: hidden;
-}
-.svg-container {
-  position: absolute;
-  left: 0.2%;
-  bottom: 0%;
-}
-.contact{
-    width: 40%;
-    color: #fff;
-}
-.contact > h1 {
-  margin-bottom: 1rem;
-  font-family: "Jost";
-}
-.text{
-    width: 450px;
-    line-height: 28px;
-    font-family: "Jost";
-}
-
-form {
-  width: 41%;
-  height: 371px;
-  position: relative;
-  margin-top: 55px;
-  margin-bottom: 54px;
-  margin-right: 96px;
-}
-hr {
-  color: #fff;
-}
-.inp{
+    height: 100%;
+  
+  }
+  .img-svg-3 {
     width: 100%;
     height: 100%;
     transform: rotate(90deg);
@@ -265,33 +238,6 @@ hr {
   text-transform: uppercase;
   color: #333136;
   margin-bottom: 25px;
-}
-.locatio-btn {
-  width: 152px;
-  height: 56px;
-  background: #e7816b;
-  font-family: "Jost";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-}
-
-
-input{
-    outline: none;
-    width: 100%;
-    border: transparent;
-    border-bottom:2px solid ;
-    background: transparent;
-    color: #fff;
-    padding: 0.8rem;
 }
 .locatio-btn {
   width: 152px;
@@ -416,31 +362,12 @@ line-height: 26px;
         }
     
 }
-textarea{
-    width: 100%;
-    height: 5rem;
-    border: transparent;
-    color: #fff;
-    border-bottom: 2px solid;
-    resize: none;
+
+form{
+    margin-bottom:10rem ;
+}
+
+input{
     outline: none;
-    background: transparent;
-}
-
-textarea::placeholder{
-    color: #fff;
-    padding-left: 1rem;
-}
-
-.btn{
-    position: absolute;
-right: 0%;
-bottom: -59px;
-text-transform: uppercase;
-width: 120px;
-height: 45px;
-color: black;
-font-weight: bolder;
-background: #fff;
-border: none;
+    border: transparent;
 }

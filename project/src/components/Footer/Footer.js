@@ -9,9 +9,6 @@ const Footer = () => {
         
     <footer>
     <div className="above-footer" >
-      <img src={pattern} className="foot-img" />
-    <div className="above-footer" style={{backgroundImage:`url(${pattern})`}}>
-      
             <div className="above-footer-text">
                 <h2> Let's talk about your project</h2>
                 <p> Ready to take it to the next level? Contact us today and find out how our expertise can 
@@ -20,7 +17,6 @@ const Footer = () => {
             <div >
                 <button className="above-footer-btn"> Get in touch</button>
             </div>
-        </div>
         </div>
       <div className="footer-container">
         <div className="footer-upper-container">
