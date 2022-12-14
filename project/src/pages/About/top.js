@@ -1,14 +1,8 @@
 import React from "react";
 import Middle from "./middle";
 import './about.css'
-import HeroMobile from "../../assets/about/mobile/image-about-hero.jpg"
-import HeroTablet from "../../assets/about/tablet/image-about-hero.jpg"
 import HeroDesktop from "../../assets/about/desktop/image-about-hero.jpg"
-import WorldClassMobile from "../../assets/about/mobile/image-world-class-talent.jpg"
-import WorldClassTablet from "../../assets/about/tablet/image-world-class-talent.jpg"
 import WorldClassDesktop from "../../assets/about/desktop/image-world-class-talent.jpg"
-import RealDealMobile from "../../assets/about/mobile/image-real-deal.jpg"
-import RealDealTablet from "../../assets/about/tablet/image-real-deal.jpg"
 import RealDealDesktop from "../../assets/about/desktop/image-real-deal.jpg"
 import BackgroundSvg from "../../assets/shared/desktop/bg-pattern-leaf.svg"
 
@@ -16,8 +10,8 @@ import BackgroundSvg from "../../assets/shared/desktop/bg-pattern-leaf.svg"
 function TopAbout(){
     return (
         < div className="about-page-mobile">
-            <img id="top-bg" src={BackgroundSvg}/>
-            <img id="mid-bg"src={BackgroundSvg}/>
+            <img id="top-bg" src={BackgroundSvg} alt=''/>
+            <img id="mid-bg"src={BackgroundSvg} alt=''/>
         <div className="big-div">
             <div className="sub-div left-curve  col-order" id="">
                 <h3 className="myText">About Us</h3>
@@ -27,19 +21,13 @@ function TopAbout(){
                    that make real impact. We’re always looking forward to creating
                    brands, products, and digital experiences that connect with our clients’ audiences.</p>
             </div>
-            <div className="sub-div-1 col-order">
-                 <img className="right-curve" id="sub-img" src={HeroDesktop}
-                     sizes="(min-width: 1090px) 30vw, (min-width: 550px) 100vw,  100vw"
-                     srcSet={`${HeroMobile} 375w, ${HeroTablet} 689w,
-                            ${HeroDesktop} 476w`}  alt=""/>
+            <div className="sub-div-1 col-order-one">
+                 <img className="right-curve" id="sub-img" src={HeroDesktop} alt=''/>
             </div>
         </div>
         <div className="big-div-1">
-            <div className="sub-div-1">
-             <img  className="left-curve-1"id="sub-img" src={WorldClassDesktop}
-                     sizes="(min-width: 1090px) 30vw, (min-width: 550px) 100vw,  100vw"
-                     srcSet={`${WorldClassMobile} 375w, ${WorldClassTablet} 689w,
-                            ${WorldClassDesktop} 476w`}  alt=""/>
+            <div className="sub-div-1 col-order-two">
+             <img  className="left-curve-1"id="sub-img" src={WorldClassDesktop}  alt=""/>
             </div>
             <div className="sub-2 right-curve-1 three-circles">
                 <div className="holder-2">
@@ -81,11 +69,8 @@ function TopAbout(){
                 </p>
                 </div>
             </div>
-            <div className="sub-div-1 col-order">
-            <img className="right-curve" id="sub-img" src={RealDealDesktop}
-                     sizes="(min-width: 1090px) 30vw, (min-width: 550px) 100vw,  100vw"
-                     srcSet={`${RealDealMobile} 375w, ${RealDealTablet} 689w,
-                            ${RealDealMobile} 476w`}  alt=""/>
+            <div className="sub-div-1 col-order-three">
+            <img className="right-curve" id="sub-img" src={RealDealDesktop} alt=""/>
                 
             </div>
 

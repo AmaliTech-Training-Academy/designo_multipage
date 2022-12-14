@@ -5,6 +5,8 @@ import './App.css'
 import Header from './components/Header/Header';
 import Home from "./pages/Home/Home";
 import WebDesign from "./pages/Web_Design/WebDesign";
+import TopAbout from "./pages/About/top";
+import Location from "./pages/Location/location"
 
 const Wrapper = ({children}) => {
   const location = useLocation();
@@ -26,8 +28,8 @@ function App() {
                 <Route path="web-design" element={<WebDesign />} />
                 <Route path="app-design" element='' />
                 <Route path="graphic-design" element='' />
-                <Route path="location" element='' />
-                <Route path="about" element='' />
+                <Route path="location" element={<Location />} />
+                <Route path="about" element={<TopAbout />} />
                 <Route path="contact" element='' />
               </Route>
             </Routes>

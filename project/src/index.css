@@ -9,8 +9,9 @@
 body {
     font-family: 'Jost';
     position: relative;
+    overflow-x: hidden;
 }
 
-.app{
+/* .app{
     overflow: hidden;
-}
+} */

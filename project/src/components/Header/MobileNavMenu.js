@@ -1,13 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 function MobileNavMenu(props) {
   return (
     <Menu onClick={() => props.closeMenu()}>
         <MobileNav>
-            <span onClick={() => props.closeMenu()}>our company</span>
-            <span onClick={() => props.closeMenu()}>location</span>
-            <span onClick={() => props.closeMenu()}>Contact</span>
+            <Link to='/about' onClick={() => props.closeMenu()}>our company</Link>
+            <Link to='/location' onClick={() => props.closeMenu()}>location</Link>
+            <Link to='/contact' onClick={() => props.closeMenu()}>Contact</Link>
         </MobileNav>
     </Menu>
   )
@@ -34,7 +35,7 @@ const MobileNav = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
 
-    span {
+    a {
         font-weight: 400;
         font-size: 24px;
         line-height: 25px;
@@ -43,5 +44,6 @@ const MobileNav = styled.div`
         text-transform: uppercase;
         width: 90%;
         margin: 0 auto;
+        text-decoration: none;
     }
 `
