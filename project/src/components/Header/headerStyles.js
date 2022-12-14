@@ -6,6 +6,7 @@ export const Nav = styled.nav`
     margin-top: 64px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 64px;
 `
 export const Logo = styled.img`
     width: 196px;
@@ -18,7 +19,7 @@ export const NavLinks = styled.div`
     align-items: center;
     justify-content: space-between;
     
-    a {
+
         position: relative;
         color: #333136;
         text-decoration: none;

@@ -6,6 +6,7 @@ import {
     Bars,
     Close
 } from './headerStyles'
+
 import MobileNavMenu from './MobileNavMenu';
 import { Link } from 'react-router-dom'
 
@@ -19,6 +20,7 @@ function Header() {
                   <img src='/assets/shared/mobile/icon-close.svg' onClick={() => setIsOpen(!isOpen)} alt=''/>
                 </Close>;
   return (
+
     <>
       <Nav>
           <Link to="/">
