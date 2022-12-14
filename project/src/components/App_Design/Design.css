@@ -173,6 +173,7 @@ color: #333136;
   align-items: center;
   text-align: center;
 }
+
 .picture-text:hover, .picture-text-2:hover{
   background: rgba(231, 129, 107, 0.75);
 
@@ -225,7 +226,6 @@ letter-spacing: 2px;
 margin-bottom: 24px;
 
 }
-
 .picture-text-2>p{
   font-family: 'Jost';
   font-style: normal;
@@ -235,17 +235,8 @@ margin-bottom: 24px;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
-a{
-  text-decoration: none;
-  font-family: 'Jost';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
+
+
 @media only screen and (max-width:825px) and (min-width:450px) {
   .wrapper{
     margin-bottom: 120px;
