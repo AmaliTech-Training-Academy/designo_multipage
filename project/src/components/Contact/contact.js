@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "./contact.css";
 import error from "../../assets/contact/desktop/icon-error.svg";
 import { Location } from "../../data";
-import bgimg from "../../assets/shared/desktop/bg-pattern-leaf.svg";
+import bimg from "../../assets/shared/desktop/bg-pattern-leaf.svg";
 import Mini from "../Footer/Footer-mini";
 const Contact = () => {
   const [formValues, setFormValues] = useState({
@@ -57,7 +57,7 @@ const Contact = () => {
   };
   return (
     <>
-      <img src={bgimg} className="bg-img" />
+      <img src={bimg} className="b-img" />
     <div className="contact-page">
       <div className="svg-container">
         <svg width="640" height="640" xmlns="http://www.w3.org/2000/svg">

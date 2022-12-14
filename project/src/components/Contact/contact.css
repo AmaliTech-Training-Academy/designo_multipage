@@ -1,4 +1,4 @@
-.bg-img{
+.b-img{
   position: absolute;
 width: 1006px;
 height: 594px;
@@ -36,7 +36,7 @@ border-radius: 297px 297px 297px 0px;
   bottom: -1.5%;
 }
 .contact {
-  width: 43.5%;
+  width: 43%;
   height: 184px;
   color: #fff;
   margin-left: 95px;
@@ -54,7 +54,7 @@ border-radius: 297px 297px 297px 0px;
 }
 
 form {
-  width: 380px;
+  width: 41%;
   height: 371px;
   position: relative;
   margin-top: 145px;
