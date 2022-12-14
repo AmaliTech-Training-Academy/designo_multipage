@@ -352,3 +352,19 @@ line-height: 26px;
         }
     
 }
+textarea{
+    width: 100%;
+    height: 7rem;
+    border: transparent;
+    resize: none;
+    outline: none;
+
+}
+
+.btn{
+position: absolute;
+right: 0%;
+text-transform: uppercase;
+width: 120px;
+height: 45px;
+}
