@@ -1,12 +1,12 @@
 /* @import "url(‘https://fonts.googleapis.com/css?family=Jost&display=swap’)"; */
 
 
-body{
+/* body{
     font-family:'Jost';
-    /* background-image: url("../../assets/shared/desktop/bg-pattern-leaf.svg"), url("../../assets/shared/desktop/bg-pattern-leaf.svg");
+    background-image: url("../../assets/shared/desktop/bg-pattern-leaf.svg"), url("../../assets/shared/desktop/bg-pattern-leaf.svg");
     background-repeat: no-repeat;
-    background-position-y: 25%; */
-}
+    background-position-y: 25%;
+} */
 #top-bg{
     position: absolute;
     top: 475px;
@@ -22,13 +22,19 @@ body{
 }
 
 
-.big-div{
+.about-us{
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 480px;
     margin: 64px 0 0;
     border-radius: 15px;
+}
+
+.world-class-talent {
+    display: flex;
+    height: 640px;
+    margin-top: 160px;
 }
 
 .about-text{
@@ -81,9 +87,8 @@ body{
     height: 100%;
     object-fit: cover;
 }
-.big-div-1{
+.real-deal{
     display: flex;
-    flex-direction: row;
     width: 100%;
     height: 640px;
     margin: 160px 0 0;
@@ -118,7 +123,7 @@ body{
     line-height: 26px;
     color: #333136;
 }
-.class-medium{
+.holder-2 span{
     font-size: 40px;
     line-height: 48px;
     color: #E7816B;
@@ -149,12 +154,18 @@ body{
         display: none;
     }
 
-    .big-div{
+    .about-us{
         width: 100%;
         display: flex;
         flex-direction: column;
         height: 632px;
         margin: 71px 0px 0px 0px;
+    }
+
+    .world-class-talent {
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
     }
     .sub-div{
         width: 100%;
@@ -205,16 +216,16 @@ body{
     .right-curve,.left-curve-1{
         border-radius: 15px 15px 0px 0px;
     }
-    .class-medium{
+    .holder-2 span{
         text-align: center;
     }
 
-    .big-div-1{
+    .real-deal{
+        text-align: center;
         display: flex;
         flex-direction: column;
-        width: 100%;
         height: 736px;
-        margin: 120px 0px 0px 0px;
+        margin: 120px 0 0;
     }
     .sub-2{
         width: 100%;
@@ -247,12 +258,25 @@ body{
         display: none;
     }
 
-    .big-div{
+    .about-us{
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 715px;
         margin-top: 46px;
+        /* position: absolute;
+        left: 0;
+        right: 0; */
+    }
+    .world-class-talent {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 0;
+        /* position: absolute;
+        left: 0;
+        right: 0;
+        top: 790px; */
     }
 
     .col-order-one img {
@@ -292,11 +316,9 @@ body{
         width: 87.2%;
         margin: 24px 6.4% 80px 6.4%;
     }
-    .big-div-1{
+    .real-deal{
         display: flex;
         flex-direction: column;
-        width: 100%;
-        margin: 0px;
         height: 865px;
 
     }
@@ -314,7 +336,7 @@ body{
         height: 385px;
         margin: 80px 6.4%;
     }
-    .class-medium{
+    .holder-2 span{
         font-size: 32px;
         line-height: 36px;
         width: 100%;
@@ -339,10 +361,4 @@ body{
         #sub-text{
             height: 173px;
         }
-        .about-page-mobile{
-            position: absolute;
-            left: 0px;
-            right: 0px;
-        }
-
 }

@@ -19,6 +19,8 @@ background-size: cover;
 }
 
 @media (max-width: 449px) {
+    width: 327px;
+    /* margin: 120px auto 0; */
     background-image: url('/assets/home/mobile/image-app-design.jpg');
 }
 `

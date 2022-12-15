@@ -77,12 +77,12 @@
  .mid-div{
     display: flex;
     flex-direction: column;
-    width: 50.80%;
-    margin: 120px 24.52% 0px 24.67%;
+    margin: 120px auto 0;
+    gap: 80px;
+    width: 350px;
  }  
  .sub-mid{
     width: 100%;
-
  } 
 }
  /* MOBILE SCREENS*/
@@ -90,8 +90,9 @@
     .mid-div{
         display: flex;
         flex-direction: column;
-       width: 93.33%;
-       margin: 120px 3.47% 120px 3.2%;
+        row-gap: 48px;
+        width: 100%;
+        /* margin: 1756px 0 120px ; */
 
     }
     .sub-mid{

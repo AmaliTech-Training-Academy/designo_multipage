@@ -6,10 +6,12 @@
     .App {
         margin: 0 40px;
     }
+
+    
 }
 
 @media (max-width: 450px) {
     .App {
-        margin: 0 24px;
+        margin: 0;
     }
 }

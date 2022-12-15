@@ -40,7 +40,7 @@ function Location () {
           {/* </div> */}
           </div>
           
-          <div className="loc-page">
+          <div className="loc-page reverse">
             {/* <div className="loc-big-div reverse"> */}
             <div className="loc-text-1">
               <div className="loc-holder">
@@ -60,7 +60,7 @@ function Location () {
               </div>
             </div>
             {/* </div>    */}
-            <div className="loc-img img-reverse">
+            <div className="loc-img">
               <img id="img-loc-1"src={AustraliaMap}
                   sizes="(min-width: 1090px) 341px, (min-width: 650px) 40vw,  50vw"
                   srcSet={`${AustraliaTablet} 689w, ${AustraliaMap} 375w`}

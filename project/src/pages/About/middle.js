@@ -28,7 +28,8 @@ function Middle(){
                 <button className="loc-button">See Location</button>
             </div>
         </div>
-      
+
+
         </>
     );
 }
