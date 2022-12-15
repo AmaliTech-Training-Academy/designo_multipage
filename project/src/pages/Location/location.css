@@ -1,6 +1,13 @@
 .loc-page{
     width: 100%;
+    height: 326px;
     margin: 64px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reverse {
+    flex-direction: row-reverse;
 }
 
 .loc-big-div.reverse
@@ -21,19 +28,12 @@
     background-color: #FDF3F0;
     width: 65.77%;
     height: 100%;
-    margin-right: 2.7%;
     border-radius: 15px;
     background-image: url(../../assets/shared/desktop/bg-pattern-two-circles.svg);
     background-repeat: no-repeat;
     background-position-y:bottom;  
 }
-.reverse .loc-text-1 {
-    margin-right: 0px;
-}
 
-.img-reverse.loc-img{
-    margin-right:2.7% ;
-}
 .loc-holder{
     width: 73.97%;
     height: 150px;
@@ -88,19 +88,14 @@
 /*TABLET SCREENS */
 @media only screen and (min-width: 520px) and (max-width:920px){
     
-    .loc-big-div{
-        display: flex;
+    .loc-page{
         flex-direction: column-reverse;
-        height: 683px;
+        height: 100%;
     }
-    .loc-big-div.reverse
-{
-    flex-direction:column-reverse;
-}
     .loc-text-1{
         width: 100%;
         height: 326px;
-        margin-top: 31px;
+        margin: 31px 0 100px;
     }
 
     .loc-holder{
@@ -128,7 +123,15 @@
 .loc-page{
     margin-top: 0px;
     margin-bottom:40px ;
+    flex-direction: column-reverse;
+    height: 100%;
+    margin: 46px 0 0;
 }
+
+/* .reverse {
+    flex-direction: column-reverse;
+} */
+
 .loc-big-div{
     display: flex;
     flex-direction: column-reverse;
@@ -140,7 +143,7 @@
 }
 .loc-text-1{
     width: 100%;
-    height: 374px;
+    height: 100%;
     border-radius: 0px;
 }
 

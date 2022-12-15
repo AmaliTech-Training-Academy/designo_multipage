@@ -9,16 +9,13 @@
 @media only screen and (max-width:825px) and (min-width:450px) {
     .App {  
         margin: 0 40px;
-    }
-    
+    }  
 }
 
 @media only screen and (max-width:449px) {
     .App {
-        margin: 0 24px;
-
-    }
-    
+        margin: 0;
+    }   
 }
 
 

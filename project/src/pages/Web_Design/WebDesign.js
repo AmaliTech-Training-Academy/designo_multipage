@@ -101,7 +101,8 @@ const Grid = styled.div`
   }
 
   @media (max-width: 449px) {
-    margin-top: 96px;
+    width: 327px;
+    margin: 96px auto 0;
     height: 524px;
   }
 `

@@ -5,8 +5,6 @@ import './App.css'
 import Header from './components/Header/Header';
 import AppRoutes from "./routes/index";
 
-
-
 const Wrapper = ({children}) => {
   const location = useLocation();
   useEffect(() => {
