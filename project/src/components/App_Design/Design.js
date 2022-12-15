@@ -39,7 +39,7 @@ const Home = () => {
       </div>
       <div className="picture-container">
         <div className="first-image">
-      <Link to={'/contact'}>
+      <Link to={'/web-design'}>
             <div className="picture-text">
               <h2> Web Design</h2>
               <p>
@@ -53,7 +53,7 @@ const Home = () => {
         </div>
 
         <div className="second-img">
-          <Link to={'/graphic'}>
+          <Link to={'/graphic-design'}>
             <div className="picture-text-2">
               <h2> Graphic Design</h2>
                 <p>
