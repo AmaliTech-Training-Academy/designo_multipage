@@ -1,11 +1,11 @@
-
 import React,{ useEffect } from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, BrowserRouter } from "react-router-dom";
 import "./index.css"
 import './App.css'
 import Header from './components/Header/Header';
-import Home from "./pages/Home/Home";
-import WebDesign from "./pages/Web_Design/WebDesign";
+import AppRoutes from "./routes/index";
+
+
 
 const Wrapper = ({children}) => {
   const location = useLocation();
@@ -21,21 +21,11 @@ function App() {
       <div className="App"  >
         <Wrapper>
           <Header />
-            <Routes>
-              <Route path="/">
-                <Route index element={<Home />} />
-                <Route path="web-design" element={<WebDesign />} />
-                <Route path="app-design" element='' />
-                <Route path="graphic-design" element='' />
-                <Route path="location" element='' />
-                <Route path="about" element='' />
-                <Route path="contact" element='' />
-              </Route>
-            </Routes>
+          <AppRoutes/>
         </Wrapper>    
-        {/* <Home /> */}
       </div>
   );
   }
+
 
 export default App;

@@ -1,17 +1,24 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Graphic from '../components/Graphic_Design/Graphic'
-import App from '../components/App_Design/Design'
+import Home from "../pages/Home/Home"
+import WebDesign from "../pages/Web_Design/WebDesign"
+import AppDesign from "../pages/App-Design/index"
+import Graphic from '../pages/Graphic-Design'
+import Contacts from '../pages/ContactPage'
 
-import Contact from '../components/Contact/contact'
 
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path='/' element={<App />} />
-      <Route path='/graphic' element={<Graphic />} />
-      <Route path='/contact' element={<Contact />} />
+                <Route path="/" element={<Home/>} />
+                <Route path="/web-design" element={<WebDesign />} />
+                <Route path="/app-design" element={<AppDesign/>} />
+                <Route path="/graphic-design" element={<Graphic/>} />
+                <Route path="/location" element='' />
+                <Route path="/about" element='' />
+                <Route path="/contact" element={<Contacts/>} />
     </Routes>
+    
   )
 }
 
