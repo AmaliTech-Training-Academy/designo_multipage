@@ -1,5 +1,5 @@
 import React from 'react'
-import Design from "../App-Design/Design"
+import Design from "../../components/App_Design/Design"
 
 const index = () => {
   return (

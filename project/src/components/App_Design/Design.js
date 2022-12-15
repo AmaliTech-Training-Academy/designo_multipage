@@ -40,7 +40,6 @@ const Home = () => {
       <div className="picture-container">
         <div className="first-image">
       <Link to={'/contact'}>
-          <div className="img-background">
             <div className="picture-text">
               <h2> Web Design</h2>
               <p>
@@ -49,14 +48,12 @@ const Home = () => {
                   <img src={arrow} alt="" />
                 </span>
               </p>
-            </div>
           </div>
       </Link>
         </div>
 
         <div className="second-img">
           <Link to={'/graphic'}>
-          <div className="img-background">
             <div className="picture-text-2">
               <h2> Graphic Design</h2>
                 <p>
@@ -65,7 +62,6 @@ const Home = () => {
                     <img src={arrow} alt="" />
                   </span>
                 </p>
-            </div>
           </div>
           </Link>
 
