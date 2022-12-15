@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home"
 import WebDesign from "../pages/Web_Design/WebDesign"
 import AppDesign from "../pages/App-Design/index"
 import Graphic from '../pages/Graphic-Design'
+import Contacts from '../pages/ContactPage'
 
 
 const AppRoutes = () => {
@@ -15,7 +16,7 @@ const AppRoutes = () => {
                 <Route path="/graphic-design" element={<Graphic/>} />
                 <Route path="/location" element='' />
                 <Route path="/about" element='' />
-                <Route path="/contact" element='' />
+                <Route path="/contact" element={<Contacts/>} />
     </Routes>
     
   )

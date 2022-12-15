@@ -5,6 +5,7 @@ import bgimg from "../../assets/shared/desktop/bg-pattern-leaf.svg";
 import { Graph } from "../../data";
 import arrow from "../../assets/shared/desktop/icon-right-arrow.svg"
 import Footer from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 const Graphic = () => {
   return (
@@ -42,25 +43,26 @@ const Graphic = () => {
 
       <div className="picture-container">
         <div className="first-img">
-          <div className="img-background">
+          <Link to={'/app-design'}>
             <div className="picture-text">
+              <h2> App Design</h2>
+              <p>
+                View Projects <span><img src={arrow} alt="" /></span>
+              </p>
+            </div>
+          </Link>
+        </div>
+
+        <div className="second-img">
+          <Link to={'/web-design'}>
+            <div className="picture-text-2">
               <h2> Web Design</h2>
               <p>
                 View Projects <span><img src={arrow} alt="" /></span>
               </p>
             </div>
+          </Link>
           </div>
-        </div>
-        <div className="second-img">
-          <div className="img-background">
-            <div className="picture-text-2">
-              <h2> Graphic Design</h2>
-              <p>
-                View Projects <span><img src={arrow} alt="" /></span>
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
       <Footer/>
     </div>

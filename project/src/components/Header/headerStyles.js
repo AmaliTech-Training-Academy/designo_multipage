@@ -19,7 +19,7 @@ export const NavLinks = styled.div`
     align-items: center;
     justify-content: space-between;
     
-
+    a{
         position: relative;
         color: #333136;
         text-decoration: none;
@@ -45,7 +45,6 @@ export const NavLinks = styled.div`
                 display: block;
             }
         }
-
         @media (max-width: 450px) {
             display: none;
         }
