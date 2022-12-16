@@ -12,7 +12,7 @@ import Footer from "../../components/Footer/Footer";
 function Location () {
     return(
         <>
-        <div className="location-pages">
+        <div className="body">
           <div className="loc-page">
             {/* <div className="loc-big-div"> */}
             <div className="loc-text-1">

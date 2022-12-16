@@ -47,39 +47,41 @@ const cards = [
 function WebDesign() {
   return (
     <>
-      <SvgBackground src='/assets/shared/desktop/bg-pattern-leaf.svg'/>
-      <TitleContainer>
-        <WebBackgroundImage />
-        <Content>
-          <WebTitle>
-            <span>Web Design</span>
-          </WebTitle>
-          <WebSubtitle>
-            <span>We build websites that serve as powerful marketing tools and bring memorable brand experiences.</span>
-          </WebSubtitle>
-        </Content>
-      </TitleContainer>
-      <CardContainer>
-      {
-        cards.map((card, i) => {
-          return(
-            <Card>
-              <CardImage>
-                <img src={`/assets/web-design/desktop/image-${card.image}.jpg`} alt='' />
-              </CardImage>
-              <CardArticle>
-                <span>{card.image.toUpperCase()}</span>
-                <p>{card.subtitle}</p>        
-              </CardArticle>
-            </Card>
-          )
-        })
-      }
-      </CardContainer>
-      <Grid>
-        <AppDesign />
-        <GraphicDesignContainer />
-      </Grid>
+      <div className='body'>
+        <SvgBackground src='/assets/shared/desktop/bg-pattern-leaf.svg'/>
+        <TitleContainer>
+          <WebBackgroundImage />
+          <Content>
+            <WebTitle>
+              <span>Web Design</span>
+            </WebTitle>
+            <WebSubtitle>
+              <span>We build websites that serve as powerful marketing tools and bring memorable brand experiences.</span>
+            </WebSubtitle>
+          </Content>
+        </TitleContainer>
+        <CardContainer>
+        {
+          cards.map((card, i) => {
+            return(
+              <Card>
+                <CardImage>
+                  <img src={`/assets/web-design/desktop/image-${card.image}.jpg`} alt='' />
+                </CardImage>
+                <CardArticle>
+                  <span>{card.image.toUpperCase()}</span>
+                  <p>{card.subtitle}</p>        
+                </CardArticle>
+              </Card>
+            )
+          })
+        }
+        </CardContainer>
+        <Grid>
+          <AppDesign />
+          <GraphicDesignContainer />
+        </Grid>
+      </div>
       <Footer/>
     </>
   )

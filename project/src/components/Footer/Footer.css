@@ -233,6 +233,9 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: -50px;
+    background-size: unset;
+    background-position-x: 0;
+    background-position-y: center;
 }
 .above-footer-text{
     display: flex;
@@ -267,10 +270,12 @@ width: 450px;
   }
 .above-footer{
   width: 337px;
-height: 379px;
-display: flex;
-flex-direction:column ;
-justify-content: center;
+  height: 379px;
+  display: flex;
+  background-image: url('../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg');
+  /* transform: rotate(90deg); */
+  flex-direction:column ;
+  justify-content: center;
 }
 .above-footer-text{
   width: 279px;

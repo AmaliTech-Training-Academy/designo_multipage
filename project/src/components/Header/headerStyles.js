@@ -75,8 +75,8 @@ export const NavLinks = styled.div`
         }
     }
 
-    @media (min-width: 451px) and (max-width: 950px) {
-        width: 370px;
+    @media (min-width: 451px) and (max-width: 990px) {
+        width: 60%;
     }
 
     @media (max-width: 449px) {
