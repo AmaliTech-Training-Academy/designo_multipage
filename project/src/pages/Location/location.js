@@ -7,10 +7,12 @@ import UKMap from "../../assets/locations/desktop/image-map-united-kingdom.png"
 import CanadaTablet from "../../assets/locations/tablet/image-map-canada.png"
 import AustraliaTablet from "../../assets/locations/tablet/image-map-australia.png"
 import UKTablet from "../../assets/locations/tablet/image-map-uk.png"
+import Footer from "../../components/Footer/Footer";
 
 function Location () {
     return(
         <>
+        <div className="location-pages">
           <div className="loc-page">
             {/* <div className="loc-big-div"> */}
             <div className="loc-text-1">
@@ -97,8 +99,9 @@ function Location () {
             </div>
             {/* </div> */}
           </div>
+        </div>
 
-
+      <Footer/>
       </>
     );
 }

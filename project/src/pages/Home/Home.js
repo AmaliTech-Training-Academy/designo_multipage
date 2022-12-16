@@ -16,6 +16,7 @@ import AppDesign from '../../components/Banners/AppDesignComponent'
 import GraphicDesign from '../../components/Banners/GraphicDesignComponent'
 import WebDesign from '../../components/Banners/WebDesignComponent'
 import AttributeComponent from '../../components/AttributeComponent/Attribute'
+import Footer from '../../components/Footer/Footer'
 
 function Home() {
   return (
@@ -41,6 +42,7 @@ function Home() {
         <GraphicDesign />
       </GridContainer>
       <AttributeComponent />
+      <Footer/>
     </>
   )
 }
