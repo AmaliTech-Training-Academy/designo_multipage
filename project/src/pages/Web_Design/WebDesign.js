@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import AppDesign from '../../components/Banners/AppDesignComponent'
 import GraphicDesignContainer from '../../components/Banners/GraphicDesignComponent'
+import Footer from '../../components/Footer/Footer'
 
 import { 
   SvgBackground,
@@ -79,6 +80,7 @@ function WebDesign() {
         <AppDesign />
         <GraphicDesignContainer />
       </Grid>
+      <Footer/>
     </>
   )
 }

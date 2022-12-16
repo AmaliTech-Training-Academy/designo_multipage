@@ -5,6 +5,7 @@ import HeroDesktop from "../../assets/about/desktop/image-about-hero.jpg"
 import WorldClassDesktop from "../../assets/about/desktop/image-world-class-talent.jpg"
 import RealDealDesktop from "../../assets/about/desktop/image-real-deal.jpg"
 import BackgroundSvg from "../../assets/shared/desktop/bg-pattern-leaf.svg"
+import Footer from "../../components/Footer/Footer";
 
 
 function TopAbout(){
@@ -73,6 +74,7 @@ function TopAbout(){
                 </div>
 
             </div>
+            <Footer/>
         </>
     );
 }
