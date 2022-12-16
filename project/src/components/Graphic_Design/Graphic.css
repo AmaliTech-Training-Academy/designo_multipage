@@ -16,6 +16,7 @@ top: 281px;
   justify-content: center;
   align-items: center;
   margin-bottom: 160px;
+  margin-top: 64px;
   position: relative;
   overflow: hidden;
 }
@@ -134,8 +135,7 @@ color: #333136;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 160px;
-
+  margin-bottom: 190px;
 }
 
 
@@ -293,27 +293,27 @@ margin-bottom: 24px;
      border-radius: 0px;
      width: 410px;
 height: 320px;
-margin-bottom:96px;
-position: absolute;
-left: 0;
-right: 0;
-top: 160px;
+margin-top: -140px;
+
   }
     .cards-container{
+      /* margin: 0 24px; */
       display: flex;
       flex-direction: column;
-      margin-bottom: 56px;
-      margin-top: 480px;
+      margin-top : 256px;
+      margin-bottom: 96px;
     }
     .card-container{
       height: 478px;
       margin-bottom: 40px;
+      width: 387px;
+      margin: 0 auto;
     }
     .picture-container{
       display: flex;
       flex-direction: column;
       height: 524px;
-      margin-bottom: 40px;
+      margin-bottom: 200px;
     }
     .img-background{
       height: 250px;
@@ -321,12 +321,15 @@ top: 160px;
     }
     .first-img{
       height: 250px;
-      width: 100%;
+      width: 387px;
+      margin: 0 auto;
+
 
     }
     .second-img{
       height: 250px;
-      width: 100%;  
+      width: 387px;
+      margin: 0 auto; 
   /* background-image: url(../../assets/home/desktop/image-web-design-small.jpg); */
 
 
