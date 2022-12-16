@@ -3,6 +3,7 @@ import "./Footer.css";
 import Header from '../../components/Header/Header'
 import footer from '../../assets/shared/desktop/logo-light.png'
 import pattern from '../../assets/app-design/desktop/bg-pattern-intro-app.svg'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -16,7 +17,9 @@ const Footer = () => {
   help your business grow.</p>
             </div>
             <div >
+              <Link to={'./contact'}>
                 <button className="above-footer-btn"> Get in touch</button>
+              </Link>
             </div>
         </div>
       <div className="footer-container">

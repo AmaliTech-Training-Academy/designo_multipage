@@ -19,9 +19,9 @@ export default MobileNavMenu
 const Menu = styled.div`
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
-    height: 100%;
+    height: 97.5%;
     position: absolute;
-    top: 76px;
+    top: 130px;
     left: 0;
     right: 0;
     bottom: 0;

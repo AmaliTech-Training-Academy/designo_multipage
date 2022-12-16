@@ -29,14 +29,12 @@
 .foot-img{
   position: absolute;
   right: 0;
-  /* z-index: -1; */
  
 }
 .above-footer-text {
   width: 50%;
   height: 174px;
   color: #ffffff;
-  z-index: 5;
 }
 .above-footer-text > h2 {
   font-family: "Jost";
