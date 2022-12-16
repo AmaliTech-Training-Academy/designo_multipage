@@ -24,7 +24,6 @@ border-radius: 297px 297px 297px 0px;
   display: flex;
   background: #e7816b;
   align-items: center;
-  /* justify-content: space-around; */
   margin-bottom: 160px;
   margin-top: 64px;
   border-radius: 10px;
@@ -267,12 +266,15 @@ textarea:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 811px;
+    margin-top: 60px;
    }
+  
 
    .contact{
     margin: 0px;
     width: 567px;
-    height: 158px;
+    height: 150px;
     margin-top: 71px;
     margin-bottom: 40px;
    }
@@ -288,14 +290,13 @@ line-height: 26px;
 
    form{
     width: 567px;
-    height: 291px;
-
-    margin: 0px;
-    margin-bottom: 150px;
-
+    height: 491px;
+    margin: 0px auto;
    }
     .btn{
-        bottom: -30%;
+        right: 0;
+        bottom: -1px;
+
     }
     .location-page{
         display: flex;
@@ -305,6 +306,9 @@ line-height: 26px;
     }
     .location-card{
         margin-bottom: 80px;
+    }
+    .b-img{
+      display: none;
     }
 }
 
