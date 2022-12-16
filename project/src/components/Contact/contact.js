@@ -12,7 +12,7 @@ const Contact = () => {
     phone: "",
     message: "",
   });
-  const [formErrors, setFormErrors] = useState({});
+  const [ formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
 
   const handleChange = (e) => {
