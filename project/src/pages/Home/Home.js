@@ -9,7 +9,7 @@ import {
   Title,
   Subtitle,
   Button,
-  GridContainer,
+  GridContainer
 } from './HomeStyles'
 
 import AppDesign from '../../components/Banners/AppDesignComponent'
@@ -17,6 +17,7 @@ import GraphicDesign from '../../components/Banners/GraphicDesignComponent'
 import WebDesign from '../../components/Banners/WebDesignComponent'
 import AttributeComponent from '../../components/AttributeComponent/Attribute'
 import Footer from '../../components/Footer/Footer'
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -33,7 +34,9 @@ function Home() {
               <Subtitle>
                 <span>With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</span>
               </Subtitle>
-              <Button>learn more</Button>
+              <Link to={'/about'}>
+                <Button>learn more</Button>
+              </Link>
             </Article>
             <ArticleImage src='/assets/home/desktop/image-hero-phone.png'/>
         </HomeContainer>
