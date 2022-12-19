@@ -7,7 +7,7 @@
     height: 326px;
     margin: 64px 0px 0px 0px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .reverse {
@@ -79,7 +79,6 @@
 img{
     width: 100%;
     height: 100%;
-
 }
 
 
