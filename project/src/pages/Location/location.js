@@ -1,16 +1,26 @@
 import React from "react";
 import './location.css'
 // images
-import CanadaMap from "../../assets/locations/desktop/image-map-canada.png"
 import AustraliaMap from "../../assets/locations/desktop/image-map-australia.png"
 import UKMap from "../../assets/locations/desktop/image-map-united-kingdom.png"
 import CanadaTablet from "../../assets/locations/tablet/image-map-canada.png"
 import AustraliaTablet from "../../assets/locations/tablet/image-map-australia.png"
 import UKTablet from "../../assets/locations/tablet/image-map-uk.png"
+import LocationMap from "./Map";
+import { MapContainer, TileLayer,Marker } from 'react-leaflet'
+import markerIconPng from "leaflet/dist/images/marker-icon.png"
+import {Icon} from 'leaflet'
 
 function Location () {
     return(
         <>
+            <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""
+/>
+ 
         <div className="loc-page">
          <div className="loc-big-div">
           <div className="loc-text-1">
@@ -31,10 +41,15 @@ function Location () {
             </div>  
           </div>
           <div className="loc-img">
-          <img id="img-loc-1"src={CanadaMap}
-              sizes="(min-width: 1090px) 341px, (min-width: 650px) 40vw,  50vw"
-              srcSet={`${CanadaTablet} 689w, ${CanadaMap} 375w`}
-             alt="canada map"/>
+          <MapContainer center={[43.77681075478822, -79.23103793101617]} zoom={13} scrollWheelZoom={false}>
+  <TileLayer
+    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+  />
+  <Marker position={[43.77681075478822, -79.23103793101617]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41]})}>
+  </Marker>
+</MapContainer>
+          
           </div>
          </div>
         </div>
@@ -59,10 +74,14 @@ function Location () {
           </div>   
         </div>
         <div className="loc-img img-reverse">
-        <img id="img-loc-1"src={AustraliaMap}
-             sizes="(min-width: 1090px) 341px, (min-width: 650px) 40vw,  50vw"
-            srcSet={`${AustraliaTablet} 689w, ${AustraliaMap} 375w`}
-            alt="australia map"/>
+        <MapContainer center={[-33.115525, 151.555563]} zoom={13} scrollWheelZoom={false}>
+  <TileLayer
+    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+  />
+  <Marker position={[-33.115525, 151.555563]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41]})}>
+  </Marker>
+</MapContainer>
         </div>
        </div>
       </div>
@@ -88,11 +107,14 @@ function Location () {
              
          </div>
          <div className="loc-img">
-         <img id="img-loc-1"src={UKMap}
-            sizes="(min-width: 1090px) 341px, (min-width: 650px) 40vw,  50vw"
-             srcSet={`${UKTablet} 689w, ${UKMap} 375w`}
-             alt="united kingdom map"/>
-          
+         <MapContainer center={[53.733268, -1.327919]} zoom={13} scrollWheelZoom={false}>
+  <TileLayer
+    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+  />
+  <Marker position={[53.733268, -1.327919]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41]})}>
+  </Marker>
+</MapContainer>
          </div>
         </div>
        </div>
