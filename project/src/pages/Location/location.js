@@ -45,6 +45,7 @@ function Location () {
             </div>
           </div>  
           
+          
           <div className="loc-img">
             {mapImage(43.77681075478822, -79.23103793101617)}
           </div>
