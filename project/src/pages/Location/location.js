@@ -7,44 +7,50 @@ import {Icon} from 'leaflet'
 import Footer from "../../components/Footer/Footer";
 
 function Location () {
+  const mapImage = (lat, lng) => {
+      return(
+      <MapContainer center={[lat, lng]} zoom={13} scrollWheelZoom={false}>
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      <Marker position={[lat, lng]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41]})}>
+      </Marker>
+    </MapContainer>
+    )
+  }
+
     return(
         <>
-        <div>
+        <div className="body">
             <link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-  crossorigin=""
-/>
+              rel="stylesheet"
+              href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+              integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+              crossorigin=""
+            />
  
         <div className="loc-page">
          <div className="loc-big-div">
           <div className="loc-text-1">
             <div className="loc-holder">
-            <h3 className="loc-title">Canada</h3>
-                <div className="loc-text-row">
-                   <div className="sub-loc-1" id="loc-right">
-                    <h4 className="loc-small-text " id="loc-small-title">Designo  Central Office</h4>
-                    <h4 className="loc-small-text" id="loc-normal-text">3886 Wellington Street</h4>
-                    <h4 className="loc-small-text" id="loc-normal-text">Toronto, Ontario M9C 3J5</h4>
-                    </div>
-                  </div>
+              <h3 className="loc-title">Canada</h3>
+              <div className="loc-text-row">
+                <div className="sub-loc-1" id="loc-right">
+                  <h4 className="loc-small-text " id="loc-small-title">Designo  Central Office</h4>
+                  <h4 className="loc-small-text" id="loc-normal-text">3886 Wellington Street</h4>
+                  <h4 className="loc-small-text" id="loc-normal-text">Toronto, Ontario M9C 3J5</h4>
+                </div>
               </div>
-            </div>  
+            </div>
+          </div>  
           <div className="loc-img">
-          <MapContainer center={[43.77681075478822, -79.23103793101617]} zoom={13} scrollWheelZoom={false}>
-  <TileLayer
-    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-  />
-  <Marker position={[43.77681075478822, -79.23103793101617]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41]})}>
-  </Marker>
-</MapContainer>
+            {mapImage(43.77681075478822, -79.23103793101617)}
           </div>
-          </div>
-          </div>
-          <div className="loc-page">
-            <div className="loc-big-div">
+         </div>
+        </div>
+        <div className="loc-page">
+            <div className="loc-big-div reverse">
             <div className="loc-text-1">
               <div className="loc-holder">
               <h3 className="loc-title">Australia</h3>
@@ -61,17 +67,10 @@ function Location () {
                       </div>
                   </div>
               </div>
-          </div>   
-        </div>
-        <div className="loc-img img-reverse">
-        <MapContainer center={[-33.115525, 151.555563]} zoom={13} scrollWheelZoom={false}>
-       <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-       url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-       />
-       <Marker position={[-33.115525, 151.555563]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41]})}>
-      </Marker>
-      </MapContainer>
+            </div>   
+            <div className="loc-img img-reverse">
+              {mapImage(-30.329531, 149.788193)}
+            </div>
         </div>
        </div>
      
@@ -96,20 +95,12 @@ function Location () {
            </div> 
          </div>
          <div className="loc-img">
-         <MapContainer center={[53.733268, -1.327919]} zoom={13} scrollWheelZoom={false}>
-  <TileLayer
-    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-  />
-  <Marker position={[53.733268, -1.327919]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41]})}>
-  </Marker>
-</MapContainer>
+          {mapImage(53.733268, -1.327919)}
          </div>
         </div>
         </div>
-      <Footer/>
-      
       </div>
+      <Footer/>
       </>
     );
 }
