@@ -9,7 +9,7 @@ import {
   Title,
   Subtitle,
   Button,
-  GridContainer,
+  GridContainer
 } from './HomeStyles'
 
 import AppDesign from '../../components/Banners/AppDesignComponent'
