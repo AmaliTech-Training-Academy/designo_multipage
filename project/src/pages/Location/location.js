@@ -31,6 +31,7 @@ function Location () {
             />
  
         <div className="loc-page">
+          
          <div className="loc-big-div">
           <div className="loc-text-1">
             <div className="loc-holder">
@@ -44,7 +45,7 @@ function Location () {
               </div>
             </div>
           </div>  
-          
+
           
           <div className="loc-img">
             {mapImage(43.77681075478822, -79.23103793101617)}
