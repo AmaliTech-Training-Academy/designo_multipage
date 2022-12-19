@@ -47,7 +47,7 @@ const Contact = () => {
     }else if (!regex.test(values.email)) {
       errors.email = "This is not a valid email";
     }
-    if (!values.phone) {
+    if (!regex) {
       errors.phone = "Can't be empty";
     }
     if (!values.message) {
