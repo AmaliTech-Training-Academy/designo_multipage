@@ -22,6 +22,8 @@ function App() {
           <Header />
           
           <AppRoutes/>
+
+          
         </Wrapper>    
       </div>
   );
