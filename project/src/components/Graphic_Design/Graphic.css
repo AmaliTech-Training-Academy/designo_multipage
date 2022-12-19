@@ -16,6 +16,7 @@ top: 281px;
   justify-content: center;
   align-items: center;
   margin-bottom: 160px;
+  margin-top: 64px;
   position: relative;
   overflow: hidden;
 }
@@ -27,7 +28,7 @@ top: 281px;
   bottom: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url('../../assets/app-design/desktop/bg-pattern-intro-app.svg');
+  background-image: url('../../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg');
 }
 
 .wrapper-text {
@@ -134,19 +135,18 @@ color: #333136;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 160px; 
+  margin-bottom: 190px;
 }
 
 
 
-.first-image{
+.first-img{
   width: 48%;
   height: 308px;
   background-image: url(../../assets/home/desktop/image-app-design.jpg);
+  object-fit: fill;
   border-radius: 15px; 
   background-size:cover ;
-  cursor: pointer;
-  border-radius: 15px;
 }
 
 .second-img{
@@ -156,12 +156,11 @@ color: #333136;
   background-image: url(../../assets/home/desktop/image-web-design-small.jpg);
   border-radius: 15px;
   background-size:cover ;
-  border-radius: 15px;
-  position: relative;
-  cursor: pointer;
 }
 
+
 .picture-text{
+ 
   width: 100%;
   height: 100%;
   border-radius:15px ;
@@ -172,11 +171,6 @@ color: #333136;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.picture-text:hover, .picture-text-2:hover{
-  background: rgba(231, 129, 107, 0.75);
-
 }
 .picture-text>h2{
   font-family: 'Jost';
@@ -203,16 +197,15 @@ text-transform: uppercase;
 
 .picture-text-2{
   width: 100%;
-height: 100%;
-color: #FFFFFF;
-background: rgba(0, 0, 0, 0.5);
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
+  height: 100%;
   border-radius:15px ;
-
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .picture-text-2>h2{
  
@@ -236,16 +229,8 @@ margin-bottom: 24px;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
-a{
-  text-decoration: none;
-  font-family: 'Jost';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  color: #FFFFFF;
+.picture-text-2>p>span{
+  color: #e7816b;
 }
 @media only screen and (max-width:825px) and (min-width:450px) {
   .wrapper{
@@ -287,7 +272,7 @@ a{
       width: 100%;
       height: 200px;
     }
-    .first-image{
+    .first-img{
       width: 100%;
       height: 200px;
     }
@@ -308,41 +293,43 @@ a{
      border-radius: 0px;
      width: 410px;
 height: 320px;
-margin-bottom:96px;
-position: absolute;
-left: 0;
-right: 0;
-top: 160px;
+margin-top: -140px;
+
   }
     .cards-container{
+      /* margin: 0 24px; */
       display: flex;
       flex-direction: column;
-      margin-bottom: 56px;
-      margin-top: 480px;
+      margin-top : 256px;
+      margin-bottom: 96px;
     }
     .card-container{
       height: 478px;
       margin-bottom: 40px;
+      width: 387px;
+      margin: 0 auto;
     }
     .picture-container{
       display: flex;
       flex-direction: column;
       height: 524px;
-      margin-bottom: 40px;
+      margin-bottom: 200px;
     }
     .img-background{
       height: 250px;
       width: 100%;
     }
-    .first-image{
+    .first-img{
       height: 250px;
-      width: 94%;
+      width: 387px;
       margin: 0 auto;
+
 
     }
     .second-img{
       height: 250px;
-      width: 100%;  
+      width: 387px;
+      margin: 0 auto; 
   /* background-image: url(../../assets/home/desktop/image-web-design-small.jpg); */
 
 

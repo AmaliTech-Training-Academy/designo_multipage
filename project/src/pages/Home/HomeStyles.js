@@ -38,9 +38,6 @@ export const HomeContainer = styled.div`
     }
 
     @media (max-width: 449px) {
-        position: absolute;
-        left: 0;
-        right: 0;
         border-radius: 0;
         margin-top: 46px;
     }
@@ -179,7 +176,8 @@ export const GridContainer = styled.div`
     }
 
     @media (max-width: 449px) {
-        margin-top: 963px;
         height: 798px;
+        width: 327px;
+        margin: 120px auto 0;
     }
 `

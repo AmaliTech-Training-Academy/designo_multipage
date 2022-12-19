@@ -17,7 +17,8 @@ export const Container = styled.div`
 
     @media (max-width: 449px) {
         height: 1396px;
-        margin-top: 120px;
+        width: 327px;
+        margin: 120px auto 0;
     }
 `
 
@@ -75,5 +76,9 @@ export const AttributeDescription = styled.div`
         bottom: unset;
         right: 0;
         width: 439px;
+    }
+
+    @media (max-width: 449px) {
+        width: 327px;
     }
 `

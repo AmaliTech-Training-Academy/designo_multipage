@@ -1,34 +1,40 @@
 /* @import "url(‘https://fonts.googleapis.com/css?family=Jost&display=swap’)"; */
 
 
-body{
+/* body{
     font-family:'Jost';
-    /* background-image: url("../../assets/shared/desktop/bg-pattern-leaf.svg"), url("../../assets/shared/desktop/bg-pattern-leaf.svg");
+    background-image: url("../../assets/shared/desktop/bg-pattern-leaf.svg"), url("../../assets/shared/desktop/bg-pattern-leaf.svg");
     background-repeat: no-repeat;
-    background-position-y: 25%; */
-}
+    background-position-y: 25%;
+} */
 #top-bg{
     position: absolute;
     top: 475px;
     z-index: -1;
     left: 0;
-    width: 69.86%;
 }
 #mid-bg{
     position: absolute;
-    top: 1777px;
+    top: 1720px;
     z-index: -1;
-    left: 57.64%;
+    right: -350px;
+    transform: rotate(180deg);
 }
 
 
-.big-div{
+.about-us{
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 480px;
-    margin: 155px 0px 160px 0px;
+    margin: 64px 0 0;
     border-radius: 15px;
+}
+
+.world-class-talent {
+    display: flex;
+    height: 640px;
+    margin-top: 160px;
 }
 
 .about-text{
@@ -57,6 +63,7 @@ body{
     background-image: url("../../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
     background-position-x: center;
     background-position-y: bottom;
+    background-repeat: no-repeat;
    
 }
 
@@ -65,6 +72,7 @@ body{
     height: 100%;
     border-radius: 15px;
 }
+
 .left-curve,.left-curve-1{
     border-radius: 15px 0px 0px 15px;
 
@@ -77,15 +85,15 @@ body{
 #sub-img{
     width: 100%;
     height: 100%;
-  
+    object-fit: cover;
 }
-.big-div-1{
+.real-deal{
     display: flex;
-    flex-direction: row;
     width: 100%;
     height: 640px;
-    margin: 155px 0px 160px 0px;
+    margin: 160px 0 0;
     border-radius: 15px;
+    margin-bottom: 190px;
 }
 
 .sub-2{
@@ -116,7 +124,7 @@ body{
     line-height: 26px;
     color: #333136;
 }
-.class-medium{
+.holder-2 span{
     font-size: 40px;
     line-height: 48px;
     color: #E7816B;
@@ -142,12 +150,23 @@ body{
     body{
         background-image: none;
     }
-    .big-div{
+
+    #top-bg, #mid-bg {
+        display: none;
+    }
+
+    .about-us{
         width: 100%;
         display: flex;
         flex-direction: column;
         height: 632px;
         margin: 71px 0px 0px 0px;
+    }
+
+    .world-class-talent {
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
     }
     .sub-div{
         width: 100%;
@@ -163,6 +182,19 @@ body{
         width: 100%;
         height: 320px;
     }
+
+    .col-order-one img {
+        content: url('../../assets/about/tablet/image-about-hero.jpg');
+    }
+
+    .col-order-two img {
+        content: url('../../assets/about/tablet/image-world-class-talent.jpg');
+    }
+
+    .col-order-three img {
+        content: url('../../assets/about/tablet/image-real-deal.jpg');
+    }
+
     .col-order:nth-of-type(1) { order: 2; }
     .col-order:nth-of-type(2) { order: 1; }
 
@@ -185,20 +217,16 @@ body{
     .right-curve,.left-curve-1{
         border-radius: 15px 15px 0px 0px;
     }
-    .class-medium{
+    .holder-2 span{
         text-align: center;
     }
 
-    .big-div-1{
+    .real-deal{
+        text-align: center;
         display: flex;
         flex-direction: column;
-        width: 100%;
         height: 736px;
-        margin: 120px 0px 0px 0px;
-    }
-    .sub-div-1{
-        width: 100%;
-        height: 320px;
+        margin: 120px 0 0;
     }
     .sub-2{
         width: 100%;
@@ -226,89 +254,112 @@ body{
     body{
         background-image: none;
     }
-.big-div{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 715px;
-    margin: 0px;
-}
-.col-order:nth-of-type(1) { order: 2; }
-.col-order:nth-of-type(2) { order: 1; }
-.sub-div-1{
-    width: 100%;
-    height: 320px;
-    border-radius: 0px;
-}
-.sub-div{
-    width: 100%;
-    height: 395px;
-    border-radius: 0px;
-}
-.myText{
-    font-size: 32px;
-    line-height: 36px;
-    width: 87.2%;
-    margin: 80px 6.4% 0px 6.4%;
-    text-align: center;
-}
-.about-text{
-    font-size: 15px;
-    line-height: 25px;
-    width: 87.2%;
-    margin: 24px 6.4% 80px 6.4%;
-}
-.big-div-1{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0px;
-    height: 865px;
 
-}
-.sub-div-1{
-    width: 100%;
-    height: 320px;
-
-}
-.sub-2{
-    width: 100%;
-    height: 545px;
-}
-.holder-2{
-    width: 87.2%;
-    height: 385px;
-    margin: 80px 6.4%;
-}
-.class-medium{
-    font-size: 32px;
-    line-height: 36px;
-    width: 100%;
-    text-align: center;
-}
-
-.body-text-small #sub-text{
-    width: 100%;
-    background-color: #333136;
-    font-size: 15px;
-    line-height: 25px;
-}
-
-.left-curve,.right-curve-1{
-    border-radius:0px ;
+    #top-bg, #mid-bg {
+        display: none;
     }
 
-.right-curve,.left-curve-1{
+    .about-us{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 715px;
+        margin-top: 46px;
+        /* position: absolute;
+        left: 0;
+        right: 0; */
+    }
+    .world-class-talent {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 0;
+        /* position: absolute;
+        left: 0;
+        right: 0;
+        top: 790px; */
+    }
+
+    .col-order-one img {
+        content: url('../../assets/about/mobile/image-about-hero.jpg');
+    }
+
+    .col-order-two img {
+        content: url('../../assets/about/mobile/image-world-class-talent.jpg');
+    }
+
+    .col-order-three img {
+        content: url('../../assets/about/mobile/image-real-deal.jpg');
+    }
+
+    .col-order:nth-of-type(1) { order: 2; }
+    .col-order:nth-of-type(2) { order: 1; }
+    .sub-div-1{
+        width: 100%;
+        height: 320px;
         border-radius: 0px;
     }
-
-    #sub-text{
-        height: 173px;
+    .sub-div{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
     }
-    .about-page-mobile{
-        position: absolute;
-        left: 0px;
-        right: 0px;
+    .myText{
+        font-size: 32px;
+        line-height: 36px;
+        width: 87.2%;
+        margin: 80px 6.4% 0px 6.4%;
+        text-align: center;
+    }
+    .about-text{
+        font-size: 15px;
+        line-height: 25px;
+        width: 87.2%;
+        margin: 24px 6.4% 80px 6.4%;
+    }
+    .real-deal{
+        display: flex;
+        flex-direction: column;
+        height: 865px;
+
+    }
+    .sub-div-1{
+        width: 100%;
+        height: 320px;
+
+    }
+    .sub-2{
+        width: 100%;
+        height: 545px;
+    }
+    .holder-2{
+        width: 87.2%;
+        height: 385px;
+        margin: 80px 6.4%;
+    }
+    .holder-2 span{
+        font-size: 32px;
+        line-height: 36px;
+        width: 100%;
+        text-align: center;
     }
 
+    .body-text-small #sub-text{
+        width: 100%;
+        background-color: #333136;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .left-curve,.right-curve-1{
+        border-radius:0px ;
+        }
+
+    .right-curve,.left-curve-1{
+            border-radius: 0px;
+        }
+
+        #sub-text{
+            height: 173px;
+        }
 }

@@ -73,7 +73,8 @@ export const CardContainer = styled.div`
 
   @media (max-width: 449px) {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    margin-top: 512px;
+    width: 327px;
+    margin: 96px auto 0;
     row-gap: 40px;
   }
 `
