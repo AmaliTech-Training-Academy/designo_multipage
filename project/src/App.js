@@ -18,8 +18,12 @@ function App() {
   return (
       <div className="App"  >
         <Wrapper>
+
           <Header />
+          
           <AppRoutes/>
+
+          
         </Wrapper>    
       </div>
   );

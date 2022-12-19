@@ -12,7 +12,7 @@ const Contact = () => {
     phone: "",
     message: "",
   });
-  const [formErrors, setFormErrors] = useState({});
+  const [ formErrors, setFormErrors] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
 
   const handleChange = (e) => {
@@ -39,6 +39,7 @@ const Contact = () => {
   const validate = (values) => {
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    const phoneRegex = /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
     if (!values.username) {
       errors.username = "Can't be empty";
     }
@@ -49,6 +50,8 @@ const Contact = () => {
     }
     if (!values.phone) {
       errors.phone = "Can't be empty";
+    }else if(!phoneRegex.test(values.phone)){
+      errors.phone = "This is not a valid phone number";
     }
     if (!values.message) {
       errors.message = "Can't be empty";
