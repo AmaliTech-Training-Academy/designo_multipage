@@ -353,6 +353,7 @@
 
     .left-curve,.right-curve-1{
         border-radius:0px ;
+        text-align: center;
         }
 
     .right-curve,.left-curve-1{
