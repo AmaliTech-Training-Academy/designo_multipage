@@ -42,6 +42,11 @@ function Location () {
                   <h4 className="loc-small-text" id="loc-normal-text">3886 Wellington Street</h4>
                   <h4 className="loc-small-text" id="loc-normal-text">Toronto, Ontario M9C 3J5</h4>
                 </div>
+                <div className="sub-loc-1">
+                   <h4 className="loc-small-text " id="loc-small-title">Contact</h4>
+                   <h4 className="loc-small-text" id="loc-normal-text">P : +1 253-863-8967</h4>
+                   <h4 className="loc-small-text" id="loc-normal-text">M : contact@designo.co</h4>
+                   </div>
               </div>
             </div>
           </div>  
