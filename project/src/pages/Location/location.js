@@ -6,20 +6,10 @@ import markerIconPng from "leaflet/dist/images/marker-icon.png"
 import {Icon} from 'leaflet'
 import Footer from "../../components/Footer/Footer";
 import LocationProps from "./LocationProps";
+import mapImage from "./Map";
 
 function Location () {
-  const mapImage = (lat, lng) => {
-      return(
-      <MapContainer center={[lat, lng]} zoom={13} scrollWheelZoom={false}>
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-      />
-      <Marker position={[lat, lng]} icon={new Icon({iconUrl: markerIconPng, iconSize: [25, 41]})}>
-      </Marker>
-    </MapContainer>
-    )
-  }
+ 
 
     return(
         <>
@@ -55,14 +45,13 @@ function Location () {
                heading = "Designo AU Office"
                address = "19 Balonne Street"
                address1 = "New South Wales 2443"
-               number= "P : (02) 6720 9092 "
+               number= "P : (02) 6720 9092"
                email="M : contact@designo.au"
               />
-           
             <div className="loc-img img-reverse">
               {mapImage(-30.329531, 149.788193)}
             </div>
-        </div>
+          </div>
        </div>
      
 
@@ -80,8 +69,9 @@ function Location () {
           {mapImage(53.733268, -1.327919)}
          </div>
         </div>
-        </div>
-        </div>
+      </div>
+      </div>
+        
      
       <Footer/>
       </>
