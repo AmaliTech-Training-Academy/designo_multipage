@@ -1,9 +1,5 @@
 import React from "react";
 import './location.css'
-// images
-import { MapContainer, TileLayer,Marker } from 'react-leaflet'
-import markerIconPng from "leaflet/dist/images/marker-icon.png"
-import {Icon} from 'leaflet'
 import Footer from "../../components/Footer/Footer";
 import LocationProps from "./LocationProps";
 import mapImage from "./Map";

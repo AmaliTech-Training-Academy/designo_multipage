@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MapContainer, TileLayer, useMap,Marker } from 'react-leaflet'
+import { MapContainer, TileLayer,Marker } from 'react-leaflet'
 import markerIconPng from "leaflet/dist/images/marker-icon.png"
 import {Icon} from 'leaflet'
 
