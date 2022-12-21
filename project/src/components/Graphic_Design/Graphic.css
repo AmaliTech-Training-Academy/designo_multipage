@@ -232,7 +232,7 @@ margin-bottom: 24px;
 .picture-text-2>p>span{
   color: #e7816b;
 }
-@media only screen and (max-width:825px) and (min-width:450px) {
+@media only screen and (max-width:950px) and (min-width:450px) {
   .wrapper{
     margin-bottom: 120px;
   }
