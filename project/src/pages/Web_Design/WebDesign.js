@@ -105,7 +105,7 @@ const Grid = styled.div`
   }
 
   @media (max-width: 449px) {
-    width: 327px;
+    width: 90%;
     margin: 96px auto 0;
     height: 524px;
   }

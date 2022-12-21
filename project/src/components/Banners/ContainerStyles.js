@@ -14,12 +14,12 @@ background-size: cover;
         border-radius: inherit;
     }
 
-@media (min-width: 450px) and (max-width: 850px) {
+@media (min-width: 450px) and (max-width: 950px) {
     background-image: url('/assets/home/tablet/image-app-design.jpg');
 }
 
 @media (max-width: 449px) {
-    width: 327px;
+    /* width: 327px; */
     /* margin: 120px auto 0; */
     background-image: url('/assets/home/mobile/image-app-design.jpg');
 }
@@ -27,7 +27,7 @@ background-size: cover;
 export const GraphicContainer = styled(AppContainer)`
     background-image: url('/assets/home/desktop/image-graphic-design.jpg');
 
-    @media (min-width: 450px) and (max-width: 850px) {
+    @media (min-width: 450px) and (max-width: 950px) {
         background-image: url('/assets/home/tablet/image-graphic-design.jpg');
     }
 
@@ -39,11 +39,11 @@ export const WebContainer = styled(AppContainer)`
     background-image: url('/assets/home/desktop/image-Web-design-large.jpg');
     grid-row: ${({variant}) => (variant === 'home' ? '1 / span 2' : 'unset')};
 
-    @media (max-width: 449px), (min-width: 450px) and (max-width: 850px) {
+    @media (max-width: 950px) {
         grid-row: unset;
     }
 
-    @media (min-width: 450px) and (max-width: 850px) {
+    @media (min-width: 450px) and (max-width: 950px) {
         background-image: url('/assets/home/tablet/image-Web-design.jpg');
     }
 
