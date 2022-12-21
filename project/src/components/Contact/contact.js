@@ -191,7 +191,7 @@ const Contact = () => {
         <div className="location-card-text-container">
           <h2>{title}</h2>
           <button type="submit" className="locatio-btn">
-          Submit
+          See location
         </button>
         </div>
       </div>
