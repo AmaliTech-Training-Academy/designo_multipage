@@ -8,7 +8,7 @@ export const center = `
         margin: 0 auto;
     }
 
-    @media (min-width: 450px) and (max-width: 850px) {
+    @media (min-width: 450px) and (max-width: 950px) {
         display: flex;
         width: 100%;
     }
@@ -37,7 +37,7 @@ export const smallCircleBackground = `
     right: 0;
     margin: 0 auto;
 
-    @media (min-width: 450px) and (max-width: 850px)  {
+    @media (min-width: 450px) and (max-width: 950px)  {
         margin: unset;
         height: 100%
     }

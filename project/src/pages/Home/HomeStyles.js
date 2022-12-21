@@ -7,7 +7,7 @@ export const HomeBackgroundOne = styled.img`
     top: 475px;
     left: 0;
 
-    @media (max-width: 850px) {
+    @media (max-width: 950px) {
         display: none;
     }
 `
@@ -17,7 +17,7 @@ export const HomeBackgroundTwo = styled.img`
     right: 0;
     transform: rotate(180deg);
 
-    @media (max-width: 850px) {
+    @media (max-width: 950px) {
         display: none;
     }
 `
@@ -33,7 +33,7 @@ export const HomeContainer = styled.div`
     border-radius: 15px;
     overflow: hidden;
 
-    @media (max-width: 850px) {
+    @media (max-width: 950px) {
         height: 843px;
     }
 
@@ -52,7 +52,7 @@ export const BackgroundImage = styled.div`
     bottom: 0;
     background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
 
-    @media (min-width: 450px) and (max-width: 850px) {
+    @media (min-width: 450px) and (max-width: 950px) {
         left: 170px;
         right: -100px;
     }
@@ -70,7 +70,7 @@ export const Article = styled.div`
     width: 540px;
     height: 350px;
 
-    @media (max-width: 850px) {
+    @media (max-width: 950px) {
         text-align: center;
         top: 60px;
         left: 0;
@@ -78,12 +78,16 @@ export const Article = styled.div`
         margin: 0 auto;
     }
 
-    @media (min-width: 450px) and (max-width: 850px)  {
+    @media (min-width: 450px) and (max-width: 950px)  {
         width: 573px;
     }
 
     @media (max-width: 449px) {
         width: 327px;
+    }
+
+    @media (max-width: 290px) {
+        width: 95%;
     }
 `
 export const Title = styled.div`
@@ -93,7 +97,7 @@ export const Title = styled.div`
     margin-bottom: 40px;
     color: #FFFFFF;
 
-    @media (min-width: 450px) and (max-width: 850px) {
+    @media (min-width: 450px) and (max-width: 950px) {
         margin-bottom: 20px;
     }
 
@@ -101,6 +105,9 @@ export const Title = styled.div`
         font-size: 32px;
         line-height: 36px;
         margin-bottom: 18px;
+    }
+    @media (max-width: 290px) {
+        font-size: 27px;
     }
 `
 export const Subtitle = styled.div`
@@ -111,7 +118,7 @@ export const Subtitle = styled.div`
     margin-bottom: 40px;
     color: #FFFFFF;
 
-    @media (max-width: 850px) {
+    @media (max-width: 950px) {
         margin: 0 auto 20px;
         text-align: center;
     }
@@ -120,6 +127,10 @@ export const Subtitle = styled.div`
         width: 327px;
         font-size: 15px;
         line-height: 20px;
+    }
+    @media (max-width: 290px) {
+        width: 95%;
+        font-size: 12px;
     }
 `
 export const Button = styled.button`
@@ -139,12 +150,17 @@ export const Button = styled.button`
         background: #FFAD9B;
         color: white;
     }
+    @media (max-width: 290px) {
+        width: 132px;
+        height: 46px;
+        font-size: 12px;
+    }
 `
 export const ArticleImage = styled.img`
     position: absolute;
     left: 531px;
 
-    @media (max-width: 850px) {
+    @media (max-width: 950px) {
         top: 285px;
         left: 0;
         right: 0;
@@ -153,6 +169,10 @@ export const ArticleImage = styled.img`
 
     @media (max-width: 449px) {
         left: -120px;
+    }
+
+    @media (max-width: 290px) {
+            width: 523px;
     }
 `
 // MIDDLE CONTENT
@@ -166,11 +186,11 @@ export const GridContainer = styled.div`
     height: 640px;
     margin-top: 164px;
 
-    @media (max-width: 850px) {
+    @media (max-width: 950px) {
         grid-template-columns: repeat(1, minmax(0, 1fr));
     }
 
-    @media (min-width: 450px) and (max-width: 850px) {
+    @media (min-width: 450px) and (max-width: 950px) {
         margin-top: 120px;
         height: 649px;
     }
@@ -179,5 +199,9 @@ export const GridContainer = styled.div`
         height: 798px;
         width: 327px;
         margin: 120px auto 0;
+    }
+
+    @media (max-width: 290px) {
+        width: 90%;
     }
 `

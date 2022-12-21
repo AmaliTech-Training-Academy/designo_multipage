@@ -53,7 +53,7 @@ const Contact = () => {
   };
   return (
     <>
-      <img src={bimg} className="b-img" />
+      <img src={bimg} className="b-img" alt=""/>
     <div className="contact-page">
       <div className="svg-container">
         <svg width="640" height="640" xmlns="http://www.w3.org/2000/svg">
@@ -100,7 +100,7 @@ const Contact = () => {
               <img
                 className={formErrors.username ? "error-img-show " : "error-img"}
                 src={error}
-              />
+                alt=""/>
               </div>
             </p>
           </div>
@@ -122,7 +122,7 @@ const Contact = () => {
               <img
                 className={formErrors.email ? "error-img-show" : "error-img"}
                 src={error}
-              />
+                alt=""/>
               </div>
             </p>
           </div>
@@ -144,7 +144,7 @@ const Contact = () => {
               <img
                 className={formErrors.phone ? "error-img-show" : "error-img"}
                 src={error}
-              />
+                alt=""/>
               </div>
             </p>
           </div>
@@ -166,7 +166,7 @@ const Contact = () => {
               <img
                 className={formErrors.message ? "error-img-show" : "error-img"}
                 src={error}
-              />
+                alt=""/>
               </div>
             </p>
           </div>
