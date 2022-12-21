@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import "./contact.css";
 import error from "../../assets/contact/desktop/icon-error.svg";
 import { Location } from "../../data";
@@ -13,7 +13,6 @@ const Contact = () => {
     message: "",
   });
   const [ formErrors, setFormErrors] = useState({});
-  const [isSubmit, setIsSubmit] = useState(false);
 
   const handleChange = (e) => {
     const name = e.target.name;
@@ -23,18 +22,12 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormErrors(validate(formValues));
-    setIsSubmit(true);
     if (formValues.username&&formValues.email&&formValues.phone&&formValues.message) {
       setFormValues({ username: '', email: '', phone: '', message: '' })
     }
   };
 
-  useEffect(() => {
-    console.log(formErrors);
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-    }
-    console.log(formValues);
-  });
+
 
   const validate = (values) => {
     const errors = {};
