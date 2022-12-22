@@ -14,7 +14,7 @@ const Graphic = () => {
       <div className="wrapper" >
       <div className="bg-wrap"></div>
         <div className="wrapper-text">
-          <h2> Graphic design</h2>
+          <h2> Graphic Design</h2>
           <p>
             We deliver eye-catching branding materials that are tailored to meet
             your business objectives.
