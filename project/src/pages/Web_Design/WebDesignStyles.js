@@ -1,8 +1,8 @@
 import styled from "styled-components";
+import {backgroundStyles} from '../../components/GlobalVariables/GlobalVariables'
 import {
     HomeBackgroundOne,
     HomeContainer,
-    BackgroundImage ,
     Subtitle,
     Title,
   } from '../Home/HomeStyles'
@@ -23,10 +23,15 @@ export const TitleContainer = styled(HomeContainer)`
       height: 320px;
     }
 `
-export const WebBackgroundImage = styled(BackgroundImage)`
+export const WebBackgroundImage = styled.div`
+  ${backgroundStyles}
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 250px;
   background-image: url('/assets/web-design/desktop/bg-pattern-intro-web.svg');
   background-size: cover;
-  left: 250px;
   
   @media (min-width: 450px) and (max-width: 850px) {
     left: 40px;
@@ -80,7 +85,7 @@ export const CardContainer = styled.div`
 `
 export const Card = styled.div`
   width: 100%;
-  height: 478px;
+  height: 100%;
   border-radius: 15px;
 
   @media (min-width: 450px) and (max-width: 850px) {
@@ -96,14 +101,14 @@ export const Card = styled.div`
 `
 export const CardImage = styled.div`
   width: 100%;
-  height: 320px;
+  height: 350px;
 
    img {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     width: 100%;
     height: 100%;
-    object-fit: fill;
+    object-fit: cover;
 
     @media (min-width: 450px) and (max-width: 850px) {
       border-top-left-radius: 15px;

@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import {backgroundStyles} from '../../components/GlobalVariables/GlobalVariables'
 
 // BACKGROUND
 export const HomeBackgroundOne = styled.img`
@@ -42,33 +41,60 @@ export const HomeContainer = styled.div`
         margin-top: 46px;
     }
 `
-export const BackgroundImage = styled.div`
-    ${backgroundStyles}
-    background-size: contain;
+export const HeroImage = styled.img`
+    width: 740px;
     position: absolute;
-    top: 0;
-    left: 420px;
     right: 0;
-    bottom: 0;
-    background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
 
-    @media (min-width: 450px) and (max-width: 950px) {
-        left: 170px;
+    @media (max-width: 1300px) {
+        width: unset;
+    }
+
+    @media (min-width: 449px) and (max-width: 950px) {
+        width: unset;
+        top: 100px;
         right: -100px;
     }
 
-    @media (max-width: 449px) {
-        top: -30px;
+    @media (max-width: 450px) {
+        width: unset;
+        right: unset;
+        top: 90px;
         left: 0;
-        right: -250px;
     }
 `
+// export const BackgroundImage = styled.div`
+//     ${backgroundStyles}
+//     background-size: contain;
+//     position: absolute;
+//     top: 0;
+//     left: 420px;
+//     right: 0;
+//     bottom: 0;
+//     background-image: url("/assets/home/desktop/bg-pattern-hero-home.svg");
+
+//     @media (min-width: 450px) and (max-width: 950px) {
+//         left: 170px;
+//         right: -100px;
+//     }
+
+//     @media (max-width: 449px) {
+//         top: -30px;
+//         left: 0;
+//         right: -250px;
+//     }
+// `
 export const Article = styled.div`
     position: absolute;
     top: 25%;
     left: 95px;
     width: 540px;
     height: 350px;
+
+    @media (max-width: 1300px) {
+        top: 15%;
+        left: 55px;
+    }
 
     @media (max-width: 950px) {
         text-align: center;
@@ -111,7 +137,7 @@ export const Title = styled.div`
     }
 `
 export const Subtitle = styled.div`
-    width: 75%;
+    width: 445px;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
@@ -134,6 +160,7 @@ export const Subtitle = styled.div`
     }
 `
 export const Button = styled.button`
+    background: #FFFFFF;
     width: 152px;
     height: 56px;
     border: none;
@@ -158,7 +185,11 @@ export const Button = styled.button`
 `
 export const ArticleImage = styled.img`
     position: absolute;
-    left: 531px;
+    right: -5%;
+
+    @media (max-width: 1300px) {
+        right: -150px;
+    }
 
     @media (max-width: 950px) {
         top: 285px;
