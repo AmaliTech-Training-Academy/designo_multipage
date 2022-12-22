@@ -36,10 +36,10 @@ border-radius: 297px 297px 297px 0px;
   bottom: -1.5%;
 }
 .contact {
-  width: 43%;
+  width: 45%;
   height: 184px;
   color: #fff;
-  margin-left: 95px;
+  margin-left: 87px;
   margin-bottom: 161px;
   margin-top: 135px;
 }
@@ -54,12 +54,12 @@ border-radius: 297px 297px 297px 0px;
 }
 
 form {
-  width: 41%;
+  width: 40%;
   height: 371px;
   position: relative;
   margin-top: 70px;
   margin-bottom: 54px;
-  margin-right: 96px;
+  /* margin-right: 90px; */
   overflow: hidden;
 }
 
@@ -333,14 +333,14 @@ textarea:focus {
     
        .contact{
         margin: 0px;
-        width: 327px;
+        width: 100%;
         height: 158px;
         margin-top: 72px;
         margin-bottom: 55px;
         text-align: center;
        }
        .text{
-        width: 357px;
+        width: 100%;
     height: 7125px8px;
     font-family: 'Jost';
     font-style: normal;
@@ -350,7 +350,7 @@ textarea:focus {
        }
     
        form{
-        width: 327px;
+        width: 100%;
         height: 387px;
     
         margin: 0px;
