@@ -1,7 +1,4 @@
-.location-pages{
-    margin-bottom: 235px;
 
-}
 .loc-page{
     width: 100%;
     height: 326px;
@@ -100,11 +97,14 @@
     .loc-big-div {
         flex-direction: column-reverse;
         height: 100%;
+        justify-content: unset;
     }
 
     .loc-text-1{
         width: 100%;
         height: 326px;
+        margin-top: 31px;
+       
     }
 
     .loc-img{
