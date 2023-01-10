@@ -1,33 +1,26 @@
-.location-pages{
-    margin-bottom: 235px;
 
-}
 .loc-page{
     width: 100%;
     height: 326px;
     margin: 64px 0px 0px 0px;
     display: flex;
+}
+
+
+
+
+.loc-big-div{
+    display: flex;
     justify-content: space-between;
+    width: 100%;
+    margin: 0px;
+    height: 326px;
 }
 
 .reverse {
     flex-direction: row-reverse;
 }
 
-.loc-big-div.reverse
-{
-    flex-direction: row-reverse;
-}
-
-
-
-.loc-big-div{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin: 0px;
-    height: 326px;
-}
 .loc-text-1{
     background-color: #FDF3F0;
     width: 65.77%;
@@ -84,6 +77,11 @@
     margin: 0px;
     border-radius: 15px;  
 }
+.leaflet-container{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
 #img-loc-1{
     height: 100%;
     width: 100%;
@@ -91,101 +89,109 @@
 }
 /*TABLET SCREENS */
 @media only screen and (min-width: 520px) and (max-width:920px){
-    
-    .loc-page{
+
+    .loc-page {
+        height: 700px;
+    }
+
+    .loc-big-div {
         flex-direction: column-reverse;
         height: 100%;
+        justify-content: unset;
     }
+
     .loc-text-1{
         width: 100%;
         height: 326px;
-        margin: 31px 0 100px;
+        margin-top: 31px;
+       
     }
 
+    .loc-img{
+        width: 100%;
+        height: 326px;
+        margin: 0px;
+    } 
     .loc-holder{
         width: 78.37%;
         height: 150px;
         margin: 88px 10.74% 88px 10.74%;
     }
-    .loc-img{
-        width: 100%;
-        height: 326px;
-        margin: 0px;
-    }
-
+    
 }
 
 
  /* MOBILE SCREENS*/
  @media only screen and (min-width:265px)and (max-width:450px) {
-.loc-page-main{
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    margin: 0px;
-}
-.loc-page{
-    margin-top: 0px;
-    margin-bottom:40px ;
-    flex-direction: column-reverse;
-    height: 100%;
-    margin: 46px 0 0;
-}
-
-/* .reverse {
-    flex-direction: column-reverse;
-} */
-
-.loc-big-div{
-    display: flex;
-    flex-direction: column-reverse;
-    height: 714px;
-}
-.loc-big-div.reverse
-{
-    flex-direction: column-reverse;
-}
-.loc-text-1{
-    width: 100%;
-    height: 100%;
-    border-radius: 0px;
-}
+    .loc-page-main{
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        margin: 0px;
+    }
+    .loc-page{
+        margin-top: 0px;
+        margin-bottom:40px ;
+        flex-direction: column-reverse;
+        height: 100%;
+        margin: 46px 0 0;
+    }
 
 
-.loc-holder{
-    width: 87.2%;
-    height: 234px;
-    margin: 80px 6.4%;
-}
-.loc-img{
-    width: 100%;
-    height: 320px;
-    margin: 0px;
-    border-radius: 0px;
-}
-#img-loc-1{
-    border-radius: 0px;
-}
-.loc-small-text{
-    text-align: center;
-}
+    .loc-big-div{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 714px;
+    }
+    .loc-big-div.reverse
+    {
+        flex-direction: column-reverse;
+    }
+    .loc-text-1{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
 
-.loc-text-row{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-}
-.sub-loc-1{
-    width: 100%;
-}
-#loc-right{
-    margin: 0px;
-}
+    .leaflet-container {
+        border-radius: unset;
+    }
 
-.loc-title{
-    text-align: center;
-    font-size: 32px;
-    line-height: 36px;
-}
+    .loc-holder{
+        width: 87.2%;
+        height: 234px;
+        margin: 80px 6.4%;
+    }
+    .loc-img{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        border-radius: unset;
+        z-index: -1;
+    }
+    #img-loc-1{
+        border-radius: 0px;
+    }
+    .loc-small-text{
+        text-align: center;
+    }
 
- }
+    .loc-text-row{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .sub-loc-1{
+        width: 100%;
+    }
+    #loc-right{
+        margin: 0 0 24px;
+    }
+
+    .loc-title{
+        text-align: center;
+        font-size: 32px;
+        line-height: 36px;
+        }
+
+}

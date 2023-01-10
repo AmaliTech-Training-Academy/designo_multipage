@@ -1,6 +1,6 @@
 
 .App {
-    margin: 0 135px;
+    margin: 0 10%;
     overflow: hidden;
 
 }
@@ -21,9 +21,8 @@
 
 @media only screen and (max-width:449px) {
     .App {
-        margin: 0;
+        margin: 0px;
     }  
-    
     .body {
         margin-bottom: 400px;
     }
@@ -31,3 +30,11 @@
 
 
 
+@media only screen and (max-width:290) {
+    .App {
+        margin: 0px;
+    }  
+    .body {
+        margin-bottom: 400px;
+    }
+}

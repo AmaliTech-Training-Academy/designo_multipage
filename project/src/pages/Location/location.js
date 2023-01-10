@@ -1,106 +1,74 @@
 import React from "react";
 import './location.css'
-// images
-import CanadaMap from "../../assets/locations/desktop/image-map-canada.png"
-import AustraliaMap from "../../assets/locations/desktop/image-map-australia.png"
-import UKMap from "../../assets/locations/desktop/image-map-united-kingdom.png"
-import CanadaTablet from "../../assets/locations/tablet/image-map-canada.png"
-import AustraliaTablet from "../../assets/locations/tablet/image-map-australia.png"
-import UKTablet from "../../assets/locations/tablet/image-map-uk.png"
 import Footer from "../../components/Footer/Footer";
+import LocationProps from "./LocationProps";
+import mapImage from "./Map";
 
 function Location () {
+ 
+
     return(
         <>
         <div className="body">
-          <div className="loc-page">
-            {/* <div className="loc-big-div"> */}
-            <div className="loc-text-1">
-              <div className="loc-holder">
-                <h3 className="loc-title">Canada</h3>
-                  <div className="loc-text-row">
-                    <div className="sub-loc-1" id="loc-right">
-                      <h4 className="loc-small-text " id="loc-small-title">Designo  Central Office</h4>
-                      <h4 className="loc-small-text" id="loc-normal-text">3886 Wellington Street</h4>
-                      <h4 className="loc-small-text" id="loc-normal-text">Toronto, Ontario M9C 3J5</h4>
-                      </div>
-                      <div className="sub-loc-1">
-                      <h4 className="loc-small-text " id="loc-small-title">Contact</h4>
-                      <h4 className="loc-small-text" id="loc-normal-text">P : +1 253-863-8967</h4>
-                      <h4 className="loc-small-text" id="loc-normal-text">M : contact@designo.co</h4>
-                    </div>
-                  </div>
-              </div>
-            </div>  
-            {/* </div> */}
-            <div className="loc-img">
-              <img id="img-loc-1"src={CanadaMap}
-                  sizes="(min-width: 1090px) 341px, (min-width: 650px) 40vw,  50vw"
-                  srcSet={`${CanadaTablet} 689w, ${CanadaMap} 375w`}
-                alt="canada map"/>
-            </div>
-          {/* </div> */}
-          </div>
+            <link
+              rel="stylesheet"
+              href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+              integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+              crossorigin=""
+            />
+ 
+        <div className="loc-page">
           
-          <div className="loc-page reverse">
-            {/* <div className="loc-big-div reverse"> */}
-            <div className="loc-text-1">
-              <div className="loc-holder">
-                <h3 className="loc-title">Australia</h3>
-                    <div className="loc-text-row">
-                      <div className="sub-loc-1" id="loc-right">
-                        <h4 className="loc-small-text " id="loc-small-title">Designo AU Office</h4>
-                        <h4 className="loc-small-text" id="loc-normal-text">19 Balonne Street</h4>
-                        <h4 className="loc-small-text" id="loc-normal-text">New South Wales 2443</h4>
-                        </div>
-                        <div className="sub-loc-1">
-                        <h4 className="loc-small-text " id="loc-small-title">Contact</h4>
-                        <h4 className="loc-small-text" id="loc-normal-text">P : (02) 6720 9092</h4>
-                        <h4 className="loc-small-text" id="loc-normal-text">M : contact@designo.au</h4>
-                      </div>
-                    </div>
-              </div>
-            </div>
-            {/* </div>    */}
-            <div className="loc-img">
-              <img id="img-loc-1"src={AustraliaMap}
-                  sizes="(min-width: 1090px) 341px, (min-width: 650px) 40vw,  50vw"
-                  srcSet={`${AustraliaTablet} 689w, ${AustraliaMap} 375w`}
-                  alt="australia map"/>
-            </div>
-            {/* </div> */}
+         <div className="loc-big-div">
+         <LocationProps 
+               country="Canada"
+               heading = "Designo  Central Office"
+               address = "3886 Wellington Street"
+               address1 = "Toronto, Ontario M9C 3J5"
+               number= "P : +1 253-863-8967"
+               email=" M : contact@designo.co"
+              />
+          <div className="loc-img">
+            {mapImage(43.77681075478822, -79.23103793101617)}
           </div>
-
-          <div className="loc-page">
-            {/* <div className="loc-big-div"> */}
-            <div className="loc-text-1">
-              <div className="loc-holder">
-              <h3 className="loc-title">United Kingdom</h3>
-                  <div className="loc-text-row">
-                      <div className="sub-loc-1" id="loc-right">
-                      <h4 className="loc-small-text " id="loc-small-title">Designo UK Office</h4>
-                      <h4 className="loc-small-text" id="loc-normal-text">13  Colorado Way</h4>
-                      <h4 className="loc-small-text" id="loc-normal-text">Rhyd-y-fro SA8 9GA</h4>
-                      </div>
-                      <div className="sub-loc-1">
-                      <h4 className="loc-small-text " id="loc-small-title">Contact</h4>
-                      <h4 className="loc-small-text" id="loc-normal-text">P : 078 3115 1400</h4>
-                      <h4 className="loc-small-text" id="loc-normal-text">M : contact@designo.uk</h4>
-                      </div>
-                  </div>
-              </div>
-                
-            </div>
-            <div className="loc-img">
-              <img id="img-loc-1"src={UKMap}
-                  sizes="(min-width: 1090px) 341px, (min-width: 650px) 40vw,  50vw"
-                  srcSet={`${UKTablet} 689w, ${UKMap} 375w`}
-                  alt="united kingdom map"/>  
-            </div>
-            {/* </div> */}
-          </div>
+         </div>
         </div>
 
+        <div className="loc-page">
+            <div className="loc-big-div reverse">
+              <LocationProps 
+               country="Australia"
+               heading = "Designo AU Office"
+               address = "19 Balonne Street"
+               address1 = "New South Wales 2443"
+               number= "P : (02) 6720 9092"
+               email="M : contact@designo.au"
+              />
+            <div className="loc-img img-reverse">
+              {mapImage(-30.329531, 149.788193)}
+            </div>
+          </div>
+       </div>
+     
+
+      <div className="loc-page">
+        <div className="loc-big-div">
+         <LocationProps 
+               country="United Kingdom"
+               heading = "Designo UK Office"
+               address = "13  Colorado Way"
+               address1 = "Rhyd-y-fro SA8 9GA"
+               number= "P : 078 3115 1400"
+               email="M : contact@designo.uk"
+              />
+         <div className="loc-img">
+          {mapImage(53.733268, -1.327919)}
+         </div>
+        </div>
+      </div>
+      </div>
+        
+     
       <Footer/>
       </>
     );

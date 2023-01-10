@@ -5,7 +5,7 @@ import {
   HomeContainer,
   Article,
   ArticleImage,
-  BackgroundImage,
+  HeroImage,
   Title,
   Subtitle,
   Button,
@@ -26,7 +26,8 @@ function Home() {
         <HomeBackgroundOne src='/assets/shared/desktop/bg-pattern-leaf.svg'/>
         <HomeBackgroundTwo src='/assets/shared/desktop/bg-pattern-leaf.svg'/>
         <HomeContainer>
-          <BackgroundImage />
+          <HeroImage src='/assets/home/desktop/bg-pattern-hero-home.svg' alt='' />
+          {/* <BackgroundImage /> */}
             <Article>
               <Title>
                 <span>Award-winning custom designs and digital branding solutions</span>

@@ -1,10 +1,11 @@
 
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import "./contact.css";
 import error from "../../assets/contact/desktop/icon-error.svg";
 import { Location } from "../../data";
 import bimg from "../../assets/shared/desktop/bg-pattern-leaf.svg";
 import Mini from "../Footer/Footer-mini";
+import { Link } from "react-router-dom";
 const Contact = () => {
   const [formValues, setFormValues] = useState({
     username: "",
@@ -12,8 +13,7 @@ const Contact = () => {
     phone: "",
     message: "",
   });
-  const [formErrors, setFormErrors] = useState({});
-  const [isSubmit, setIsSubmit] = useState(false);
+  const [ formErrors, setFormErrors] = useState({});
 
   const handleChange = (e) => {
     const name = e.target.name;
@@ -23,22 +23,17 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormErrors(validate(formValues));
-    setIsSubmit(true);
     if (formValues.username&&formValues.email&&formValues.phone&&formValues.message) {
       setFormValues({ username: '', email: '', phone: '', message: '' })
     }
   };
 
-  useEffect(() => {
-    console.log(formErrors);
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-    }
-    console.log(formValues);
-  });
+
 
   const validate = (values) => {
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    const phoneRegex = /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
     if (!values.username) {
       errors.username = "Can't be empty";
     }
@@ -49,6 +44,8 @@ const Contact = () => {
     }
     if (!values.phone) {
       errors.phone = "Can't be empty";
+    }else if(!phoneRegex.test(values.phone)){
+      errors.phone = "This is not a valid phone number";
     }
     if (!values.message) {
       errors.message = "Can't be empty";
@@ -57,7 +54,7 @@ const Contact = () => {
   };
   return (
     <>
-      <img src={bimg} className="b-img" />
+      <img src={bimg} className="b-img" alt=""/>
     <div className="contact-page">
       <div className="svg-container">
         <svg width="640" height="640" xmlns="http://www.w3.org/2000/svg">
@@ -104,7 +101,7 @@ const Contact = () => {
               <img
                 className={formErrors.username ? "error-img-show " : "error-img"}
                 src={error}
-              />
+                alt=""/>
               </div>
             </p>
           </div>
@@ -126,7 +123,7 @@ const Contact = () => {
               <img
                 className={formErrors.email ? "error-img-show" : "error-img"}
                 src={error}
-              />
+                alt=""/>
               </div>
             </p>
           </div>
@@ -148,7 +145,7 @@ const Contact = () => {
               <img
                 className={formErrors.phone ? "error-img-show" : "error-img"}
                 src={error}
-              />
+                alt=""/>
               </div>
             </p>
           </div>
@@ -170,7 +167,7 @@ const Contact = () => {
               <img
                 className={formErrors.message ? "error-img-show" : "error-img"}
                 src={error}
-              />
+                alt=""/>
               </div>
             </p>
           </div>
@@ -189,16 +186,18 @@ const Contact = () => {
           const {img,title,id} = place
           return(
             <div className="location-card">
-        <div className={id===1?"location-card-img-container-1":id===2?"location-card-img-container-2":"location-card-img-container-3"}>
-          <img className={id===1?"img-svg-1":id===2?"img-svg-2":"img-svg-3"} src={img} alt="" />
-        </div>
-        <div className="location-card-text-container">
-          <h2>{title}</h2>
-          <button type="submit" className="locatio-btn">
-          Submit
-        </button>
-        </div>
-      </div>
+              <div className={id===1?"location-card-img-container-1":id===2?"location-card-img-container-2":"location-card-img-container-3"}>
+                <img className={id===1?"img-svg-1":id===2?"img-svg-2":"img-svg-3"} src={img} alt="" />
+              </div>
+              <div className="location-card-text-container">
+                <h2>{title}</h2>
+              <Link to="/location" >
+                <button type="submit" className="locatio-btn">
+                  See location
+                </button>
+              </Link>
+              </div>
+            </div>
           )
         })
       }

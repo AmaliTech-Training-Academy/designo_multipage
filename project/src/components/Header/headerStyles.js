@@ -21,11 +21,19 @@ export const Nav = styled.nav`
             justify-content: ${(props) => props.footer === 'footer' ? 'center' : 'unset'};
         }
     }
+
+    @media (max-width: 290px) {
+        width: 80%;
+    }
 `
 export const Logo = styled.img`
     width: 196px;
     cursor: pointer;
     content: url(${(props) => props.footer === 'footer' ? "/assets/shared/desktop/logo-light.png" : "/assets/shared/desktop/logo-dark.png"});
+
+    @media (max-width: 290px) {
+        width: 126px;
+    }
 `
 export const Line = styled.div`
     height: 2px;
@@ -73,6 +81,10 @@ export const NavLinks = styled.div`
         @media (max-width: 449px) {
             display: ${(props) => props.footer === 'footer' ? 'block' : 'none'};
         }
+    }
+
+    @media (max-width: 1300px) {
+        width: 50%;
     }
 
     @media (min-width: 451px) and (max-width: 990px) {

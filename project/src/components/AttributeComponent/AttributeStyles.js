@@ -10,14 +10,14 @@ export const Container = styled.div`
     justify-content: space-between;
     margin-top: 160px;
 
-    @media (max-width: 449px), (min-width: 450px) and (max-width: 850px) {
+    @media (max-width: 950px) {
         flex-direction: column;
         height: 670px;
     }
 
     @media (max-width: 449px) {
         height: 1396px;
-        width: 327px;
+        width: 90%;
         margin: 120px auto 0;
     }
 `
@@ -35,8 +35,11 @@ export const Attribute = styled.div`
         margin: 0 auto;
     }
 
-    @media (min-width: 450px) and (max-width: 850px) {
+    @media (min-width: 450px) and (max-width: 950px) {
         display: flex;
+        width: 100%;
+    }
+    @media (max-width: 449px) {
         width: 100%;
     }
 `
@@ -71,14 +74,14 @@ export const AttributeDescription = styled.div`
         margin-top: 32px;
     }
 
-    @media (min-width: 450px) and (max-width: 850px)  {
+    @media (min-width: 450px) and (max-width: 950px)  {
         text-align: unset;
         bottom: unset;
         right: 0;
         width: 439px;
     }
 
-    @media (max-width: 449px) {
+    /* @media (max-width: 449px) {
         width: 327px;
-    }
+    } */
 `
