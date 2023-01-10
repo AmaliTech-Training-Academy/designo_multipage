@@ -1,5 +1,5 @@
 import React,{ useEffect } from "react";
-import { Routes, Route, useLocation, BrowserRouter } from "react-router-dom";
+import {useLocation} from "react-router-dom";
 import "./index.css"
 import './App.css'
 import Header from './components/Header/Header';
@@ -18,12 +18,8 @@ function App() {
   return (
       <div className="App"  >
         <Wrapper>
-
           <Header />
-          
           <AppRoutes/>
-
-          
         </Wrapper>    
       </div>
   );

@@ -6,7 +6,6 @@ import {
   Article,
   ArticleImage,
   HeroImage,
-  // BackgroundImage,
   Title,
   Subtitle,
   Button,

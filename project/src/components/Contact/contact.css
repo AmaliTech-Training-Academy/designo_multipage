@@ -254,6 +254,7 @@ textarea:focus {
   color: #fff;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .locatio-btn:hover {

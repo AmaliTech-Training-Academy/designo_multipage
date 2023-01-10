@@ -12,8 +12,6 @@ import MobileNavMenu from './MobileNavMenu';
 import { Link } from 'react-router-dom'
 
 function Header(props) {
-  const dark_logo = "/assets/shared/desktop/logo-dark.png";
-  const light_logo = "/assets/shared/desktop/logo-light.png";
 
   const [isOpen, setIsOpen] = useState(false);
 

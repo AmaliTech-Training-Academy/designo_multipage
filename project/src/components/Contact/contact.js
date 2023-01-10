@@ -5,6 +5,7 @@ import error from "../../assets/contact/desktop/icon-error.svg";
 import { Location } from "../../data";
 import bimg from "../../assets/shared/desktop/bg-pattern-leaf.svg";
 import Mini from "../Footer/Footer-mini";
+import { Link } from "react-router-dom";
 const Contact = () => {
   const [formValues, setFormValues] = useState({
     username: "",
@@ -185,16 +186,18 @@ const Contact = () => {
           const {img,title,id} = place
           return(
             <div className="location-card">
-        <div className={id===1?"location-card-img-container-1":id===2?"location-card-img-container-2":"location-card-img-container-3"}>
-          <img className={id===1?"img-svg-1":id===2?"img-svg-2":"img-svg-3"} src={img} alt="" />
-        </div>
-        <div className="location-card-text-container">
-          <h2>{title}</h2>
-          <button type="submit" className="locatio-btn">
-          See location
-        </button>
-        </div>
-      </div>
+              <div className={id===1?"location-card-img-container-1":id===2?"location-card-img-container-2":"location-card-img-container-3"}>
+                <img className={id===1?"img-svg-1":id===2?"img-svg-2":"img-svg-3"} src={img} alt="" />
+              </div>
+              <div className="location-card-text-container">
+                <h2>{title}</h2>
+              <Link to="/location" >
+                <button type="submit" className="locatio-btn">
+                  See location
+                </button>
+              </Link>
+              </div>
+            </div>
           )
         })
       }
